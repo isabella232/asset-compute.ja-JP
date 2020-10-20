@@ -1,12 +1,16 @@
 ---
-source-git-commit: 83bc0c58ce23d755a82a4b4e4fff44cdc237c74d
+source-git-commit: a55ebe5108c5a61f53ae0ffc7e625d8b93f8a813
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '69'
-ht-degree: 76%
+source-wordcount: '151'
+ht-degree: 40%
 
 ---
 # Adobe資産計算サービスドキュメント
+
+| EXL-PR | EXL | プレビュー | アクティベート | 公開済み | ヘルプ |
+|--- |--- |--- |--- |--- |--- |
+| [![ビルドの状態](https://docs.ci.corp.adobe.com/view/exl-pr/job/asset-compute.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/asset-compute.en_pr-exl/lastBuild/) | [![ビルドの状態](https://docs.ci.corp.adobe.com/view/exl-pr/job/asset-compute.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/asset-compute.en_exl/lastBuild/lastBuild) | [プレビュー URL](https://experienceleague.corp.adobe.com/docs/asset-compute/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [ライブURL](https://experienceleague.adobe.com/docs/asset-compute/using/home.html?lang=en) | [オーサリングガイド](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 これは、のドキュメントのリポジトリで [!DNL Adobe Asset Compute Service]す。
 
