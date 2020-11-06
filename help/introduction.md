@@ -1,36 +1,36 @@
 ---
-title: Introduction to the [!DNL Asset Compute Service].
-description: '[!DNL Asset Compute Service] は、複雑さを軽減し、拡張性を向上させる、クラウドネイティブのアセット処理サービスです。'
-translation-type: tm+mt
+title: ' [!DNL Asset Compute Service] の概要です。'
+description: '[!DNL Asset Compute Service] は、複雑さを軽減しスケーラビリティを向上させるクラウドネイティブなアセット処理サービスです。'
+translation-type: ht
 source-git-commit: 54afa44d8d662ee1499a385f504fca073ab6c347
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '332'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
-# 概要 [!DNL Asset Compute Service] {#overview}
+# [!DNL Asset Compute Service] の概要 {#overview}
 
-[!DNL Asset Compute Service] は、デジタルアセットを処理するためのスケーラブルで拡張可能なサービス [!DNL Adobe Experience Cloud] です。 画像、ビデオ、ドキュメントおよびその他のファイル形式を、サムネール、抽出したテキストおよびメタデータ、アーカイブなど、様々なレンディションに変換できます。
+[!DNL Asset Compute Service] は、デジタルアセットを処理するためのスケーラブルかつ拡張可能な [!DNL Adobe Experience Cloud] サービスです。画像、ビデオ、ドキュメントなどのファイル形式を、サムネール、抽出テキストとメタデータ、アーカイブなど、様々なレンディションに変換できます。
 
-開発者は、カスタムアセットアプリケーション（カスタムワーカーとも呼ばれます）をプラグインして、カスタム使用例に対処できます。 サービスは [!DNL Adobe I/O] ランタイムで動作します。 Node.jsで書かれたヘッドレスアプリを通じて拡張でき [!DNL Project Firefly] ます。 画像操作を実行するための外部APIの呼び出しや、サポートの活用など、カスタム操作を実行でき [!DNL Adobe Sensei] ます。
+開発者は、カスタムアセットアプリケーション（カスタムワーカーとも呼ばれます）をプラグインして、カスタムユースケースに対応できます。このサービスは [!DNL Adobe I/O] ランタイムで動作します。Node.js で作成された [!DNL Project Firefly] ヘッドレスアプリを通じて拡張できます。これらのアプリでは、外部 API を呼び出して画像操作を実行したり [!DNL Adobe Sensei] サポートを利用するなどのカスタム操作をおこなえます。
 
-[!DNL Project Firefly] は、カスタムwebアプリケーションを [!DNL Adobe I/O] 実行時に構築およびデプロイして、Adobe Experience Cloudのソリューションを拡張するフレームワークです。 カスタムアプリケーションを作成する場合、開発者は [!DNL React Spectrum] (AdobeのUIツールキット)を活用し、マイクロサービスを作成し、カスタムイベントを作成し、APIを調整できます。 Project Fireflyの [ドキュメントを参照してください](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html)。
-
->[!NOTE]
->
->現在、はをCloud Service [!DNL Asset Compute Service] としてのみ使用 [!DNL Experience Manager] できます。 管理者は、を呼び出して処理用にアセットを渡すこ [!DNL Asset Compute Service] とのできる処理プロファイルを作成します。 詳しくは、アセットマイクロサービスと処理プロファイルの [使用を参照してください](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html)。
-
-## サポートされる使用例 [!DNL Asset Compute Service] {#possible-use-cases-benefits}
-
-[!DNL Asset Compute Service] は、基本的な画像処理など、一般的なビジネス用途のいくつかをサポートしています。Adobeアプリケーション固有のコンバージョン複雑なビジネス要件を調整するカスタムアプリケーションの作成も可能です。
-
-Webサービスを使用して、様々なファイルタイプのサムネールを生成できます。 [!DNL Asset Compute] サ [ポートされるファイル形式では、高品質な画像レンダリングが可能](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/file-format-support.html)。 カスタム設定でサポートされる [使用例を参照してください](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#custom-config)。
+[!DNL Project Firefly] は、[!DNL Adobe I/O] ランタイム上にカスタム Web アプリケーションを作成およびデプロイして Adobe Experience Cloud のソリューションを拡張するためのフレームワークです。カスタムアプリケーションを作成する場合、開発者は [!DNL React Spectrum]（アドビの UI ツールキット）を活用し、マイクロサービスを作成し、カスタムイベントを作成し、API をオーケストレーションすることができます。詳しくは、[Project Firefly のドキュメント](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html)を参照してください。
 
 >[!NOTE]
 >
->サービスはアセットストレージを提供しません。 ユーザーはこの情報を提供し、クラウドストレージ内のソースファイルとレンディションファイルの場所への参照を提供します。
+>現在、[!DNL Asset Compute Service] は Adobe [!DNL Experience Manager] as a Cloud Service 経由でのみ使用できます。管理者は、[!DNL Asset Compute Service] を呼び出してアセットを処理に渡すことができる処理プロファイルを作成します。詳しくは、[アセットマイクロサービスと処理プロファイルの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html)を参照してください。
+
+## [!DNL Asset Compute Service] のサポート対象ユースケース {#possible-use-cases-benefits}
+
+[!DNL Asset Compute Service] は、基本的な画像処理、Adobe アプリケーション固有の変換、複雑なビジネス要件をオーケストレーションするカスタムアプリケーションの作成など、いくつかの一般的なビジネスユースケースをサポートしています。
+
+[!DNL Asset Compute] Web サービスを使用して、様々なファイルタイプのサムネールを生成したり、[サポートされているファイル形式](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/assets/file-format-support.html)の高画質な画像レンダリングを生成したりできます。詳しくは、[カスタム設定でサポートされるユースケース](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#custom-config)を参照してください。
+
+>[!NOTE]
+>
+>このサービスはアセットストレージを提供しません。ユーザーがアセットストレージを提供し、クラウドストレージ内のソースファイルとレンディションファイルの場所を参照して提供します。
 
 <!-- TBD: Should this be mentioned in the docs?
 
@@ -45,10 +45,10 @@ Webサービスを使用して、様々なファイルタイプのサムネー�
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Managerの資産マイクロサービスをCloud Serviceとした資産処理の概要](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/asset-microservices-overview.html)。
->* [Project Fireflyのドキュメント](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html)。
->* [処理でサポートされるファイル形式](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/file-format-support.html)。
->* [Asset Compute Serviceのリリースノート](release-notes.md)
+>* [Adobe Experience Manager as a Cloud Service のアセットマイクロサービスを使用したアセット処理の概要](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/assets/asset-microservices-overview.html)。
+>* [Project Firefly のドキュメント](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html)
+>* [処理でサポートされるファイル形式](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/assets/file-format-support.html)
+>* [Asset Compute Service のリリースノート](release-notes.md)
 
 
 <!-- **TBD:**
