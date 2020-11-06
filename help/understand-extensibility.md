@@ -1,35 +1,35 @@
 ---
-title: 拡張について理解します [!DNL Asset Compute Service]。
-description: カスタムアセット処理を実行するた [!DNL Asset Compute Service] めの機能を拡張するタイミングと方法。
-translation-type: tm+mt
+title: ' [!DNL Asset Compute Service] の拡張について。'
+description: カスタムアセット処理を実行するために  [!DNL Asset Compute Service]  の機能を拡張するタイミングと方法。
+translation-type: ht
 source-git-commit: 54afa44d8d662ee1499a385f504fca073ab6c347
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
 # 拡張機能の概要 {#introduction-to-extensibilty}
 
-形式への変換や画像のサイズ変更など、多くのレンディションの要件は、Cloud Service [内の [!DNL Experience Manager] 処理プロファイル](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/asset-microservices-overview.html)が対処します。 より複雑なビジネス要件には、組織のニーズに合ったカスタム作成ソリューションが必要になる場合があります。 [!DNL Asset Compute Service] は、の「処理プロファイル」から呼び出されるカスタムアプリケーションを作成することで拡張でき [!DNL Experience Manager]ます。 これらのカスタムアプリケーションは、 [サポートされる使用例に応じて異なります](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html)。
+形式の変換や画像のサイズ変更など、多くのレンディション要件は、[Adobe  [!DNL Experience Manager]  as a Cloud Service の処理プロファイル](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/assets/asset-microservices-overview.html)で対処します。より複雑なビジネス要件の場合は、組織のニーズに合ったカスタムメイドのソリューションが必要になる場合があります。[!DNL Asset Compute Service] は、Adobe [!DNL Experience Manager] の処理プロファイルから呼び出されるカスタムアプリケーションを作成することで拡張することができます。これらのカスタムアプリケーションは、[サポート対象ユースケース ](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html)に対応しています。
 
 >[!NOTE]
 >
->[!DNL Asset Compute Service] は、Cloud Serviceとしてのみ使用 [!DNL Experience Manager] できます。
+>[!DNL Asset Compute Service] は、Adobe [!DNL Experience Manager] as a Cloud Service でのみ使用できます。
 
-カスタムアプリケーションは、ヘッドレスな [Project Firefly](https://github.com/AdobeDocs/project-firefly) Appです。 カスタムアプリケーション [!DNL Asset Compute Service] を使用した拡張は、 [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk) 、Project Firefly開発者ツールを使用して簡単に行えます。 これにより、開発者はビジネスロジックに集中できます。 カスタムアプリケーションの作成は、プレーンサーバーレスのAdobe I/O Runtimeアクションを作成するのと同じくらい簡単です。 これは、単一のNode.js JavaScript関数です。 基本的な [カスタムアプリケーションの例](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js) 。
+カスタムアプリケーションは、[Project Firefly](https://github.com/AdobeDocs/project-firefly) のヘッドレスアプリです。[Asset Compute SDK](https://github.com/adobe/asset-compute-sdk) と Project Firefly 開発者ツールを使用すると、[!DNL Asset Compute Service] をカスタムアプリケーションで簡単に拡張できるようになります。これにより、開発者はビジネスロジックに専念できます。カスタムアプリケーションの作成は、サーバーレスのプレーン Adobe I/O Runtime アクションを作成するのと同程度の簡単な作業です。カスタムアプリケーションは 1 つの Node.js JavaScript 関数です。詳しくは、[基本的なカスタムアプリケーションの例](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js)を参照してください。
 
 ## 前提条件とプロビジョニング要件 {#prerequisites-and-provisioning}
 
-次の前提条件を満たしていることを確認します。
+次の前提条件を満たしている必要があります。
 
-* Project Fireflyツールがコンピューターにインストールされている。
-* 組織 [!DNL Experience Cloud] 。 詳細は [こちら](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/setup.md#acquire-access-and-credentials)。
-* エクスペリエンス組織では、Cloud Serviceが有効になっ [!DNL Experience Manager] ている必要があります。
-* [!DNL Adobe Experience Cloud] 組織は、 [!DNL Project Firefly] 開発者プレビュープログラムの一部です。 アクセスの適用 [方法を参照してください](https://github.com/AdobeDocs/project-firefly/blob/master/overview/getting_access.md)。
-* 開発者の組織の開発者ロールまたは管理者権限を確認します。
-* [AdobeI/O CLI](https://github.com/adobe/aio-cli) がローカルにインストールされていることを確認します。
+* Project Firefly ツールがコンピューターにインストールされている。
+* [!DNL Experience Cloud] 組織である。詳しくは、[こちら](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/setup.md#acquire-access-and-credentials)を参照してください。
+* Experience 組織では、Adobe [!DNL Experience Manager] as a Cloud Service が有効になっている。
+* [!DNL Adobe Experience Cloud] 組織は、[!DNL Project Firefly] 開発者プレビュープログラムに含まれている。アクセス申請方法につては[こちら](https://github.com/AdobeDocs/project-firefly/blob/master/overview/getting_access.md)を参照してください。
+* 開発者の組織に開発者ロールまたは管理者権限がある。
+* [Adobe I/O CLI](https://github.com/adobe/aio-cli) がローカルにインストールされている。
 
 <!-- TBD for later:
 
