@@ -1,26 +1,26 @@
 ---
-title: カスタムアプリケーションの動作を理解する。
-description: カスタムアプリケ [!DNL Asset Compute Service] ーションの内部作業を参照してください。
-translation-type: tm+mt
+title: カスタムアプリケーションの動作の理解。
+description: ' [!DNL Asset Compute Service]  カスタムアプリケーションの動作の理解に役立つその内部動作'
+translation-type: ht
 source-git-commit: 54afa44d8d662ee1499a385f504fca073ab6c347
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '774'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
 # カスタムアプリケーションの内部 {#how-custom-application-works}
 
-次の図を参照して、デジタルアセットがクライアントによるカスタムアプリケーションで処理される場合のエンドツーエンドのワークフローを理解してください。
+次の図は、クライアントでカスタムアプリケーションを使用してデジタルアセットを処理する際のエンドツーエンドのワークフローを示しています。
 
-![カスタムアプリケーションワークフロー](assets/customworker.png)
+![カスタムアプリケーションのワークフロー](assets/customworker.png)
 
-*図：を使用してアセットを処理する手順 [!DNL Asset Compute Service]です。*
+*図：[!DNL Asset Compute Service] を使用してアセットを処理する手順*
 
 ## 登録 {#registration}
 
-クライアントは、Adobeアセット計算用のAdobeI/Oイベントを受け取るためのジャーナルURLを設定して取得するため [`/register`](api.md#register)[`/process`](api.md#process-request) に、に対する最初の要求の前に1回呼び出す必要があります。
+クライアントは、Adobe Asset Compute 用の Adobe I/O イベントを受け取るためのジャーナル URL を設定および取得するために、[`/process`](api.md#process-request) に初めてリクエストするより前に [`/register`](api.md#register) を 1 回呼び出す必要があります。
 
 ```sh
 curl -X POST \
@@ -31,11 +31,11 @@ curl -X POST \
   -H "x-api-key: $API_KEY"
 ```
 
-JavaScriptライブラリは、NodeJSアプリケーションで使用して、登録、処理、非同期イベント処理から必要なすべての手順を処理できます。 [`@adobe/asset-compute-client`](https://github.com/adobe/asset-compute-client#usage) 必要なヘッダーの詳細については、「 [認証と認証](api.md)」を参照してください。
+[`@adobe/asset-compute-client`](https://github.com/adobe/asset-compute-client#usage) JavaScript ライブラリを NodeJS アプリケーションで使用すると、登録から処理、非同期イベント処理まで、必要なすべての手順を実行できます。必要なヘッダーについて詳しくは、[認証と承認](api.md)を参照してください。
 
-## 処理中 {#processing}
+## 処理 {#processing}
 
-クライアントが [処理リクエストを送信します](api.md#process-request) 。
+クライアントは[処理](api.md#process-request)リクエストを送信します。
 
 ```sh
 curl -X POST \
@@ -47,11 +47,11 @@ curl -X POST \
   -d "<RENDITION_JSON>
 ```
 
-クライアントは、事前に署名されたURLを使用してレンディションを正しくフォーマットする必要があります。 JavaScriptライブラリは、URLに事前署名するためにNodeJSアプリケーションで使用できます。 [`@adobe/node-cloud-blobstore-wrapper`](https://github.com/adobe/node-cloud-blobstore-wrapper#presigned-urls) 現在、ライブラリはAzure BlobストレージとAWS S3コンテナのみをサポートしています。
+クライアントは、署名済みの URL を使用してレンディションの形式を正しく設定する必要があります。[`@adobe/node-cloud-blobstore-wrapper`](https://github.com/adobe/node-cloud-blobstore-wrapper#presigned-urls) JavaScript ライブラリを NodeJS アプリケーションで使用すると、URL に事前に署名することができます。現在、このライブラリでは Azure Blob ストレージと AWS S3 コンテナのみをサポートしています。
 
-処理要求は、AdobeI/Oイベント `requestId` をポーリングするのに使用できる値を返します。
+処理リクエストは、Adobe I/O イベントのポーリングに使用できる `requestId` 値を返します。
 
-カスタムアプリケーション処理リクエストの例を以下に示します。
+カスタムアプリケーションの処理リクエストの例を以下に示します。
 
 ```json
 {
@@ -69,15 +69,15 @@ curl -X POST \
 }
 ```
 
-は、カスタムアプリケーションにカスタムアプリケーションレンディション要求を [!DNL Asset Compute Service] 送信します。 Project Fireflyの保護されたWebアクションURLである、指定されたアプリケーションURLへのHTTPPOSTを使用します。 すべてのリクエストで、データのセキュリティを最大限に高めるためにHTTPSプロトコルが使用されます。
+[!DNL Asset Compute Service] が、カスタムアプリケーションレンディションリクエストをカスタムアプリケーションに送信します。指定されたアプリケーション URL（Project Firefly のセキュアな Web アクション URL）への HTTP POST が使用されます。すべてのリクエストで HTTPS プロトコルが使用されるので、データのセキュリティは最大になります。
 
-カスタムアプリケーションが [使用するAsset Compute SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk) （アセット計算SDK）は、HTTPPOSTリクエストを処理します。 また、ソースのダウンロード、レンディションのアップロード、I/Oイベントの送信、エラー処理も処理されます。
+カスタムアプリケーションで使用する [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk) が HTTP POST リクエストを処理します。また、ソースのダウンロード、レンディションのアップロード、I/O イベントの送信、エラー処理もおこないます。
 
 <!-- TBD: Add the application diagram. -->
 
-### Application code {#application-code}
+### アプリケーションコード {#application-code}
 
-カスタムコードは、ローカルで使用可能なソースファイル(`source.path`)を受け取るコールバックを提供する必要があります。 は、アセット処理要求 `rendition.path` の最終結果を配置する場所です。 カスタムアプリケーションは、コールバックを使用して、ローカルで使用可能なソースファイルを、渡された名前(`rendition.path`)を使用してレンディションファイルに変換します。 カスタムアプリケーションは、レンディションを作成す `rendition.path` るにはに書き込む必要があります。
+カスタムコードでは、ローカルで使用可能なソースファイル（`source.path`）を受け取るコールバックのみ提供するだけです。`rendition.path` は、アセット処理リクエストの最終結果を保存する場所です。カスタムアプリケーションでは、このコールバックを使用し、渡された名前（`rendition.path`）を使用して、ローカルで使用可能なソースファイルを、レンディションファイルに変換します。レンディションを作成するには、カスタムアプリケーションが `rendition.path` に書き込む必要があります。
 
 ```javascript
 const { worker } = require('@adobe/asset-compute-sdk');
@@ -97,33 +97,33 @@ exports.main = worker(async (source, rendition) => {
 
 ### ソースファイルのダウンロード {#download-source}
 
-カスタムアプリケーションは、ローカルファイルのみを扱います。 ソースファイルのダウンロードは、 [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk)（アセット計算SDK）で処理されます。
+カスタムアプリケーションは、ローカルファイルのみを扱います。ソースファイルのダウンロードは、[Asset Compute SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk) で処理されます。
 
 ### レンディションの作成 {#rendition-creation}
 
-SDKは、各レンディションに対して非同期 [レンディションコールバック関数](https://github.com/adobe/asset-compute-sdk#rendition-callback-for-worker-required) を呼び出します。
+SDK は、レンディションごとに非同期の[レンディションコールバック関数](https://github.com/adobe/asset-compute-sdk#rendition-callback-for-worker-required)を呼び出します。
 
-このコールバック関数は、 [source](https://github.com/adobe/asset-compute-sdk#source) オブジェクトと [rendition](https://github.com/adobe/asset-compute-sdk#rendition) オブジェクトにアクセスできます。 は `source.path` 既に存在し、ソースファイルのローカルコピーへのパスです。 は、処理 `rendition.path` 済みのレンディションを保存する必要があるパスです。 disableSourceDownloadフラグが設定されていない限り [、アプリケーションは完全にを使用する必要があり](https://github.com/adobe/asset-compute-sdk#worker-options-optional)`rendition.path`ます。 そうしないと、SDKはレンディションファイルを特定または識別できず、失敗します。
+このコールバック関数は、[source](https://github.com/adobe/asset-compute-sdk#source) オブジェクトと [rendition](https://github.com/adobe/asset-compute-sdk#rendition) オブジェクトにアクセスできます。`source.path` は既に存在し、ソースファイルのローカルコピーへのパスになっています。`rendition.path` は、処理済みレンディションの保存先となるパスです。[disableSourceDownload フラグ](https://github.com/adobe/asset-compute-sdk#worker-options-optional)が設定されていない場合、アプリケーションは `rendition.path` を正確に使用する必要があります。そうでない場合、SDK はレンディションファイルを特定または識別できず、失敗します。
 
-この例は、カスタムアプリケーションの構造を説明し、焦点を絞るために過剰に簡略化されています。 アプリケーションは、ソースファイルをレンディションのコピー先にコピーするだけです。
+なお、この例は、カスタムアプリケーションの構造に焦点をあてるために、極端に単純化されています。アプリケーションは、ソースファイルをレンディション先にコピーするだけです。
 
-レンディションコールバックパラメーターについて詳しくは、「 [Asset Compute SDK API](https://github.com/adobe/asset-compute-sdk#api-details)」を参照してください。
+レンディションコールバックパラメーターについて詳しくは、[Asset Compute SDK API](https://github.com/adobe/asset-compute-sdk#api-details) を参照してください。
 
-### レンディションをアップロード {#upload-rendition}
+### レンディションのアップロード {#upload-rendition}
 
-各レンディションが作成され、が指定したパスを持つファイルに保存された後 `rendition.path`、 [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk) （AWSまたはAzure）は、各レンディションをクラウドストレージ（AWSまたはAzure）にアップロードします。 カスタムアプリケーションは、受信要求に同じアプリケーションURLを指す複数のレンディションが含まれている場合に限り、同時に複数のレンディションを取得します。 クラウドへのアップロードストレージは、各レンディションの後、および次のレンディションのコールバックを実行する前に実行されます。
+各レンディションが作成され、`rendition.path` で指定されたパスでファイルに保存されたら、[Asset Compute SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk) は各レンディションをクラウドストレージ（AWS か Azure のいづれか）にアップロードします。カスタムアプリケーションは、受信リクエストに、同じアプリケーション URL を示す複数のレンディションが含まれている場合に限り、同時に複数のレンディションを取得します。クラウドストレージへのアップロードは、各レンディションの後、次のレンディションのコールバックを実行する前に実行されます。
 
-の動作 `batchWorker()` は異なります。これは、実際にはすべてのレンディションが処理され、すべてのレンディションが処理された後にアップロードされるからです。
+`batchWorker()` の動作は異なります。つまり、実際にすべてのレンディションを処理し、すべてを処理した後にのみアップロードします。
 
-## AdobeI/Oイベント {#aio-events}
+## Adobe I/O イベント {#aio-events}
 
-SDKは、レンディションごとにAdobeI/Oイベントを送信します。 これらのイベントは、タイプ `rendition_created` または結果 `rendition_failed` に応じて異なります。 イベントについて詳しくは、 [Asset Compute asynchronousイベント](api.md#asynchronous-events) （非同期を計算）を参照してください。
+SDK は、レンディションごとに Adobe I/O イベントを送信します。これらのイベントは、結果に応じて `rendition_created` か `rendition_failed` のどちらかのタイプになります。イベントについて詳しくは、[Asset Compute の非同期イベント](api.md#asynchronous-events)を参照してください。
 
-## AdobeI/Oイベントの受信 {#receive-aio-events}
+## Adobe I/O イベントの受信 {#receive-aio-events}
 
-クライアントは、消費ロジックに従って [AdobeI/Oイベントジャーナル](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#/Journaling) をポーリングします。 最初のジャーナルURLは、 `/register` API応答で提供されるURLです。 イベントは、イベントに存在 `requestId` し、で返されるのと同じを使用して識別でき `/process`ます。 すべてのレンディションには、別々のイベントがあり、レンディションがアップロード（または失敗）されるとすぐに送信されます。 一致するイベントを受け取ると、クライアントは結果のレンディションを表示したり、処理したりできます。
+クライアントは、消費ロジックに従って [Adobe I/O イベントジャーナル](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#/Journaling)をポーリングします。最初のジャーナル URL は、`/register` API 応答で提供される URL です。イベントは、`requestId` を使用して識別できます。この ID はイベントに存在し、`/process` で返されるものと同じです。レンディションごとに個別のイベントがあります。このイベントは、レンディションがアップロードされる（または失敗する）とすぐに送信されます。一致するイベントを受け取ると、クライアントは結果のレンディションを表示したり、処理したりすることができます。
 
-JavaScriptライブラリ [`asset-compute-client`](https://github.com/adobe/asset-compute-client#usage) では、ジャーナルのポーリングを簡単に行うことができます。この方法を使用して、すべてのイベントを取得するこ `waitActivation()` とができます。
+JavaScript ライブラリ [`asset-compute-client`](https://github.com/adobe/asset-compute-client#usage) では、`waitActivation()` メソッドを使用してすべてのイベントを取得するので、ジャーナルのポーリングが簡単になります。
 
 ```javascript
 const events = await assetCompute.waitActivation(requestId);
@@ -141,7 +141,7 @@ await Promise.all(events.map(event => {
 }));
 ```
 
-ジャーナルイベントの取得方法について詳しくは、「 [AdobeI/OイベントAPI](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#!adobedocs/adobeio-events/master/events-api-reference.yaml)」を参照してください。
+ジャーナルイベントの取得方法について詳しくは、[Adobe I/O イベント API](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#!adobedocs/adobeio-events/master/events-api-reference.yaml) を参照してください。
 
 <!-- TBD:
 * Illustration of the controls/data flow.
