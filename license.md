@@ -1,14 +1,14 @@
 ---
 source-git-commit: 324f414164ccbb712e7197ddc68075ea9c238cae
-workflow-type: tm+mt
-translation-type: tm+mt
+workflow-type: ht
+translation-type: ht
 source-wordcount: '170'
 ht-degree: 100%
 
 ---
 # MIT ライセンス
 
-© Copyright 2020 Adobe.All rights reserved.
+© Copyright 2020 Adobe. All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the &quot;Software&quot;), to deal
