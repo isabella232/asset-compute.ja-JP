@@ -1,48 +1,48 @@
 ---
-title: トラブルシューティング [!DNL Asset Compute Service].
-description: を使用したカスタムアプリケーションのトラブルシューティングとデバッグ [!DNL Asset Compute Service]。
-translation-type: tm+mt
+title: ' [!DNL Asset Compute Service] のトラブルシューティング。'
+description: ' [!DNL Asset Compute Service] を使用したカスタムアプリケーションのトラブルシューティングとデバッグ。'
+translation-type: ht
 source-git-commit: 68d910cd092fccb599c361f24daff80460129e1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '306'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
 # トラブルシューティング {#troubleshoot}
 
-Asset Compute Serviceのトラブルシューティングに役立つ一般的なトラブルシューティングのヒントをいくつか示します。
+Asset Compute Service のトラブルシューティングに役立つ一般的なトラブルシューティングヒントを以下にいくつか示します。
 
-* 起動時にJavaScriptアプリケーションがクラッシュしないことを確認します。 このようなクラッシュは、通常、見つからないライブラリや依存関係に関連しています。
-* インストールするすべての依存関係がアプリケーションの `package.json` ファイルで参照されていることを確認します。
-* 失敗時のクリーンアップに起因する可能性のあるエラーが、元の問題を隠す独自のエラーを生成しないようにします。
+* JavaScript アプリケーションが起動時にクラッシュしないようにします。このようなクラッシュは、通常、ライブラリや依存コンポーネントが見つからないことが原因で発生します。
+* インストールするすべての依存コンポーネントがアプリケーションの `package.json` ファイルで参照されるようにします。
+* 失敗時のクリーンアップに起因する可能性のあるエラーが、元の問題を隠す独自のエラーを発生させないようにします。
 
-* 新しい [!DNL Asset Compute Service] 統合で初めて開発者ツールを起動すると、「アセット計算イベント」ジャーナルが完全に設定されていない場合があるので、最初の処理リクエストが失敗する場合があります。 ジャーナルが設定されるまでしばらく待ってから、別の要求を送信します。
-* アセット計算 `/register``/process` または要求の送信でエラーが発生した場合は、必要なすべてのAPIがAdobeのI/Oプロジェクトとワークスペース(Asset Compute、IOイベント、IOイベント管理、Runtime)に追加されていることを確認してください。
+* 新しい [!DNL Asset Compute Service] 統合で初めて開発者ツールを起動した場合、Asset Compute イベントジャーナルの設定が完全でない可能性があり、最初の処理リクエストが失敗する場合があります。ジャーナルが設定されるまでしばらく待ってから、別のリクエストを送信します。
+* Asset Compute の `/register` リクエストまたは `/process` リクエストの送信でエラーが発生した場合は、必要なすべての API が Adobe I/O プロジェクトとワークスペース（Asset Compute、IO イベント、IO イベント管理、ランタイム）に追加されていることを確認します。
 
-## AdobeI/O CLIを使用したログインの問題 {#login-via-aio-cli}
+## Adobe I/O CLI を使用したログインの問題 {#login-via-aio-cli}
 
-AdobeI/O CLI [!DNL Adobe Developer Console] を [](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#3-signing-in-from-cli)使用したログインで問題が発生した場合は、カスタムアプリケーションの開発、テスト、展開に必要な資格情報を手動で追加します。
+[Adobe I/O CLI を通じて](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#3-signing-in-from-cli) [!DNL Adobe Developer Console] にログインするときに問題が発生した場合は、カスタムアプリケーションの開発、テスト、デプロイに必要な資格情報を手動で追加します。
 
-1. AdobeデベロッパーコンソールのFireflyプロジェクトとワークスペースに移動し [、右上隅の](https://console.adobe.io/) 「ダウンロード **** 」を押します。 このファイルを開き、このJSONをマシン上の安全な場所に保存します。
+1. [Adobe Developer Console](https://console.adobe.io/) で Firefly プロジェクトとワークスペースに移動し、右上隅にある「**[!UICONTROL Download]**」をクリックします。このファイルを開き、この JSON をコンピューター上の安全な場所に保存します。
 
-1. Firefly ApplicationのENVファイルに移動します。
+1. Firefly アプリケーションの ENV ファイルに移動します。
 
-1. Adobe I/O Runtime追加の資格情報 ダウンロードしたJSONからAdobe I/O Runtimeの資格情報を取得します。 The credentials are under `project.workspace.services.runtime`. 変追加数内のI/Oランタイム資格情報： `AIO_runtime_XXX`
+1. Adobe I/O Runtime の資格情報を追加します。ダウンロードした JSON から Adobe I/O Runtime の資格情報を取得します。資格情報は `project.workspace.services.runtime` の配下にあります。I/O Runtime の資格情報を `AIO_runtime_XXX` 変数に追加します。
 
    ```json
    AIO_runtime_auth=
    AIO_runtime_namespace=
    ```
 
-1. 手順1追加のダウンロード済みJSONの絶対パス：
+1. 手順 1でダウンロードした JSON の絶対パスを追加します。
 
    ```json
        ASSET_COMPUTE_INTEGRATION_FILE_PATH=
    ```
 
-1. 開発者ツールに必要な残りの [必要な資格情報を設定します](develop-custom-application.md) 。
+1. 開発者ツールに必要な残りの[必須資格情報](develop-custom-application.md)を設定します。
 
 <!-- TBD for later:
 Add any best practices for developers in this section:
