@@ -1,9 +1,9 @@
 ---
-source-git-commit: 324f414164ccbb712e7197ddc68075ea9c238cae
-workflow-type: ht
-translation-type: ht
-source-wordcount: '519'
-ht-degree: 100%
+source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
+workflow-type: tm+mt
+translation-type: tm+mt
+source-wordcount: '518'
+ht-degree: 98%
 
 ---
 # ドキュメントへの投稿
@@ -49,7 +49,7 @@ ht-degree: 100%
 
 以下のビデオで、イシューとプル要求の作成方法についての概要を簡単に確認できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/27069?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/27069)
 
 ### アドビ従業員による投稿
 
@@ -59,4 +59,4 @@ ht-degree: 100%
 
 ## その他の情報
 
-GitHub オーサリングプラットフォームの使用方法とサポートされる Markdown 構文について詳しくは、[アドビドキュメント投稿者ガイド](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)を参照してください。
+GitHub オーサリングプラットフォームの使用方法とサポートされる Markdown 構文について詳しくは、[アドビドキュメント投稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)を参照してください。
