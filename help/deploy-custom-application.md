@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Asset Compute Service]  カスタムアプリケーションのデプロイ。'
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションのデプロイ。'
-translation-type: ht
-source-git-commit: 1c2a1dc41296bf26c432c51b5afa20cb07a4c5c5
-workflow-type: ht
-source-wordcount: '201'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 92%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 アプリケーションを再デプロイせずに同じ URL を取得するには、[`aio app get-url`](https://github.com/adobe/aio-cli#aio-appget-url-action) コマンドを使用します。
 
-この URL を [Adobe Experience Manager as a Cloud Service の処理プロファイル](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html)で使用すると、アプリケーションを Adobe [!DNL Experience Manager] as a Cloud Service と統合できます。
+この URL を [Adobe Experience Manager as a Cloud Service の処理プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html)で使用すると、アプリケーションを Adobe [!DNL Experience Manager] as a Cloud Service と統合できます。
 
 Firefly プロジェクトとワークスペースが、アクションを使用する Adobe [!DNL Experience Manager] as a Cloud Service 環境に対応していることを確認します。開発、ステージング、実稼動用の環境は異なります。環境が正しいか確かめるには、Firefly アプリケーションのルートにある ENV ファイル内で定義されている `AIO_runtime_*` 資格情報を確認します。例えば、`Stage` ワークスペースにデプロイする場合、`AIO_runtime_namespace` は `xxxxxx_xxxxxxxxx_stage` の形式です。Adobe [!DNL Experience Manager] as a Cloud Service の実稼動環境と統合するには、Firefly の `Production` ワークスペースのアプリケーション URL を使用します。
 
@@ -26,5 +26,5 @@ Firefly プロジェクトとワークスペースが、アクションを使用
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager as a Cloud Service の環境の理解と管理](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)。
+>* [Adobe Experience Manager as a Cloud Service の環境の理解と管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)。
 
