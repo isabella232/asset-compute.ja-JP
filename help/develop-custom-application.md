@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Asset Compute Service] 向けの開発。'
 description: ' [!DNL Asset Compute Service] を使用してカスタムアプリケーションを作成します。'
-translation-type: ht
-source-git-commit: 127895cf1bab59546f9ba0be2b3b7a935627effb
-workflow-type: ht
-source-wordcount: '1496'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6de4e3cde9c38f2e23838f5d728dae23e15d2147
+workflow-type: tm+mt
+source-wordcount: '1559'
+ht-degree: 96%
 
 ---
 
@@ -96,7 +96,13 @@ Firefly プロジェクトのルートにある ENV ファイルに、開発者�
    ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
    ```
 
-1. S3 ストレージか Azure ストレージのいずれかの資格情報を追加します。1 つのクラウドストレージソリューションへのアクセスのみ必要です。
+1. がFirefollyアプリケーションのルートに `console.json` ない場合は、Adobeデベロッパーコンソール統合JSONファイルへの絶対パスを追加します。 これは、プロジェクトワークスペースにダウンロードされるのと同じ [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user) ファイルです。 または、ENVファイルにパスを追加する `aio app use <path_to_console_json>` 代わりに、コマンドを使用することもできます。
+
+   ```conf
+   ASSET_COMPUTE_INTEGRATION_FILE_PATH=
+   ```
+
+1. 追加S3またはAzureストレージの資格情報です。 1 つのクラウドストレージソリューションへのアクセスのみ必要です。
 
    ```conf
    # S3 credentials
