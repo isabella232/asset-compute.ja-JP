@@ -9,15 +9,15 @@ user-guide-description: このドキュメントでは、カスタムコード�
 breadcrumb-title: Asset Compute Service ガイド
 breadcrumb-url: /docs/asset-compute/using/home.html
 solution-title: AEM Assets
-solution-hub-url: https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/assets/home.html
-getting-started-url: https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/assets/asset-microservices-overview.html
+solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html
 tutorials-title: AEM チュートリアル
-tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/assets/overview.html
+tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html
 translation-type: tm+mt
-source-git-commit: ec2fd2e7c20ad9d104f95724a3970a433ac7d50f
+source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 100%
+source-wordcount: '124'
+ht-degree: 75%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 + [Asset Compute Service ユーザーガイド](home.md)
 + [概要](introduction.md)
 + [リリースノート](release-notes.md)
-+ [サポートされているファイル形式](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/assets/file-format-support.html)
++ [サポートされているファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html)
 + [アーキテクチャ](architecture.md)
 + [API リファレンス](api.md)
 + Asset Compute Service の拡張 {#extend}
@@ -37,6 +37,6 @@ ht-degree: 100%
    + [カスタムアプリケーションの開発](develop-custom-application.md)
    + [カスタムアプリケーションのテスト](test-custom-application.md)
    + [カスタムアプリケーションのデプロイ](deploy-custom-application.md)
-   + [Adobe Experience Manager as a Cloud Service での統合と使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/assets/asset-microservices-overview.html)
+   + [Adobe Experience Manager as a Cloud Service での統合と使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html)
 + [トラブルシューティング](troubleshooting.md)
 + [オープンソースプロジェクトへの貢献](contribute-to-compute-service.md)
