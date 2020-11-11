@@ -1,18 +1,18 @@
 ---
 title: ' [!DNL Asset Compute Service] の拡張について。'
 description: カスタムアセット処理を実行するために  [!DNL Asset Compute Service]  の機能を拡張するタイミングと方法。
-translation-type: ht
-source-git-commit: 54afa44d8d662ee1499a385f504fca073ab6c347
-workflow-type: ht
-source-wordcount: '275'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 95%
 
 ---
 
 
 # 拡張機能の概要 {#introduction-to-extensibilty}
 
-形式の変換や画像のサイズ変更など、多くのレンディション要件は、[Adobe  [!DNL Experience Manager]  as a Cloud Service の処理プロファイル](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/assets/asset-microservices-overview.html)で対処します。より複雑なビジネス要件の場合は、組織のニーズに合ったカスタムメイドのソリューションが必要になる場合があります。[!DNL Asset Compute Service] は、Adobe [!DNL Experience Manager] の処理プロファイルから呼び出されるカスタムアプリケーションを作成することで拡張することができます。これらのカスタムアプリケーションは、[サポート対象ユースケース ](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html)に対応しています。
+形式の変換や画像のサイズ変更など、多くのレンディション要件は、[Adobe  [!DNL Experience Manager]  as a Cloud Service の処理プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html)で対処します。より複雑なビジネス要件の場合は、組織のニーズに合ったカスタムメイドのソリューションが必要になる場合があります。[!DNL Asset Compute Service] は、Adobe [!DNL Experience Manager] の処理プロファイルから呼び出されるカスタムアプリケーションを作成することで拡張することができます。これらのカスタムアプリケーションは、[サポート対象ユースケース ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html)に対応しています。
 
 >[!NOTE]
 >
