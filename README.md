@@ -1,16 +1,16 @@
 ---
 source-git-commit: a55ebe5108c5a61f53ae0ffc7e625d8b93f8a813
-workflow-type: tm+mt
-translation-type: tm+mt
+workflow-type: ht
+translation-type: ht
 source-wordcount: '151'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 # Adobe Asset Compute Service ドキュメント
 
 | EXL-PR | EXL | プレビュー | アクティベート | 公開済み | ヘルプ |
 |--- |--- |--- |--- |--- |--- |
-| [![ビルドのステータス](https://docs.ci.corp.adobe.com/view/exl-pr/job/asset-compute.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/asset-compute.en_pr-exl/lastBuild/) | [![ビルドのステータス](https://docs.ci.corp.adobe.com/view/exl-pr/job/asset-compute.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/asset-compute.en_exl/lastBuild/lastBuild) | [プレビュー URL](https://experienceleague.corp.adobe.com/docs/asset-compute/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [ライブ URL](https://experienceleague.adobe.com/docs/asset-compute/using/home.html?lang=en) | [オーサリングガイド](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=ja) |
+| [![ビルドのステータス](https://docs.ci.corp.adobe.com/view/exl-pr/job/asset-compute.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/asset-compute.en_pr-exl/lastBuild/) | [![ビルドのステータス](https://docs.ci.corp.adobe.com/view/exl-pr/job/asset-compute.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/asset-compute.en_exl/lastBuild/lastBuild) | [プレビュー URL](https://experienceleague.corp.adobe.com/docs/asset-compute/using/home.html?lang=ja) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [ライブ URL](https://experienceleague.adobe.com/docs/asset-compute/using/home.html?lang=ja) | [オーサリングガイド](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=ja) |
 
 これは [!DNL Adobe Asset Compute Service] のドキュメントのリポジトリーです。
 
