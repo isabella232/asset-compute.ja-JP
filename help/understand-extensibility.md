@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Asset Compute Service] の拡張について。'
 description: カスタムアセット処理を実行するために  [!DNL Asset Compute Service]  の機能を拡張するタイミングと方法。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '271'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
