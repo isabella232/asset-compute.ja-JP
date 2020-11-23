@@ -1,11 +1,11 @@
 ---
 title: '[!DNL Asset Compute Service] HTTP API。'
 description: カスタムアプリケーションを作成するための [!DNL Asset Compute Service] HTTP API。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2925'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -233,7 +233,7 @@ HTTP ステータスコードは次のとおりです。
 
 使用可能なフィールドは次のとおりです。
 
-| 名前 | 型 | 説明 | 例 |
+| 名前 | 種類 | 説明 | 例 |
 |--------------|----------|-------------|---------|
 | `source` | `string` | 処理するソースアセットの URL。要求されたレンディション形式（例：`fmt=zip`）によってはオプション。 | `"http://example.com/image.jpg"` |
 | `source` | `object` | 処理するソースアセットを記述します。以下の [source オブジェクトのフィールド](#source-object-fields)の説明を参照してください。要求されたレンディション形式（例：`fmt=zip`）によってはオプション。 | `{"url": "http://example.com/image.jpg", "mimeType": "image/jpeg" }` |
@@ -253,7 +253,7 @@ HTTP ステータスコードは次のとおりです。
 
 ### source オブジェクトのフィールド {#source-object-fields}
 
-| 名前 | 型 | 説明 | 例 |
+| 名前 | 種類 | 説明 | 例 |
 |-----------|----------|-------------|---------|
 | `url` | `string` | 処理するソースアセットの URL。必須。 | `"http://example.com/image.jpg"` |
 | `name` | `string` | ソースアセットファイル名。MIME タイプを検出できない場合は、名前のファイル拡張子が使用される可能性があります。URL パス内のファイル名や、バイナリリソースの `content-disposition` ヘッダー内のファイル名よりも優先されます。デフォルトは &quot;file&quot; です。 | `"image.jpg"` |
@@ -372,7 +372,7 @@ HTTP ステータスコードは次のとおりです。
 
 ### 共通のフィールド {#common-fields}
 
-| 名前 | 型 | 説明 | 例 |
+| 名前 | 種類 | 説明 | 例 |
 |-------------------|----------|-------------|---------|
 | `fmt` | `string` | レンディションのターゲット形式は、テキスト抽出の場合は `text`、XMP メタデータを xml として抽出する場合は `xmp` にすることもできます。[サポートされる形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html)を参照してください | `png` |
 | `worker` | `string` | [カスタムアプリケーション](develop-custom-application.md) の URL。`https://` URL にする必要があります。このフィールドが存在する場合、レンディションはカスタムアプリケーションで作成されます。設定されたその他のレンディションフィールドはすべて、カスタムアプリケーションで使用されます。 | `"https://1234.adobeioruntime.net`<br>`/api/v1/web`<br>`/example-custom-worker-master/worker"` |
@@ -384,7 +384,7 @@ HTTP ステータスコードは次のとおりです。
 
 現在サポートされているファイル形式の一覧については、[サポートされているファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html)を参照してください。
 
-| 名前 | 型 | 説明 | 例 |
+| 名前 | 種類 | 説明 | 例 |
 |-------------------|----------|-------------|---------|
 | `*` | `*` | [カスタムアプリケーション](develop-custom-application.md)で認識できる高度なカスタムフィールドを追加できます。 |  |
 | `embedBinaryLimit` | `number`（バイト単位） | この値が設定されていて、レンディションのファイルサイズがこの値より小さい場合は、レンディション生成の完了時に送信されるイベントにレンディションが埋め込まれます。埋め込み可能な最大サイズは 32 KB（32 x 1024 バイト）です。レンディションのサイズが上限 `embedBinaryLimit` を超える場合、レンディションはクラウドストレージ内の場所に配置され、イベントには埋め込まれません。 | `3276` |
@@ -405,7 +405,7 @@ HTTP ステータスコードは次のとおりです。
 
 PNG 形式が透かしとして使用されます。
 
-| 名前 | 型 | 説明 | 例 |
+| 名前 | 種類 | 説明 | 例 |
 |-------------------|----------|-------------|---------|
 | `scale` | `number` | 透かしの倍率（`0.0`～`1.0`）。`1.0` は、透かしが元画像のサイズと同じ（1:1）であることを意味し、この値を小さくすると透かしのサイズが小さくなります。 | 値が `0.5` の場合は、元のサイズの半分であることを意味します。 |
 | `image` | `url` | 透かしに使用する PNG ファイルの URL。 |  |
@@ -425,7 +425,7 @@ PNG 形式が透かしとして使用されます。
 
 ### イベント属性 {#event-attributes}
 
-| 属性 | 型 | イベント | 説明 |
+| 属性 | 種類 | イベント | 説明 |
 |-------------|----------|---------------|-------------|
 | `date` | `string` | `*` | イベント送信時のタイムスタンプで、簡略化された拡張 [ISO-8601](https://ja.wikipedia.org/wiki/ISO_8601) 形式（JavaScript の [Date.toISOString()](https://developer.mozilla.org/ja-JP/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString) 関数で定義）で表されます。 |
 | `requestId` | `string` | `*` | `/process` に対する元のリクエストのリクエスト ID（`X-Request-Id` ヘッダーと同じ）。 |
