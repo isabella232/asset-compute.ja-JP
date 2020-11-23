@@ -1,9 +1,9 @@
 ---
 source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
-workflow-type: tm+mt
-translation-type: tm+mt
+workflow-type: ht
+translation-type: ht
 source-wordcount: '518'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 # ドキュメントへの投稿
@@ -49,7 +49,7 @@ ht-degree: 98%
 
 以下のビデオで、イシューとプル要求の作成方法についての概要を簡単に確認できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/27069)
+>[!VIDEO](https://video.tv.adobe.com/v/27069?captions=jpn)
 
 ### アドビ従業員による投稿
 
