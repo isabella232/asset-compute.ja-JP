@@ -14,10 +14,10 @@ getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-
 tutorials-title: AEM チュートリアル
 tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html
 translation-type: tm+mt
-source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
+source-git-commit: c392b8588929f7b13db13e42a3f17bbc4f68a376
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 100%
+source-wordcount: '120'
+ht-degree: 95%
 
 ---
 
@@ -37,6 +37,6 @@ ht-degree: 100%
    + [カスタムアプリケーションの開発](develop-custom-application.md)
    + [カスタムアプリケーションのテスト](test-custom-application.md)
    + [カスタムアプリケーションのデプロイ](deploy-custom-application.md)
-   + [Adobe Experience Manager as a Cloud Service での統合と使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html)
+   + [統合 [!DNL Experience Manager] と使用を [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html)
 + [トラブルシューティング](troubleshooting.md)
 + [オープンソースプロジェクトへの貢献](contribute-to-compute-service.md)
