@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Adobe Asset Compute Service] ユーザーガイド。'
 description: このドキュメントでは、導入、カスタムコードの開発、管理、デプロイ、トラブルシューティングの方法など、 [!DNL Asset Compute Service]  に関連するタスクについて説明しています。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 100%
 
