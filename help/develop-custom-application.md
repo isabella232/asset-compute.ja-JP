@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] 向けの開発。'
 description: ' [!DNL Asset Compute Service] を使用してカスタムアプリケーションを作成します。'
 translation-type: tm+mt
-source-git-commit: 6de4e3cde9c38f2e23838f5d728dae23e15d2147
+source-git-commit: c392b8588929f7b13db13e42a3f17bbc4f68a376
 workflow-type: tm+mt
-source-wordcount: '1559'
-ht-degree: 100%
+source-wordcount: '1557'
+ht-degree: 99%
 
 ---
 
@@ -82,7 +82,7 @@ If you did not log in, refer to our troubleshooting guide to [set up credentials
 
 >[!NOTE]
 >
->これは、[!DNL Adobe Experience Manager] as a Cloud Service のクラウドストレージとは別のものです。これは、Asset Compute の開発者ツールを使用した開発およびテストにのみ当てはまります。
+>これは、[!DNL Adobe Experience Manager]のクラウドストレージとは別に[!DNL Cloud Service]です。 これは、Asset Compute の開発者ツールを使用した開発およびテストにのみ当てはまります。
 
 [サポート対象のクラウドストレージコンテナ](https://github.com/adobe/asset-compute-devtool#prerequisites)にアクセスできることを確認してください。このコンテナは、異なるプロジェクトの複数の開発者が必要に応じて共有できます。
 
