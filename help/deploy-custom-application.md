@@ -1,9 +1,9 @@
 ---
 title: ' [!DNL Asset Compute Service]  カスタムアプリケーションのデプロイ。'
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションのデプロイ。'
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 100%
 
