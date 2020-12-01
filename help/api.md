@@ -2,21 +2,21 @@
 title: '[!DNL Asset Compute Service] HTTP API。'
 description: カスタムアプリケーションを作成するための [!DNL Asset Compute Service] HTTP API。
 translation-type: tm+mt
-source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
+source-git-commit: c392b8588929f7b13db13e42a3f17bbc4f68a376
 workflow-type: tm+mt
-source-wordcount: '2925'
-ht-degree: 100%
+source-wordcount: '2921'
+ht-degree: 99%
 
 ---
 
 
 # [!DNL Asset Compute Service] HTTP API {#asset-compute-http-api}
 
-この API の使用は開発目的に限られています。この API は、カスタムアプリケーションの開発用として提供されます。[!DNL Adobe Experience Manager] as a Cloud Service では、この API を使用して処理情報をカスタムアプリケーションに渡します。詳しくは、[アセットマイクロサービスと処理プロファイルの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html)を参照してください。
+この API の使用は開発目的に限られています。この API は、カスタムアプリケーションの開発用として提供されます。[!DNL Adobe Experience Manager][!DNL Cloud Service] as a では、この API を使用して処理情報をカスタムアプリケーションに渡します。詳しくは、[アセットマイクロサービスと処理プロファイルの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html)を参照してください。
 
 >[!NOTE]
 >
->[!DNL Asset Compute Service] は、Adobe [!DNL Experience Manager] as a Cloud Service でのみ使用できます。
+>[!DNL Asset Compute Service] は、としてのみ使用 [!DNL Experience Manager] でき [!DNL Cloud Service]ます。
 
 [!DNL Asset Compute Service] HTTP API のクライアントはすべて、次の大まかなフローに従う必要があります。
 
