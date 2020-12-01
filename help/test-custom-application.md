@@ -1,9 +1,9 @@
 ---
 title: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ。'
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ。'
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 54afa44d8d662ee1499a385f504fca073ab6c347
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 100%
 
