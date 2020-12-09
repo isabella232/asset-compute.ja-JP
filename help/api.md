@@ -1,22 +1,22 @@
 ---
 title: '[!DNL Asset Compute Service] HTTP API。'
 description: カスタムアプリケーションを作成するための [!DNL Asset Compute Service] HTTP API。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c392b8588929f7b13db13e42a3f17bbc4f68a376
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2921'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
 # [!DNL Asset Compute Service] HTTP API {#asset-compute-http-api}
 
-この API の使用は開発目的に限られています。この API は、カスタムアプリケーションの開発用として提供されます。[!DNL Adobe Experience Manager][!DNL Cloud Service] as a では、この API を使用して処理情報をカスタムアプリケーションに渡します。詳しくは、[アセットマイクロサービスと処理プロファイルの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html)を参照してください。
+この API の使用は開発目的に限られています。この API は、カスタムアプリケーションの開発用として提供されます。[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、この API を使用して処理情報をカスタムアプリケーションに渡します。詳しくは、[アセットマイクロサービスと処理プロファイルの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=ja)を参照してください。
 
 >[!NOTE]
 >
->[!DNL Asset Compute Service] は、としてのみ使用 [!DNL Experience Manager] でき [!DNL Cloud Service]ます。
+>[!DNL Asset Compute Service] は、Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] でのみ使用できます。
 
 [!DNL Asset Compute Service] HTTP API のクライアントはすべて、次の大まかなフローに従う必要があります。
 
@@ -374,7 +374,7 @@ HTTP ステータスコードは次のとおりです。
 
 | 名前 | 種類 | 説明 | 例 |
 |-------------------|----------|-------------|---------|
-| `fmt` | `string` | レンディションのターゲット形式は、テキスト抽出の場合は `text`、XMP メタデータを xml として抽出する場合は `xmp` にすることもできます。[サポートされる形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html)を参照してください | `png` |
+| `fmt` | `string` | レンディションのターゲット形式は、テキスト抽出の場合は `text`、XMP メタデータを xml として抽出する場合は `xmp` にすることもできます。[サポートされる形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=ja)を参照してください | `png` |
 | `worker` | `string` | [カスタムアプリケーション](develop-custom-application.md) の URL。`https://` URL にする必要があります。このフィールドが存在する場合、レンディションはカスタムアプリケーションで作成されます。設定されたその他のレンディションフィールドはすべて、カスタムアプリケーションで使用されます。 | `"https://1234.adobeioruntime.net`<br>`/api/v1/web`<br>`/example-custom-worker-master/worker"` |
 | `target` | `string` | 生成されたレンディションを HTTP PUT でアップロードする宛先の URL。 | `http://w.com/img.jpg` |
 | `target` | `object` | 生成されたレンディションの署名済み URL へのマルチパートアップロードの情報。これは、この[マルチパートアップロード動作](http://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html)に対応する [AEM／Oak 直接バイナリアップロード](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)に使用されます。<br>フィールドは次のとおりです。<ul><li>`urls`：文字列配列。署名済みのパート URL ごとに 1 つの文字列が割り当てられます。</li><li>`minPartSize`：1 つのパート（URL）に使用する最小サイズ</li><li>`maxPartSize`：1 つのパート（URL）に使用する最大サイズ</li></ul> | `{ "urls": [ "https://part1...", "https://part2..." ], "minPartSize": 10000, "maxPartSize": 100000 }` |
@@ -382,7 +382,7 @@ HTTP ステータスコードは次のとおりです。
 
 ### レンディション固有のフィールド {#rendition-specific-fields}
 
-現在サポートされているファイル形式の一覧については、[サポートされているファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html)を参照してください。
+現在サポートされているファイル形式の一覧については、[サポートされているファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=ja)を参照してください。
 
 | 名前 | 種類 | 説明 | 例 |
 |-------------------|----------|-------------|---------|
