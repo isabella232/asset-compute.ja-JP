@@ -1,7 +1,7 @@
 ---
 source-git-commit: 78c1246f5fc42006013701a6cf4d375a1d8c9fd8
-workflow-type: tm+mt
-translation-type: tm+mt
+workflow-type: ht
+translation-type: ht
 source-wordcount: '646'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 ドキュメントの改善に役立つアイデアの投稿を歓迎します。ただし、コメント、問題報告（イシュー）および変更修正依頼（プル要求）は、*投稿*&#x200B;専用です。これらを、製品の使用方法、プロジェクトの実装方法、技術的な問題の解決方法についての質問に回答するために使用することはできません。
 
-使用方法や技術的な問題に関して質問がある場合は、[[!DNL Experience Cloud]  Enterprise サポートポータル](https://helpx.adobe.com/jp/contact/enterprise-support.ec.html)の通常のサポートプロセスを通じて報告したり、[[!DNL Experience Manager] Adobe コミュニティ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)でディスカッションしたりする必要があります。
+使用方法や技術的な問題に関して質問がある場合は、[[!DNL Experience Cloud]  Enterprise サポートポータル](https://helpx.adobe.com/jp/contact/enterprise-support.ec.html)の通常のサポートプロセスを通じて報告したり、 Adobe [[!DNL Experience Manager]  コミュニティ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)でディスカッションしたりする必要があります。
 
 ドキュメントへの投稿は、アドビのサポートに代わるものではありません。サポート関連の質問に対する回答を求めるような投稿は拒否されます。
 
