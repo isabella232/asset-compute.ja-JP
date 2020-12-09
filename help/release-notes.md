@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Asset Compute Service] のリリースノート。'
 description: ' [!DNL Asset Compute Service] の新機能、機能強化、既知の問題。'
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c57867cd896e4ccb9402e6eeb0eea133faaa0e5d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '191'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ To test your custom applications with the [developer tool](https://github.com/ad
 
 これは、[!DNL Asset Compute Service] の最初のリリースです。デジタルアセットを処理するためのスケーラブルかつ拡張可能な [!DNL Adobe Experience Cloud] サービスです。画像、ビデオ、ドキュメントなどのファイル形式を、サムネール、抽出テキストとメタデータ、アーカイブなど、様々なレンディションに変換できます。
 
-現在、[!DNL Asset Compute Service]は[!DNL Experience Manager]で[!DNL Cloud Service]としてのみ使用できます。
+現在、[!DNL Asset Compute Service] は [!DNL Experience Manager] as a [!DNL Cloud Service] でのみ使用できます。
 
 ## 制限事項と既知の問題 {#known-limitations}
 
