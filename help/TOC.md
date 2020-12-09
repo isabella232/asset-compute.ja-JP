@@ -9,15 +9,15 @@ user-guide-description: このドキュメントでは、カスタムコード�
 breadcrumb-title: Asset Compute Service ガイド
 breadcrumb-url: /docs/asset-compute/using/home.html
 solution-title: AEM Assets
-solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html
-getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html
+solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=ja
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=ja
 tutorials-title: AEM チュートリアル
-tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html
-translation-type: tm+mt
+tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=ja
+translation-type: ht
 source-git-commit: c392b8588929f7b13db13e42a3f17bbc4f68a376
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '120'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 95%
 + [Asset Compute Service ユーザーガイド](home.md)
 + [概要](introduction.md)
 + [リリースノート](release-notes.md)
-+ [サポートされているファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html)
++ [サポートされているファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=ja)
 + [アーキテクチャ](architecture.md)
 + [API リファレンス](api.md)
 + Asset Compute Service の拡張 {#extend}
@@ -37,6 +37,6 @@ ht-degree: 95%
    + [カスタムアプリケーションの開発](develop-custom-application.md)
    + [カスタムアプリケーションのテスト](test-custom-application.md)
    + [カスタムアプリケーションのデプロイ](deploy-custom-application.md)
-   + [統合 [!DNL Experience Manager] と使用を [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html)
+   + [ [!DNL Experience Manager]  as a  [!DNL Cloud Service] での統合と使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=ja)
 + [トラブルシューティング](troubleshooting.md)
 + [オープンソースプロジェクトへの貢献](contribute-to-compute-service.md)
