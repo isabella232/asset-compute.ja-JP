@@ -1,9 +1,9 @@
 ---
 title: ' [!DNL Asset Compute Service] のアーキテクチャ。'
 description: ' [!DNL Asset Compute Service]  の API、アプリケーション、SDK が連携して、クラウドネイティブなアセット処理サービスを提供する仕組み。'
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c392b8588929f7b13db13e42a3f17bbc4f68a376
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '494'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # [!DNL Asset Compute Service] のアーキテクチャ {#overview}
 
-[!DNL Asset Compute Service] は、サーバーレスの Adobe I/O Runtime プラットフォーム上に構築されています。アセットに Adobe Sensei コンテンツサービスを提供します。呼び出し側クライアント（Adobe [!DNL Experience Manager] as a のみサポート）には、アセットに必要な Adobe Sensei 生成情報が提供されます。[!DNL Cloud Service]返される情報は JSON 形式です。
+[!DNL Asset Compute Service] は、サーバーレスの Adobe I/O Runtime プラットフォーム上に構築されています。アセットに Adobe Sensei コンテンツサービスを提供します。呼び出し側クライアント（Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] のみサポート）には、アセットに必要な Adobe Sensei 生成情報が提供されます。返される情報は JSON 形式です。
 
 [!DNL Asset Compute Service] は、[!DNL Project Firefly] に基づいてカスタムアプリケーションを作成することにより拡張できます。これらのカスタムアプリケーションは [!DNL Project Firefly] ヘッドレスアプリであり、カスタム変換ツールの追加や、画像操作を実行する外部 API の呼び出しなどのタスクをおこないます。
 
