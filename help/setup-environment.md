@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Asset Compute Service] に必要な開発環境の設定。'
 description: カスタムコードの作成とテストを開始するための  [!DNL Asset Compute Service]  の開発環境の設定。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0ecf2c044c7847029fb10ce37f4b831c58b93fe9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '373'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 95%
 
 1. エクスペリエンス組織でのシステム管理者ロールまたは開発者ロールのアクセス権を取得します。これは、システム管理者が [Admin Console](https://adminconsole.adobe.com/overview) で設定できます。
 
-1. [Adobe Developer Console](https://console.adobe.io/) にログオンします。[!DNL Cloud Service]統合と[!DNL Experience Manager]が同じAdobe Experience Cloud組織に属していることを確認します。 Adobe Developer Console について詳しくは、[コンソールのドキュメント](https://www.adobe.io/apis/experienceplatform/console/docs.html)を参照してください。
+1. [Adobe Developer Console](https://console.adobe.io/) にログオンします。[!DNL Experience Manager] as a [!DNL Cloud Service] 統合と同じ Adobe Experience Cloud 組織に属していることを確認します。Adobe Developer Console について詳しくは、[コンソールのドキュメント](https://www.adobe.io/apis/experienceplatform/console/docs.html)を参照してください。
 
 1. [Firefly プロジェクトを作成](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/getting_started/first_app.md)します。**[!UICONTROL Create new project]**／**[!UICONTROL Project from template]**&#x200B;をクリックします。「Project Firefly」を選択します。`Production` と `Stage` の 2 つのワークスペースを持つ新しい Firefly プロジェクトが作成されます。必要に応じて、ワークスペース（例：`Development`）を追加します。
 
