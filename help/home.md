@@ -1,10 +1,10 @@
 ---
 title: '[!DNL Adobe Asset Compute Service] ユーザーガイド。'
 description: このドキュメントでは、導入、カスタムコードの開発、管理、デプロイ、トラブルシューティングの方法など、 [!DNL Asset Compute Service]  に関連するタスクについて説明しています。
-translation-type: ht
-source-git-commit: 78c1246f5fc42006013701a6cf4d375a1d8c9fd8
-workflow-type: ht
-source-wordcount: '190'
+translation-type: tm+mt
+source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
+workflow-type: tm+mt
+source-wordcount: '187'
 ht-degree: 100%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # [!DNL Asset Compute Service] について
 
-[!DNL Asset Compute Service] は、デジタルアセットを処理するためのスケーラブルかつ拡張可能な Adobe Experience Cloud サービスです。画像、ビデオ、ドキュメントなどのファイル形式を、サムネール、抽出したテキストとメタデータ、アーカイブなど、様々なレンディションに変換できます。開発者は、カスタムアプリケーション（カスタムワーカーとも呼ばれます）をプラグインして、カスタムユースケースに対処できます。これらのユースケースは [Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html) を使用して作成され、サーバーレスの [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) で動作します。
+[!DNL Asset Compute Service] は、デジタルアセットを処理するためのスケーラブルかつ拡張可能な Adobe Experience Cloud サービスです。画像、ビデオ、ドキュメントなどのファイル形式を、サムネール、抽出したテキストとメタデータ、アーカイブなど、様々なレンディションに変換できます。開発者は、カスタムアプリケーション（カスタムワーカーとも呼ばれます）をプラグインして、カスタムユースケースに対処できます。これらのユースケースは [Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html) を使用して作成され、サーバーレスの [[!DNL Adobe I/O]  Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) で動作します。
 
 このドキュメントでは、カスタムコードの開発、管理、デプロイ、トラブルシューティングの方法など、[!DNL Asset Compute Service] に関連するトピックについて説明しています。[!DNL Asset Compute Service] の機能については、[概要](introduction.md)を参照してください。[サービスの内容](introduction.md#possible-use-cases-benefits)を確認してください。
 
