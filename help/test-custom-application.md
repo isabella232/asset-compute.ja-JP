@@ -2,9 +2,9 @@
 title: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ。'
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ。'
 translation-type: tm+mt
-source-git-commit: 54afa44d8d662ee1499a385f504fca073ab6c347
+source-git-commit: 7e520921ebb459c963d61d70c66497b8e62521cf
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '787'
 ht-degree: 100%
 
 ---
@@ -36,7 +36,7 @@ Asset Compute アプリケーションのユニットテストフレームワー
 
 ### テストの追加 {#add-tests}
 
-テストは、AIO プロジェクトのルートレベルにある `test` フォルダーに含まれている必要があります。各アプリケーションのテストケースは、パス `test/asset-compute/<worker-name>` 内にテストケースごとに 1 つのフォルダーとして配置する必要があります。
+テストは、 プロジェクトのルートレベルにある `test` フォルダーに含まれている必要があります。[!DNL Adobe I/O]各アプリケーションのテストケースは、パス `test/asset-compute/<worker-name>` 内にテストケースごとに 1 つのフォルダーとして配置する必要があります。
 
 ```yaml
 action/
