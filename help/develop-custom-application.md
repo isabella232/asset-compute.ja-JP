@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] 向けの開発。'
 description: ' [!DNL Asset Compute Service] を使用してカスタムアプリケーションを作成します。'
 translation-type: tm+mt
-source-git-commit: 576936cc7527fc4cb43c0859a61df5fecc0bc3a8
+source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 98%
+source-wordcount: '1560'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 ## カスタムアプリケーションの作成 {#create-custom-application}
 
-[Adobe I/O CLI](https://github.com/adobe/aio-cli) がローカルにインストールされていることを確認します。
+[[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli)がローカルにインストールされていることを確認します。
 
 1. カスタムアプリケーションを作成するには、[Firefly アプリケーションを作成](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#4-bootstrapping-new-app-using-the-cli)します。それには、ターミナルで `aio app init <app-name>` を実行します。
 
@@ -32,7 +32,7 @@ ht-degree: 98%
 
    ```sh
    $ aio app init <app-name>
-   Retrieving information from Adobe I/O Console..
+   Retrieving information from [!DNL Adobe I/O] Console.
    ? Select Org My Adobe Org
    ? Select Project MyFireflyProject
    ? Select Workspace myworkspace
@@ -121,7 +121,7 @@ Firefly プロジェクトのルートにある ENV ファイルに、開発者�
 
 Asset Compute 開発者ツールを使用してアプリケーションを実行する前に、[資格情報](#developer-tool-credentials)を適切に設定します。
 
-開発者ツールでアプリケーションを実行するには、`aio app run` コマンドを使用します。これにより、ローカルマシン上に Adobe I/O Runtime へのアクションがデプロイされ、ローカルマシンで開発ツールが起動します。このツールは、開発中にアプリケーションリクエストのテストに使用されます。レンディションリクエストの例を次に示します。
+開発者ツールでアプリケーションを実行するには、`aio app run` コマンドを使用します。これにより、[!DNL Adobe I/O] Runtimeに対してアクションを展開し、ローカルマシン上の開発ツールを開始します。 このツールは、開発中にアプリケーションリクエストのテストに使用されます。レンディションリクエストの例を次に示します。
 
 ```json
 "renditions": [
@@ -266,7 +266,7 @@ const key = params.secretKey;
 
 ## アプリケーションのサイズ調整 {#sizing-workers}
 
-アプリケーションは、Adobe I/O Runtime のコンテナで実行されますが、その際に、`manifest.yml` で設定できる[制限](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md)（下記参照）が適用されます。
+アプリケーションは、[!DNL Adobe I/O]ランタイムのコンテナで実行され、`manifest.yml`を介して設定できる[制限](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md)を持ちます。
 
 ```yaml
     actions:
