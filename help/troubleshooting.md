@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] のトラブルシューティング。'
 description: ' [!DNL Asset Compute Service] を使用したカスタムアプリケーションのトラブルシューティングとデバッグ。'
 translation-type: tm+mt
-source-git-commit: 68d910cd092fccb599c361f24daff80460129e1c
+source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 100%
+source-wordcount: '290'
+ht-degree: 91%
 
 ---
 
@@ -19,17 +19,17 @@ Asset Compute Service のトラブルシューティングに役立つ一般的�
 * 失敗時のクリーンアップに起因する可能性のあるエラーが、元の問題を隠す独自のエラーを発生させないようにします。
 
 * 新しい [!DNL Asset Compute Service] 統合で初めて開発者ツールを起動した場合、Asset Compute イベントジャーナルの設定が完全でない可能性があり、最初の処理リクエストが失敗する場合があります。ジャーナルが設定されるまでしばらく待ってから、別のリクエストを送信します。
-* Asset Compute の `/register` リクエストまたは `/process` リクエストの送信でエラーが発生した場合は、必要なすべての API が Adobe I/O プロジェクトとワークスペース（Asset Compute、IO イベント、IO イベント管理、ランタイム）に追加されていることを確認します。
+* Asset Compute の `/register` リクエストまたは `/process` リクエストの送信でエラーが発生した場合は、必要なすべての API が プロジェクトとワークスペース（Asset Compute、IO イベント、IO イベント管理、ランタイム）に追加されていることを確認します。[!DNL Adobe I/O]
 
-## Adobe I/O CLI を使用したログインの問題 {#login-via-aio-cli}
+## [!DNL Adobe I/O] CLI {#login-via-aio-cli}を使用してログインする
 
-[Adobe I/O CLI を通じて](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#3-signing-in-from-cli) [!DNL Adobe Developer Console] にログインするときに問題が発生した場合は、カスタムアプリケーションの開発、テスト、デプロイに必要な資格情報を手動で追加します。
+[!DNL Adobe Developer Console][ CLI を通じて [!DNL Adobe I/O]  ](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#3-signing-in-from-cli) にログインするときに問題が発生した場合は、カスタムアプリケーションの開発、テスト、デプロイに必要な資格情報を手動で追加します。
 
 1. [Adobe Developer Console](https://console.adobe.io/) で Firefly プロジェクトとワークスペースに移動し、右上隅にある「**[!UICONTROL Download]**」をクリックします。このファイルを開き、この JSON をコンピューター上の安全な場所に保存します。
 
 1. Firefly アプリケーションの ENV ファイルに移動します。
 
-1. Adobe I/O Runtime の資格情報を追加します。ダウンロードした JSON から Adobe I/O Runtime の資格情報を取得します。資格情報は `project.workspace.services.runtime` の配下にあります。I/O Runtime の資格情報を `AIO_runtime_XXX` 変数に追加します。
+1. 追加[!DNL Adobe I/O]ランタイム資格情報。 ダウンロードしたJSONから[!DNL Adobe I/O]ランタイム資格情報を取得します。 資格情報は `project.workspace.services.runtime` の配下にあります。追加`AIO_runtime_XXX`変数内の[!DNL Adobe I/O]ランタイム資格情報：
 
    ```json
    AIO_runtime_auth=
