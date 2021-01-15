@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] のオープンソースコンポーネントへの貢献。'
 description: ' [!DNL Asset Compute Service] のオープンソースコンポーネントへの貢献。'
 translation-type: tm+mt
-source-git-commit: 127895cf1bab59546f9ba0be2b3b7a935627effb
+source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 100%
+source-wordcount: '203'
+ht-degree: 91%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 100%
 
 ## 使用可能なリソースとライブラリ {#available-resources}
 
-[!DNL Asset Compute Service] の[オープンソースライブラリ](https://github.com/adobe/asset-compute-sdk#available-resources-and-libraries)の一覧を参照してください。また、Adobe I/O Runtime および OpenWhisk に関する利用可能なリソースは次のとおりです。
+[!DNL Asset Compute Service] の[オープンソースライブラリ](https://github.com/adobe/asset-compute-sdk#available-resources-and-libraries)の一覧を参照してください。さらに、利用可能な[!DNL Adobe I/O]ランタイムとOpenWiskのリソースは次のとおりです。
 
 * [Getting started with Apache OpenWhisk](https://github.com/apache/incubator-openwhisk/tree/master/docs#getting-started-with-openwhisk)（Apache OpenWhisk 入門）。
-* ラボ：[Building Composable AI with Adobe Sensei functions and Adobe I/O Runtime ](https://opensource.adobe.com/adobe-sensei-ai-functions/index.html)（Adobe Sensei 機能と Adobe I/O Runtime を使用した合成可能な AI の構築）。
-* [Adobe I/O Runtime の FAQ](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/resources/faq.md)
+* [ラボ：Runtimeを使用して、合成可能なAI [!DNL Adobe Sensei] functions and [!DNL Adobe I/O] を構築します](https://opensource.adobe.com/adobe-sensei-ai-functions/index.html)。
+* [[!DNL Adobe I/O] ランタイムFAQ](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/resources/faq.md)
 
 <!-- **TBD** for post-release:
 * Link to Firefly open-source components.
