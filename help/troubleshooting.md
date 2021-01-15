@@ -2,9 +2,9 @@
 title: ' [!DNL Asset Compute Service] のトラブルシューティング。'
 description: ' [!DNL Asset Compute Service] を使用したカスタムアプリケーションのトラブルシューティングとデバッグ。'
 translation-type: tm+mt
-source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
+source-git-commit: 7e520921ebb459c963d61d70c66497b8e62521cf
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '288'
 ht-degree: 91%
 
 ---
@@ -19,7 +19,7 @@ Asset Compute Service のトラブルシューティングに役立つ一般的�
 * 失敗時のクリーンアップに起因する可能性のあるエラーが、元の問題を隠す独自のエラーを発生させないようにします。
 
 * 新しい [!DNL Asset Compute Service] 統合で初めて開発者ツールを起動した場合、Asset Compute イベントジャーナルの設定が完全でない可能性があり、最初の処理リクエストが失敗する場合があります。ジャーナルが設定されるまでしばらく待ってから、別のリクエストを送信します。
-* Asset Compute の `/register` リクエストまたは `/process` リクエストの送信でエラーが発生した場合は、必要なすべての API が プロジェクトとワークスペース（Asset Compute、IO イベント、IO イベント管理、ランタイム）に追加されていることを確認します。[!DNL Adobe I/O]
+* Asset Compute の `/register` リクエストまたは `/process` リクエストの送信でエラーが発生した場合は、必要なすべての API が プロジェクトとワークスペース（Asset Compute、 イベント、 イベント管理、ランタイム）に追加されていることを確認します。[!DNL Adobe I/O][!DNL Adobe I/O][!DNL Adobe I/O][!DNL Adobe I/O]
 
 ## [!DNL Adobe I/O] CLI {#login-via-aio-cli}を使用してログインする
 
