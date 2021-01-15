@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Asset Compute Service] の拡張について。'
 description: カスタムアセット処理を実行するために  [!DNL Asset Compute Service]  の機能を拡張するタイミングと方法。
-translation-type: ht
-source-git-commit: c392b8588929f7b13db13e42a3f17bbc4f68a376
-workflow-type: ht
-source-wordcount: '265'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >
 >[!DNL Asset Compute Service] は、Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] でのみ使用できます。
 
-カスタムアプリケーションは、[Project Firefly](https://github.com/AdobeDocs/project-firefly) のヘッドレスアプリです。[Asset Compute SDK](https://github.com/adobe/asset-compute-sdk) と Project Firefly 開発者ツールを使用すると、[!DNL Asset Compute Service] をカスタムアプリケーションで簡単に拡張できるようになります。これにより、開発者はビジネスロジックに専念できます。カスタムアプリケーションの作成は、サーバーレスのプレーン Adobe I/O Runtime アクションを作成するのと同程度の簡単な作業です。カスタムアプリケーションは 1 つの Node.js JavaScript 関数です。詳しくは、[基本的なカスタムアプリケーションの例](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js)を参照してください。
+カスタムアプリケーションは、[Project Firefly](https://github.com/AdobeDocs/project-firefly) のヘッドレスアプリです。[Asset Compute SDK](https://github.com/adobe/asset-compute-sdk) と Project Firefly 開発者ツールを使用すると、[!DNL Asset Compute Service] をカスタムアプリケーションで簡単に拡張できるようになります。これにより、開発者はビジネスロジックに専念できます。カスタムアプリケーションの作成は、プレーンサーバーレスの[!DNL Adobe I/O]ランタイムアクションを作成するのと同じくらい簡単です。 カスタムアプリケーションは 1 つの Node.js JavaScript 関数です。詳しくは、[基本的なカスタムアプリケーションの例](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js)を参照してください。
 
 ## 前提条件とプロビジョニング要件 {#prerequisites-and-provisioning}
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 * Experience 組織では、Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] が有効になっている。
 * [!DNL Adobe Experience Cloud] 組織は、[!DNL Project Firefly] 開発者プレビュープログラムに含まれている。アクセス申請方法につては[こちら](https://github.com/AdobeDocs/project-firefly/blob/master/overview/getting_access.md)を参照してください。
 * 開発者の組織に開発者ロールまたは管理者権限がある。
-* [Adobe I/O CLI](https://github.com/adobe/aio-cli) がローカルにインストールされている。
+* [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli)がローカルにインストールされていることを確認します。
 
 <!-- TBD for later:
 
