@@ -1,11 +1,11 @@
 ---
 title: '[!DNL Asset Compute Service] HTTP API。'
 description: カスタムアプリケーションを作成するための [!DNL Asset Compute Service] HTTP API。
-translation-type: ht
-source-git-commit: c392b8588929f7b13db13e42a3f17bbc4f68a376
-workflow-type: ht
-source-wordcount: '2921'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
+workflow-type: tm+mt
+source-wordcount: '2906'
+ht-degree: 98%
 
 ---
 
@@ -68,11 +68,11 @@ ht-degree: 100%
    * メタスコープ：`asset_compute_meta`
    * スコープ：`asset_compute,read_organizations`
 
-* Adobe I/O イベント
+* [!DNL Adobe I/O] イベント
    * メタスコープ：`event_receiver_api`
    * スコープ：`event_receiver,event_receiver_api`
 
-* Adobe I/O 管理 API
+* [!DNL Adobe I/O] 管理API
    * メタスコープ：`ent_adobeio_sdk`
    * スコープ：`adobeio_api,additional_info.roles,additional_info.projectedProductContext`
 
@@ -382,7 +382,7 @@ HTTP ステータスコードは次のとおりです。
 
 ### レンディション固有のフィールド {#rendition-specific-fields}
 
-現在サポートされているファイル形式の一覧については、[サポートされているファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=ja)を参照してください。
+現在サポートされているファイル形式の一覧については、[サポートされているファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html)を参照してください。
 
 | 名前 | 種類 | 説明 | 例 |
 |-------------------|----------|-------------|---------|
@@ -412,9 +412,9 @@ PNG 形式が透かしとして使用されます。
 
 ## 非同期イベント {#asynchronous-events}
 
-レンディションの処理が完了した場合、またはエラーが発生した場合は、[Adobe I/O イベントジャーナル](https://www.adobe.io/apis/experienceplatform/events/documentation.html#!adobedocs/adobeio-events/master/intro/journaling_api.md)にイベントが送信されます。クライアントは、[/register](#register) を通じて提供されたジャーナル URL をリッスンする必要があります。ジャーナル応答は `event` 配列を含んでいます。その要素は各イベントに対応する 1 つのオブジェクトで、そのオブジェクトの `event` フィールドに実際のイベントペイロードが含まれています。
+レンディションの処理が完了した場合、またはエラーが発生した場合は、[[!DNL Adobe I/O]  イベントジャーナル](https://www.adobe.io/apis/experienceplatform/events/documentation.html#!adobedocs/adobeio-events/master/intro/journaling_api.md)にイベントが送信されます。クライアントは、[/register](#register) を通じて提供されたジャーナル URL をリッスンする必要があります。ジャーナル応答は `event` 配列を含んでいます。その要素は各イベントに対応する 1 つのオブジェクトで、そのオブジェクトの `event` フィールドに実際のイベントペイロードが含まれています。
 
-[!DNL Asset Compute Service] のあらゆるイベントの Adobe I/O イベントタイプは `asset_compute` です。ジャーナルは、このイベントタイプのみを自動的にサブスクライブし、Adobe I/O イベントタイプに基づいてさらにフィルタリングする必要はありません。このサービス固有のイベントタイプは、イベントの `type` プロパティで得られます。
+[!DNL Asset Compute Service]のすべてのイベントの[!DNL Adobe I/O]イベントタイプは`asset_compute`です。 ジャーナルは自動的にこのイベントタイプのみに登録され、[!DNL Adobe I/O]イベントタイプに基づいてフィルタリングする必要はありません。 このサービス固有のイベントタイプは、イベントの `type` プロパティで得られます。
 
 ### イベントタイプ {#event-types}
 
