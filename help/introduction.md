@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Asset Compute Service] の概要です。'
 description: '[!DNL Asset Compute Service] は、複雑さを軽減しスケーラビリティを向上させるクラウドネイティブなアセット処理サービスです。'
-translation-type: ht
-source-git-commit: 78c1246f5fc42006013701a6cf4d375a1d8c9fd8
-workflow-type: ht
-source-wordcount: '314'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 [!DNL Asset Compute Service] は、基本的な画像処理、Adobe アプリケーション固有の変換、複雑なビジネス要件をオーケストレーションするカスタムアプリケーションの作成など、いくつかの一般的なビジネスユースケースをサポートしています。
 
-[!DNL Asset Compute] Web サービスを使用して、様々なファイルタイプのサムネールを生成したり、[サポートされているファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=ja)の高画質な画像レンダリングを生成したりできます。詳しくは、[カスタム設定でサポートされるユースケース](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=ja)を参照してください。
+[!DNL Asset Compute] Web サービスを使用して、様々なファイルタイプのサムネールを生成したり、[サポートされているファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=ja)の高画質な画像レンダリングを生成したりできます。詳しくは、[カスタム設定でサポートされるユースケース](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html)を参照してください。
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ ht-degree: 100%
 | Binary uploads or API-based asset ingestion. | Use other methods to ingest assets. |
 | Store binaries or any persisted data across processing requests.| Each request is independent so treat it as a standalone request by sharing binary and processing instructions. |
 | Store any configurations such as processing rules or settings for a user or an organization's account. | Add processing request to each request/instruction. |
-| Direct event handling of asset creation events from storage systems and processing completed notifications, and errors. | Use Adobe I/O Events and other methods. |
+| Direct event handling of asset creation events from storage systems and processing completed notifications, and errors. | Use [!DNL Adobe I/O] Events and other methods. |
 
 -->
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 >
 >* [ [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] のアセットマイクロサービスを使用したアセット処理の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=ja)。
 >* [Project Firefly のドキュメント](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html)
->* [処理でサポートされるファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=ja)
+>* [処理でサポートされるファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html)
 >* [Asset Compute Service のリリースノート](release-notes.md)
 
 
