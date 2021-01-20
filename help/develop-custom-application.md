@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 7e520921ebb459c963d61d70c66497b8e62521cf
 workflow-type: tm+mt
 source-wordcount: '1562'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 94%
    create console.json
    ```
 
-1. プロンプトに`Which Adobe I/O App features do you want to enable for this project?`が表示されたら、`Actions`を選択します。 Webアセットは異なる認証と認証の確認を使用するので、`Web Assets`オプションの選択を必ず解除してください。
+1. 「`Which Adobe I/O App features do you want to enable for this project?`」というプロンプトが表示されたら、「`Actions`」を選択します。Web アセットは別の認証および承認チェックを使用するので、必ず「`Web Assets`」オプションの選択を解除してください。
 
    ```bash
    ? Which Adobe I/O App features do you want to enable for this project?
@@ -50,7 +50,7 @@ ht-degree: 94%
    ◯ CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy
    ```
 
-1. 「`Which type of sample actions do you want to create?`」というプロンプトが表示され たら、必ず `Adobe Asset Compute Worker` を選択します。
+1. 「`Which type of sample actions do you want to create?`」というプロンプトが表示されたら、必ず `Adobe Asset Compute Worker` を選択します。
 
    ```bash
    ? Which type of sample actions do you want to create?
@@ -187,7 +187,7 @@ exports.main = worker(async function (source, rendition) {
 
 ### カスタムパラメーターの受け渡し {#pass-custom-parameters}
 
-カスタム定義のパラメーターをレンディションオブジェクトに渡すことができます。これらは、アプリケーション内の [`rendition` instructions](https://github.com/adobe/asset-compute-sdk#rendition) で参照できます。レンディションオブジェクトの例を次に示します。
+カスタム定義のパラメーターをレンディションオブジェクトに渡すことができます。これらは、アプリケーション内の [`rendition` 手順](https://github.com/adobe/asset-compute-sdk#rendition)で参照できます。レンディションオブジェクトの例を次に示します。
 
 ```json
 "renditions": [
