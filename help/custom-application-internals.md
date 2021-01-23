@@ -1,11 +1,11 @@
 ---
-title: カスタムアプリケーションの動作の理解。
+title: カスタムアプリケーションの動作を理解する
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションの動作の理解に役立つその内部動作'
 translation-type: tm+mt
-source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
+source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
 workflow-type: tm+mt
 source-wordcount: '751'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
