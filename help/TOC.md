@@ -1,21 +1,21 @@
 ---
 cloud: experience-cloud
-product: Asset Compute Service
-solution: Experience Manager
+product: asset compute service
+solution: Experience Manager, Experience Manager Assets
 type: Documentation
-audience: end-user
+role: Developer
 user-guide-title: Asset Compute Service ガイド
 user-guide-description: このドキュメントでは、カスタムコードの開発、管理、デプロイ、トラブルシューティングの方法など、 [!DNL Asset Compute Service]  に関連するタスクについて説明しています。
 breadcrumb-title: Asset Compute Service ガイド
 breadcrumb-url: /docs/asset-compute/using/home.html
 solution-title: AEM Assets
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=ja
-getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=ja
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html
 tutorials-title: AEM チュートリアル
 tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=ja
-translation-type: ht
-source-git-commit: c392b8588929f7b13db13e42a3f17bbc4f68a376
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
+workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 100%
 
