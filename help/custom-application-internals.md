@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
 workflow-type: tm+mt
 source-wordcount: '751'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 93%
 
 ## 登録 {#registration}
 
-クライアントは、Adobe Asset Compute 用の イベントを受け取るためのジャーナル URL を設定および取得するために、[`/register`](api.md#register) に初めてリクエストするより前に [`/process`](api.md#process-request) を 1 回呼び出す必要があります。[!DNL Adobe I/O]
+クライアントは、Adobe Asset Compute 用の [!DNL Adobe I/O] イベントを受け取るためのジャーナル URL を設定および取得するために、[`/register`](api.md#register) に初めてリクエストするより前に [`/process`](api.md#process-request) を 1 回呼び出す必要があります。
 
 ```sh
 curl -X POST \
@@ -49,7 +49,7 @@ curl -X POST \
 
 クライアントは、署名済みの URL を使用してレンディションの形式を正しく設定する必要があります。[`@adobe/node-cloud-blobstore-wrapper`](https://github.com/adobe/node-cloud-blobstore-wrapper#presigned-urls) JavaScript ライブラリを NodeJS アプリケーションで使用すると、URL に事前に署名することができます。現在、このライブラリでは Azure Blob ストレージと AWS S3 コンテナのみをサポートしています。
 
-処理リクエストは、 イベントのポーリングに使用できる `requestId` 値を返します。[!DNL Adobe I/O]
+処理リクエストは、[!DNL Adobe I/O] イベントのポーリングに使用できる `requestId` 値を返します。
 
 カスタムアプリケーションの処理リクエストの例を以下に示します。
 
@@ -71,7 +71,7 @@ curl -X POST \
 
 [!DNL Asset Compute Service] が、カスタムアプリケーションレンディションリクエストをカスタムアプリケーションに送信します。指定されたアプリケーション URL（Project Firefly のセキュアな Web アクション URL）への HTTP POST が使用されます。すべてのリクエストで HTTPS プロトコルが使用されるので、データのセキュリティは最大になります。
 
-カスタムアプリケーションで使用する [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk) が HTTP POST リクエストを処理します。また、ソースのダウンロード、レンディションのアップロード、[!DNL Adobe I/O]イベントの送信、エラー処理も処理します。
+カスタムアプリケーションで使用する [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk) が HTTP POST リクエストを処理します。また、ソースのダウンロード、レンディションのアップロード、[!DNL Adobe I/O] イベントの送信、エラー処理もおこないます。
 
 <!-- TBD: Add the application diagram. -->
 
@@ -117,11 +117,11 @@ SDK は、レンディションごとに非同期の[レンディションコー
 
 ## [!DNL Adobe I/O] イベント {#aio-events}
 
-SDKは、レンディションごとに[!DNL Adobe I/O]イベントを送信します。 これらのイベントは、結果に応じて `rendition_created` か `rendition_failed` のどちらかのタイプになります。イベントについて詳しくは、[Asset Compute の非同期イベント](api.md#asynchronous-events)を参照してください。
+SDK は、レンディションごとに [!DNL Adobe I/O] イベントを送信します。これらのイベントは、結果に応じて `rendition_created` か `rendition_failed` のどちらかのタイプになります。イベントについて詳しくは、[Asset Compute の非同期イベント](api.md#asynchronous-events)を参照してください。
 
-## [!DNL Adobe I/O]イベントを受信{#receive-aio-events}
+## [!DNL Adobe I/O] イベントを受信 {#receive-aio-events}
 
-クライアントは、消費ロジックに従って[[!DNL Adobe I/O] イベントジャーナル](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#/Journaling)をポーリングします。 最初のジャーナル URL は、`/register` API 応答で提供される URL です。イベントは、`requestId` を使用して識別できます。この ID はイベントに存在し、`/process` で返されるものと同じです。レンディションごとに個別のイベントがあります。このイベントは、レンディションがアップロードされる（または失敗する）とすぐに送信されます。一致するイベントを受け取ると、クライアントは結果のレンディションを表示したり、処理したりすることができます。
+クライアントは、消費ロジックに従って [[!DNL Adobe I/O]  イベントジャーナル](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#/Journaling)をポーリングします。最初のジャーナル URL は、`/register` API 応答で提供される URL です。イベントは、`requestId` を使用して識別できます。この ID はイベントに存在し、`/process` で返されるものと同じです。レンディションごとに個別のイベントがあります。このイベントは、レンディションがアップロードされる（または失敗する）とすぐに送信されます。一致するイベントを受け取ると、クライアントは結果のレンディションを表示したり、処理したりすることができます。
 
 JavaScript ライブラリ [`asset-compute-client`](https://github.com/adobe/asset-compute-client#usage) では、`waitActivation()` メソッドを使用してすべてのイベントを取得するので、ジャーナルのポーリングが簡単になります。
 
@@ -141,7 +141,7 @@ await Promise.all(events.map(event => {
 }));
 ```
 
-ジャーナルイベントの取得方法について詳しくは、[[!DNL Adobe I/O] イベントAPI](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#!adobedocs/adobeio-events/master/events-api-reference.yaml)を参照してください。
+ジャーナルイベントの取得方法について詳しくは、[[!DNL Adobe I/O]  イベント API](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#!adobedocs/adobeio-events/master/events-api-reference.yaml) を参照してください。
 
 <!-- TBD:
 * Illustration of the controls/data flow.
