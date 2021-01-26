@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
 workflow-type: tm+mt
 source-wordcount: '259'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 91%
 >
 >[!DNL Asset Compute Service] は、Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] でのみ使用できます。
 
-カスタムアプリケーションは、[Project Firefly](https://github.com/AdobeDocs/project-firefly) のヘッドレスアプリです。[Asset Compute SDK](https://github.com/adobe/asset-compute-sdk) と Project Firefly 開発者ツールを使用すると、[!DNL Asset Compute Service] をカスタムアプリケーションで簡単に拡張できるようになります。これにより、開発者はビジネスロジックに専念できます。カスタムアプリケーションの作成は、プレーンサーバーレスの[!DNL Adobe I/O]ランタイムアクションを作成するのと同じくらい簡単です。 カスタムアプリケーションは 1 つの Node.js JavaScript 関数です。詳しくは、[基本的なカスタムアプリケーションの例](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js)を参照してください。
+カスタムアプリケーションは、[Project Firefly](https://github.com/AdobeDocs/project-firefly) のヘッドレスアプリです。[Asset Compute SDK](https://github.com/adobe/asset-compute-sdk) と Project Firefly 開発者ツールを使用すると、[!DNL Asset Compute Service] をカスタムアプリケーションで簡単に拡張できるようになります。これにより、開発者はビジネスロジックに専念できます。カスタムアプリケーションの作成は、サーバーレスのプレーン [!DNL Adobe I/O] Runtime アクションを作成するのと同程度の簡単な作業です。カスタムアプリケーションは 1 つの Node.js JavaScript 関数です。詳しくは、[基本的なカスタムアプリケーションの例](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js)を参照してください。
 
 ## 前提条件とプロビジョニング要件 {#prerequisites-and-provisioning}
 
@@ -29,7 +29,7 @@ ht-degree: 91%
 * Experience 組織では、Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] が有効になっている。
 * [!DNL Adobe Experience Cloud] 組織は、[!DNL Project Firefly] 開発者プレビュープログラムに含まれている。アクセス申請方法につては[こちら](https://github.com/AdobeDocs/project-firefly/blob/master/overview/getting_access.md)を参照してください。
 * 開発者の組織に開発者ロールまたは管理者権限がある。
-* [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli)がローカルにインストールされていることを確認します。
+* [[!DNL Adobe I/O]  CLI](https://github.com/adobe/aio-cli) がローカルにインストールされている。
 
 <!-- TBD for later:
 
