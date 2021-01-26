@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
 workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 88%
 
 ## 使用可能なリソースとライブラリ {#available-resources}
 
-[!DNL Asset Compute Service] の[オープンソースライブラリ](https://github.com/adobe/asset-compute-sdk#available-resources-and-libraries)の一覧を参照してください。さらに、利用可能な[!DNL Adobe I/O]ランタイムとOpenWiskのリソースは次のとおりです。
+[!DNL Asset Compute Service] の[オープンソースライブラリ](https://github.com/adobe/asset-compute-sdk#available-resources-and-libraries)の一覧を参照してください。また、[!DNL Adobe I/O] Runtime および OpenWhisk に関する利用可能なリソースは次のとおりです。
 
-* [Getting started with Apache OpenWhisk](https://github.com/apache/incubator-openwhisk/tree/master/docs#getting-started-with-openwhisk)（Apache OpenWhisk 入門）。
-* [ラボ：Runtimeを使用して、合成可能なAI [!DNL Adobe Sensei] functions and [!DNL Adobe I/O] を構築します](https://opensource.adobe.com/adobe-sensei-ai-functions/index.html)。
-* [[!DNL Adobe I/O] ランタイムFAQ](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/resources/faq.md)
+* [Apache OpenWhisk 入門](https://github.com/apache/incubator-openwhisk/tree/master/docs#getting-started-with-openwhisk)。
+* [ラボ： [!DNL Adobe Sensei] functions and [!DNL Adobe I/O] Runtime](https://opensource.adobe.com/adobe-sensei-ai-functions/index.html) を使用して、合成可能な AI を構築します。
+* [[!DNL Adobe I/O] Runtime に関する FAQ](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/resources/faq.md)
 
 <!-- **TBD** for post-release:
 * Link to Firefly open-source components.
