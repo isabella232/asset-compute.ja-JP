@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
 workflow-type: tm+mt
 source-wordcount: '1562'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 95%
 
 ## カスタムアプリケーションの作成 {#create-custom-application}
 
-[[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli)がローカルにインストールされていることを確認します。
+[[!DNL Adobe I/O]  CLI](https://github.com/adobe/aio-cli) がローカルにインストールされていることを確認します。
 
 1. カスタムアプリケーションを作成するには、[Firefly アプリケーションを作成](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#4-bootstrapping-new-app-using-the-cli)します。それには、ターミナルで `aio app init <app-name>` を実行します。
 
@@ -121,7 +121,7 @@ Firefly プロジェクトのルートにある ENV ファイルに、開発者�
 
 Asset Compute 開発者ツールを使用してアプリケーションを実行する前に、[資格情報](#developer-tool-credentials)を適切に設定します。
 
-開発者ツールでアプリケーションを実行するには、`aio app run` コマンドを使用します。これにより、[!DNL Adobe I/O] Runtimeに対してアクションを展開し、ローカルマシン上の開発ツールを開始します。 このツールは、開発中にアプリケーションリクエストのテストに使用されます。レンディションリクエストの例を次に示します。
+開発者ツールでアプリケーションを実行するには、`aio app run` コマンドを使用します。これにより、ローカルマシン上に [!DNL Adobe I/O] Runtime へのアクションがデプロイされ、ローカルマシンで開発ツールが起動します。このツールは、開発中にアプリケーションリクエストのテストに使用されます。レンディションリクエストの例を次に示します。
 
 ```json
 "renditions": [
@@ -266,7 +266,7 @@ const key = params.secretKey;
 
 ## アプリケーションのサイズ調整 {#sizing-workers}
 
-アプリケーションは、[!DNL Adobe I/O]ランタイムのコンテナで実行され、`manifest.yml`を介して設定できる[制限](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md)を持ちます。
+アプリケーションは、[!DNL Adobe I/O] Runtime のコンテナで実行されますが、その際に、`manifest.yml` で設定できる[制限](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md)（下記参照）が適用されます。
 
 ```yaml
     actions:
@@ -282,7 +282,7 @@ Asset Compute アプリケーションで通常実行される処理が大規模
 
 Runtime ではアクションのデフォルトのタイムアウトは 1 分ですが、`timeout` の制限値（ミリ秒）を設定して増やすことができます。サイズの大きいファイルを処理することが想定される場合は、この時間を長くしてください。ソースのダウンロード、ファイルの処理、レンディションのアップロードにかかる合計時間を考慮します。アクションがタイムアウトした場合、つまり、指定されたタイムアウト上限までにアクティベーションが返されない場合、Runtime はコンテナを破棄し、再利用しません。
 
-本来のasset computeアプリケーションは、ネットワークとディスクの入力または出力のバインドになる傾向があります。 ソースファイルを最初にダウンロードする必要があり、処理には多くの場合リソースが消費され、その後で結果のレンディションが再びアップロードされます。
+Asset Compute アプリケーションは本来、ネットワークとディスクの入力および出力が制限される傾向があります。ソースファイルをまずダウンロードする必要があり、処理はリソースに負荷がかかることが多く、結果として生成されるレンディションが再びアップロードされます。
 
 アクションコンテナが使用できるメモリは、`memorySize` に MB 単位で指定します。現在のところ、この値はコンテナが取得する CPU アクセスの量も定義していますが、最も重要なのは、この値が Runtime の使用コストの主要な要素になっていることです（コンテナが大きいほどコストが大きくなります）。処理に必要なメモリや CPU の量が多い場合は、ここでより大きい値を指定しますが、コンテナが大きいほど全体的なスループットが低下するので、リソースを無駄にしないように注意してください。
 
