@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
 workflow-type: tm+mt
 source-wordcount: '2906'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 98%
    * メタスコープ：`event_receiver_api`
    * スコープ：`event_receiver,event_receiver_api`
 
-* [!DNL Adobe I/O] 管理API
+* [!DNL Adobe I/O] 管理 API
    * メタスコープ：`ent_adobeio_sdk`
    * スコープ：`adobeio_api,additional_info.roles,additional_info.projectedProductContext`
 
@@ -414,7 +414,7 @@ PNG 形式が透かしとして使用されます。
 
 レンディションの処理が完了した場合、またはエラーが発生した場合は、[[!DNL Adobe I/O]  イベントジャーナル](https://www.adobe.io/apis/experienceplatform/events/documentation.html#!adobedocs/adobeio-events/master/intro/journaling_api.md)にイベントが送信されます。クライアントは、[/register](#register) を通じて提供されたジャーナル URL をリッスンする必要があります。ジャーナル応答は `event` 配列を含んでいます。その要素は各イベントに対応する 1 つのオブジェクトで、そのオブジェクトの `event` フィールドに実際のイベントペイロードが含まれています。
 
-[!DNL Asset Compute Service]のすべてのイベントの[!DNL Adobe I/O]イベントタイプは`asset_compute`です。 ジャーナルは自動的にこのイベントタイプのみに登録され、[!DNL Adobe I/O]イベントタイプに基づいてフィルタリングする必要はありません。 このサービス固有のイベントタイプは、イベントの `type` プロパティで得られます。
+[!DNL Adobe I/O] [!DNL Asset Compute Service] のすべてのイベントに対するイベントタイプは `asset_compute` です。ジャーナルは、このイベントタイプのみを自動的にサブスクライブし、[!DNL Adobe I/O] イベントタイプに基づいてさらにフィルタリングする必要はありません。このサービス固有のイベントタイプは、イベントの `type` プロパティで得られます。
 
 ### イベントタイプ {#event-types}
 
