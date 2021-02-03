@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Asset Compute Service]に必要な開発環境を設定'
+title: ' [!DNL Asset Compute Service] に必要な開発環境の設定'
 description: カスタムコードの作成とテストを開始するための  [!DNL Asset Compute Service]  の開発環境の設定。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 98%
    * [Git](https://git-scm.com/)
    * [Docker Desktop](https://www.docker.com/get-started)
    * [NodeJS](https://nodejs.org)（v10～v12 LTS、奇数バージョンはお勧めしません）と [NPM](https://www.npmjs.com)。OSX HomeBrew のユーザーは、`brew install node` を実行して両方をインストールできます。それ以外の場合は、[NodeJS ダウンロードページ](https://nodejs.org/ja/)からダウンロードします。
-   * NodeJS に適したIDE。[Visual Studio Code（VS Code）](https://code.visualstudio.com)をお勧めします。デバッガーでサポートされている IDE です。その他の任意の IDE をコードエディターとして使用できますが、高度な使用方法（デバッガーなど）はまだサポートされていません。
+   * NodeJS に適した IDE。[Visual Studio Code（VS Code）](https://code.visualstudio.com)をお勧めします。デバッガーでサポートされている IDE です。その他の任意の IDE をコードエディターとして使用できますが、高度な使用方法（デバッガーなど）はまだサポートされていません。
    * [[!DNL Adobe I/O]  CLI](https://github.com/adobe/aio-cli)（`aio`）- `npm install -g @adobe/aio-cli` を使用してインストールします。
 
 1. 必ず[前提条件](/help/understand-extensibility.md#prerequisites-and-provisioning)を満たすようにしてください。
@@ -34,7 +34,7 @@ ht-degree: 98%
 
 1. [Adobe Developer Console](https://console.adobe.io/) にログオンします。[!DNL Experience Manager] as a [!DNL Cloud Service] 統合と同じ Adobe Experience Cloud 組織に属していることを確認します。Adobe Developer Console について詳しくは、[コンソールのドキュメント](https://www.adobe.io/apis/experienceplatform/console/docs.html)を参照してください。
 
-1. [Firefly プロジェクトを作成](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/getting_started/first_app.md)します。**[!UICONTROL Create new project]**／**[!UICONTROL Project from template]**&#x200B;をクリックします。「Project Firefly」を選択します。`Production` と `Stage` の 2 つのワークスペースを持つ新しい Firefly プロジェクトが作成されます。必要に応じて、ワークスペース（例：`Development`）を追加します。
+1. [Firefly プロジェクトを作成](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/getting_started/first_app.md)します。**[!UICONTROL Create new project]**／**[!UICONTROL Project from template]**　をクリックします。「Project Firefly」を選択します。`Production` と `Stage` の 2 つのワークスペースを持つ新しい Firefly プロジェクトが作成されます。必要に応じて、ワークスペース（例：`Development`）を追加します。
 
 1. この Firefly プロジェクトで、ワークスペースを選択し、Asset Compute に必要なサービスをサブスクライブします。**Add to Project**／**API** をクリックし、`Asset Compute`、`IO Events`、`IO Events Management` の各サービスを追加します。最初の API を追加すると、秘密鍵の作成を促すメッセージが表示されます。開発者ツールでカスタムアプリケーションをテストするには、この鍵が必要なので、この情報をコンピューターに保存します。
 
