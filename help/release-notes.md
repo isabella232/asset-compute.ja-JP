@@ -1,9 +1,9 @@
 ---
 title: ' [!DNL Asset Compute Service] のリリースノート '
 description: ' [!DNL Asset Compute Service] の新機能、機能強化、既知の問題。'
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '191'
 ht-degree: 100%
 
