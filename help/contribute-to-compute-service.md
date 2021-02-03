@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Asset Compute Service]のオープンソース・コンポーネントに貢献する'
+title: ' [!DNL Asset Compute Service] のオープンソースコンポーネントへの貢献'
 description: ' [!DNL Asset Compute Service] のオープンソースコンポーネントへの貢献。'
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
