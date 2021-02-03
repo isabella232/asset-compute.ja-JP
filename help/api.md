@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Asset Compute Service] HTTP API'
 description: カスタムアプリケーションを作成するための [!DNL Asset Compute Service] HTTP API。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2906'
 ht-degree: 100%
 
@@ -382,7 +382,7 @@ HTTP ステータスコードは次のとおりです。
 
 ### レンディション固有のフィールド {#rendition-specific-fields}
 
-現在サポートされているファイル形式の一覧については、[サポートされているファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html)を参照してください。
+現在サポートされているファイル形式の一覧については、[サポートされているファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=ja)を参照してください。
 
 | 名前 | 種類 | 説明 | 例 |
 |-------------------|----------|-------------|---------|
@@ -397,7 +397,7 @@ HTTP ステータスコードは次のとおりです。
 | `jpegSize` | `number` | JPEG ファイルのおおよそのサイズ（バイト単位）。これは `quality` 設定よりも優先します。他の形式には影響しません。 |  |
 | `dpi` | `number` か `object` のどちらかにする必要があります。 | x および y の DPI を設定します。簡単にするために、x と y の両方に適用される 1 つの数値に設定することもできます。画像自体には影響しません。 | `96` か `{ xdpi: 96, ydpi: 96 }` のどちらかにする必要があります。 |
 | `convertToDpi` | `number` か `object` のどちらかにする必要があります。 | 物理サイズを維持しながら x および y DPI の値が再サンプリングされます。簡単にするために、x と y の両方に適用される 1 つの数値に設定することもできます。 | `96` か `{ xdpi: 96, ydpi: 96 }` のどちらかにする必要があります。 |
-| `files` | `array` | ZIP アーカイブ（`fmt=zip`）に含めるファイルのリスト。各エントリは、URL 文字列か、次のフィールドを持つオブジェクトのどちらかにすることができます。<ul><li>`url`：ファイルをダウンロードするための URL</li><li>`path`：ZIP 内のこのパスの下にファイルをに格納します</li></ul> | `[{ "url": "https://host/asset.jpg", "path": "folder/location/asset.jpg" }]` |
+| `files` | `array` | ZIP アーカイブ（`fmt=zip`）に含めるファイルのリスト。各エントリは、URL 文字列か、次のフィールドを持つオブジェクトのどちらかにすることができます。<ul><li>`url`：ファイルをダウンロードするための URL</li><li>`path`：ZIP 内のこのパスにファイルを格納します</li></ul> | `[{ "url": "https://host/asset.jpg", "path": "folder/location/asset.jpg" }]` |
 | `duplicate` | `string` | ZIP アーカイブ（`fmt=zip`）の重複処理。デフォルトでは、ZIP 内の同じパスに複数のファイルを格納しようとすると、エラーが発生します。`duplicate` を `ignore` に設定すると、最初のアセットのみが保存され、残りは無視されます。 | `ignore` |
 | `watermark` | `object` | [透かし](#watermark-specific-fields)に関する指示が含まれています。 |  |
 
