@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Asset Compute Service] に対応した開発'
 description: ' [!DNL Asset Compute Service] を使用してカスタムアプリケーションを作成します。'
-translation-type: ht
-source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: ht
-source-wordcount: '1562'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 33b72b164faeda2dd425656209790f019ccec96e
+workflow-type: tm+mt
+source-wordcount: '1615'
+ht-degree: 94%
 
 ---
 
@@ -96,11 +96,14 @@ Firefly プロジェクトのルートにある ENV ファイルに、開発者�
    ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
    ```
 
-1. `console.json` が Firefly アプリケーションのルートディレクトリにない場合は、Adobe 開発者コンソール統合の JSON ファイルの絶対パスを追加します。これは、プロジェクトワークスペースにダウンロードされる [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user) ファイルと同じです。または、ENV ファイルにパスを追加する代わりに、コマンド `aio app use <path_to_console_json>` を使用することもできます。
+1. Adobeデベロッパーコンソールからファイルをダウンロードします。 プロジェクトのルートに移動し、右上隅の「すべてをダウンロード」をクリックします。 ファイルはファイル名として`<namespace>-<workspace>.json`と共にダウンロードされます。 次のいずれかの操作をおこないます。
 
-   ```conf
-   ASSET_COMPUTE_INTEGRATION_FILE_PATH=
-   ```
+   * ファイル名を`config.json`に変更し、プロジェクトのルートに移動します。
+   * オプションで、AdobeDeveloper Console統合JSONファイルへの絶対パスを追加できます。 これは、プロジェクトワークスペースにダウンロードされる [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user) ファイルと同じです。
+
+      ```conf
+      ASSET_COMPUTE_INTEGRATION_FILE_PATH=
+      ```
 
 1. S3 ストレージか Azure ストレージのいずれかの資格情報を追加します。1 つのクラウドストレージソリューションへのアクセスのみ必要です。
 
@@ -116,6 +119,10 @@ Firefly プロジェクトのルートにある ENV ファイルに、開発者�
    AZURE_STORAGE_KEY=
    AZURE_STORAGE_CONTAINER_NAME=
    ```
+
+>[!TIP]
+>
+>`config.json`ファイルには資格情報が含まれています。 共有を防ぐために、プロジェクト内で`.gitignore`ファイルにJSONファイルを追加します。 .envファイルと.aioファイルにも同様です。
 
 ## アプリケーションの実行 {#run-custom-application}
 
