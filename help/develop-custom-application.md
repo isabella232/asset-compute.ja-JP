@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Asset Compute Service] に対応した開発'
 description: ' [!DNL Asset Compute Service] を使用してカスタムアプリケーションを作成します。'
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 33b72b164faeda2dd425656209790f019ccec96e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1615'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -96,10 +96,10 @@ Firefly プロジェクトのルートにある ENV ファイルに、開発者�
    ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
    ```
 
-1. Adobeデベロッパーコンソールからファイルをダウンロードします。 プロジェクトのルートに移動し、右上隅の「すべてをダウンロード」をクリックします。 ファイルはファイル名として`<namespace>-<workspace>.json`と共にダウンロードされます。 次のいずれかの操作をおこないます。
+1. Adobe Developer Console からファイルをダウンロードします。プロジェクトのルートに移動し、右上隅の「すべてをダウンロード」をクリックします。ファイルは「`<namespace>-<workspace>.json`」というファイル名でダウンロードされます。次のいずれかの操作をおこないます。
 
-   * ファイル名を`config.json`に変更し、プロジェクトのルートに移動します。
-   * オプションで、AdobeDeveloper Console統合JSONファイルへの絶対パスを追加できます。 これは、プロジェクトワークスペースにダウンロードされる [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user) ファイルと同じです。
+   * ファイル名を「`config.json`」に変更し、プロジェクトのルートに移動します。
+   * オプションとして、Adobe Developer Console 統合 JSON ファイルへの絶対パスを追加できます。これは、プロジェクトワークスペースにダウンロードされる [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user) ファイルと同じです。
 
       ```conf
       ASSET_COMPUTE_INTEGRATION_FILE_PATH=
@@ -122,7 +122,7 @@ Firefly プロジェクトのルートにある ENV ファイルに、開発者�
 
 >[!TIP]
 >
->`config.json`ファイルには資格情報が含まれています。 共有を防ぐために、プロジェクト内で`.gitignore`ファイルにJSONファイルを追加します。 .envファイルと.aioファイルにも同様です。
+>`config.json` ファイルには資格情報が含まれています。共有を防ぐため、プロジェクト内で、`.gitignore` ファイルに JSON ファイルを追加します。.env ファイルと .aio ファイルにも同じ操作を実行します。
 
 ## アプリケーションの実行 {#run-custom-application}
 
