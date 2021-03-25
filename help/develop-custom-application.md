@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Asset Compute Service] に対応した開発'
 description: ' [!DNL Asset Compute Service] を使用してカスタムアプリケーションを作成します。'
-translation-type: ht
-source-git-commit: 33b72b164faeda2dd425656209790f019ccec96e
-workflow-type: ht
-source-wordcount: '1615'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 7ae47fdb7ff91e1388d2037d90abe35fe5218216
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -98,7 +98,7 @@ Firefly プロジェクトのルートにある ENV ファイルに、開発者�
 
 1. Adobe Developer Console からファイルをダウンロードします。プロジェクトのルートに移動し、右上隅の「すべてをダウンロード」をクリックします。ファイルは「`<namespace>-<workspace>.json`」というファイル名でダウンロードされます。次のいずれかの操作をおこないます。
 
-   * ファイル名を「`config.json`」に変更し、プロジェクトのルートに移動します。
+   * ファイル名を「`console.json`」に変更し、プロジェクトのルートに移動します。
    * オプションとして、Adobe Developer Console 統合 JSON ファイルへの絶対パスを追加できます。これは、プロジェクトワークスペースにダウンロードされる [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user) ファイルと同じです。
 
       ```conf
