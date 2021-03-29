@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Asset Compute Service] に対応した開発'
 description: ' [!DNL Asset Compute Service] を使用してカスタムアプリケーションを作成します。'
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae47fdb7ff91e1388d2037d90abe35fe5218216
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1615'
+ht-degree: 100%
 
 ---
 
