@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 solution-title: Asset Compute Service
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html
 solution-icon: assets/experience-cloud-logo-24.png
@@ -10,9 +10,9 @@ tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/asset-compute.ja-JP
 index: y
-translation-type: ht
-source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1cf682be00c984fa523963f5d4358575efffb50b
+workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 100%
 
