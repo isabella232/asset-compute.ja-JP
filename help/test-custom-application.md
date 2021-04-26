@@ -2,11 +2,11 @@
 title: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ'
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ。'
 exl-id: c2534904-0a07-465e-acea-3cb578d3bc08
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9bc1534671c81a05798f98ae556d348bc771d975
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '782'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Asset Compute アプリケーションのユニットテストフレームワー
 
 ### テストの追加 {#add-tests}
 
-テストは、 プロジェクトのルートレベルにある `test` フォルダーに含まれている必要があります。[!DNL Adobe I/O]各アプリケーションのテストケースは、パス `test/asset-compute/<worker-name>` 内にテストケースごとに 1 つのフォルダーとして配置する必要があります。
+テストは、[!DNL Adobe I/O] プロジェクトのルートレベルにある `test` フォルダーに含まれている必要があります。各アプリケーションのテストケースは、パス `test/asset-compute/<worker-name>` 内にテストケースごとに 1 つのフォルダーとして配置する必要があります。
 
 ```yaml
 action/
@@ -173,8 +173,8 @@ tests/
 1. ユーザー設定 JSON ファイルに追加します。古い VS Code デバッガーが引き続き使用されます。新しいデバッガーには wskdebug（`"debug.javascript.usePreview": false`）に関して[いくつかの問題](https://github.com/apache/openwhisk-wskdebug/issues/74)があります。
 1. `aio app run` で開いているアプリのインスタンスをすべて閉じます。
 1. `aio app deploy` を使用して最新のコードをデプロイします。
-1. `aio asset-compute devtool`を使用して、Asset computeDevtoolのみを実行します。 ツールを開いたままにします。
-1. VSコードエディターで、`launch.json`に次のデバッグ設定を追加します。
+1. `aio asset-compute devtool` を使用して、Asset Compute 開発者ツールのみを実行します。ツールを開いたままにします。
+1. VS Code エディターで、次のデバッグ設定を `launch.json` に追加します。
 
    ```json
    {
@@ -195,7 +195,7 @@ tests/
    }
    ```
 
-   `aio app deploy`の出力から`ACTION NAME`を取得します。
+   `aio app deploy` の出力から `ACTION NAME` を取得します。
 
 1. 実行／デバッグ設定から `wskdebug worker` を選択し、再生アイコンを押します。**[!UICONTROL Debug Console]** ウィンドウに **[!UICONTROL Ready for activations]** と表示されるまで待ちます。
 
