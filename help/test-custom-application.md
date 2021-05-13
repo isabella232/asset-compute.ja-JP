@@ -2,11 +2,10 @@
 title: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ'
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ。'
 exl-id: c2534904-0a07-465e-acea-3cb578d3bc08
-translation-type: ht
-source-git-commit: 9bc1534671c81a05798f98ae556d348bc771d975
-workflow-type: ht
-source-wordcount: '782'
-ht-degree: 100%
+source-git-commit: ebc0d717b3f6fc4518f4a79cd44ebe8fdcf9ec6a
+workflow-type: tm+mt
+source-wordcount: '811'
+ht-degree: 96%
 
 ---
 
@@ -137,6 +136,10 @@ tests/
 ### 予期されるエラーのテスト {#test-unexpected-errors}
 
 エラーテストケースには、予期される `rendition.*` ファイルを含めず、予期される `errorReason` を `params.json` ファイル内で定義してください。
+
+>[!NOTE]
+>
+>テストケースに、期待された`rendition.*`ファイルが含まれておらず、`params.json`ファイル内に期待される`errorReason`が定義されていない場合、`errorReason`のエラーケースと見なされます。
 
 エラーテストケースの構造：
 
