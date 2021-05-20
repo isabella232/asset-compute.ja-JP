@@ -3,7 +3,7 @@ title: ' [!DNL Asset Compute Service]  カスタムアプリケーションの�
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ。'
 exl-id: c2534904-0a07-465e-acea-3cb578d3bc08
 source-git-commit: ebc0d717b3f6fc4518f4a79cd44ebe8fdcf9ec6a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 100%
 
