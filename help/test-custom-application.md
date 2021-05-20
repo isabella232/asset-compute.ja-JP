@@ -3,9 +3,9 @@ title: ' [!DNL Asset Compute Service]  カスタムアプリケーションの�
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ。'
 exl-id: c2534904-0a07-465e-acea-3cb578d3bc08
 source-git-commit: ebc0d717b3f6fc4518f4a79cd44ebe8fdcf9ec6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '811'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -139,7 +139,7 @@ tests/
 
 >[!NOTE]
 >
->テストケースに、期待された`rendition.*`ファイルが含まれておらず、`params.json`ファイル内に期待される`errorReason`が定義されていない場合、`errorReason`のエラーケースと見なされます。
+>テストケースに期待された `rendition.*` ファイルが含まれておらず、`params.json` ファイル内で期待される `errorReason` が定義されていない場合、`errorReason` のエラーケースと見なされます。
 
 エラーテストケースの構造：
 
