@@ -1,14 +1,13 @@
 ---
 title: ' [!DNL Asset Compute Service] に必要な開発環境の設定'
 description: カスタムコードの作成とテストを開始するための  [!DNL Asset Compute Service]  の開発環境の設定。
-translation-type: ht
-source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: ht
+exl-id: 91c12889-01d8-4757-9bdd-f73c491cd9d5
+source-git-commit: 187a788d036f33b361a0fd1ca34a854daeb4a101
+workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 100%
 
 ---
-
 
 # 開発環境の設定 {#create-dev-environment}
 
