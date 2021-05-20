@@ -1,16 +1,15 @@
 ---
 title: ' [!DNL Asset Compute Service] について'
 description: '[!DNL Asset Compute Service] は、複雑さを軽減しスケーラビリティを向上させるクラウドネイティブなアセット処理サービスです。'
-translation-type: ht
-source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: ht
+exl-id: f8c89f65-5a94-44f3-aaac-4612ae291101
+source-git-commit: 187a788d036f33b361a0fd1ca34a854daeb4a101
+workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 100%
 
 ---
 
-
-# [!DNL Asset Compute Service] の概要 {#overview}
+# [!DNL Asset Compute Service] の概要  {#overview}
 
 [!DNL Asset Compute Service] は、デジタルアセットを処理するためのスケーラブルかつ拡張可能な [!DNL Adobe Experience Cloud] サービスです。画像、ビデオ、ドキュメントなどのファイル形式を、サムネール、抽出テキストとメタデータ、アーカイブなど、様々なレンディションに変換できます。
 
@@ -26,7 +25,7 @@ ht-degree: 100%
 
 [!DNL Asset Compute Service] は、基本的な画像処理、Adobe アプリケーション固有の変換、複雑なビジネス要件をオーケストレーションするカスタムアプリケーションの作成など、いくつかの一般的なビジネスユースケースをサポートしています。
 
-[!DNL Asset Compute] Web サービスを使用して、様々なファイルタイプのサムネールを生成したり、[サポートされているファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=ja)の高画質な画像レンダリングを生成したりできます。詳しくは、[カスタム設定でサポートされるユースケース](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=ja)を参照してください。
+[!DNL Asset Compute] Web サービスを使用して、様々なファイルタイプのサムネールを生成したり、[サポートされているファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=ja)の高画質な画像レンダリングを生成したりできます。詳しくは、[カスタム設定でサポートされるユースケース](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html)を参照してください。
 
 >[!NOTE]
 >
@@ -47,7 +46,7 @@ ht-degree: 100%
 >
 >* [ [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] のアセットマイクロサービスを使用したアセット処理の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=ja)。
 >* [Project Firefly のドキュメント](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html)
->* [処理でサポートされるファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=ja)
+>* [処理でサポートされるファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html)
 >* [Asset Compute Service のリリースノート](release-notes.md)
 
 
