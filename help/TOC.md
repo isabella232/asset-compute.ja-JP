@@ -10,12 +10,11 @@ breadcrumb-title: Asset Compute Service ガイド
 breadcrumb-url: /docs/asset-compute/using/home.html
 solution-title: AEM Assets
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=ja
-getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=ja
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html
 tutorials-title: AEM チュートリアル
 tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=ja
-translation-type: ht
 source-git-commit: 3f306f2006ba1520ea5266a93a7912720f96b412
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 100%
 
@@ -32,7 +31,7 @@ ht-degree: 100%
 + [API リファレンス](api.md)
 + Asset Compute Service の拡張 {#extend}
    + [Compute Service の拡張について](understand-extensibility.md)
-   + [環境の設定](setup-environment.md)
+   + [環境を設定する](setup-environment.md)
    + [アプリの内部概念について](custom-application-internals.md)
    + [カスタムアプリケーションの開発](develop-custom-application.md)
    + [カスタムアプリケーションのテスト](test-custom-application.md)
