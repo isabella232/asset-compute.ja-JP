@@ -1,19 +1,19 @@
 ---
 cloud: Experience Cloud
-solution-title: Experience Manager、Experience ManagerとしてのCloud Service、Experience Managerアセット
+solution-title: Experience Manager、Experience Manager as a Cloud Service、Experience Manager Assets
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=ja
 solution-icon: assets/experience-cloud-logo-24.png
 getting-started-title: はじめに
-getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=ja
 tutorials-title: チュートリアル
 tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=ja
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/asset-compute.ja-JP
 index: y
 source-git-commit: 5f987f28fdf8d074ceb6226d21a5f64aad67bf04
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '162'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
