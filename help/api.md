@@ -2,10 +2,10 @@
 title: '[!DNL Asset Compute Service] HTTP API'
 description: カスタムアプリケーションを作成するための [!DNL Asset Compute Service] HTTP API。
 exl-id: 4b63fdf9-9c0d-4af7-839d-a95e07509750
-source-git-commit: 187a788d036f33b361a0fd1ca34a854daeb4a101
+source-git-commit: 780ddb7e119a28a1f8cc555ed2f1d3cee543b73f
 workflow-type: tm+mt
 source-wordcount: '2906'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -359,7 +359,7 @@ HTTP ステータスコードは次のとおりです。
 * ピクセルに適用するスケールを調整することで、DPI を設定してデスクトップパブリッシング用にレンダリングサイズを調整する。これは、レンディションオブジェクトの `instructions.dpi` で定義され、dpi 解像度を変更します。ただし、異なる解像度で同じサイズになるように画像のサイズを変更する場合は、`convertToDpi` 指示を使用します。
 * レンダリング後の幅または高さが指定のターゲット解像度（DPI）で元の画像と同じになるように画像のサイズを変更する。これは、レンディションオブジェクトの `instructions.convertToDpi` で定義されます。
 
-## 透かしアセット {#add-watermark}
+## アセットへの透かしの適用 {#add-watermark}
 
 [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk) では、PNG、JPEG、TIFF、GIF の各画像ファイルへの透かしの追加をサポートしています。透かしは、レンディションの `watermark` オブジェクトのレンディション指示に従って追加されます。
 
@@ -376,7 +376,7 @@ HTTP ステータスコードは次のとおりです。
 | `fmt` | `string` | レンディションのターゲット形式は、テキスト抽出の場合は `text`、XMP メタデータを xml として抽出する場合は `xmp` にすることもできます。[サポートされる形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=ja)を参照してください | `png` |
 | `worker` | `string` | [カスタムアプリケーション](develop-custom-application.md) の URL。`https://` URL にする必要があります。このフィールドが存在する場合、レンディションはカスタムアプリケーションで作成されます。設定されたその他のレンディションフィールドはすべて、カスタムアプリケーションで使用されます。 | `"https://1234.adobeioruntime.net`<br>`/api/v1/web`<br>`/example-custom-worker-master/worker"` |
 | `target` | `string` | 生成されたレンディションを HTTP PUT でアップロードする宛先の URL。 | `http://w.com/img.jpg` |
-| `target` | `object` | 生成されたレンディションの署名済み URL へのマルチパートアップロードの情報。これは、この[マルチパートアップロード動作](http://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html)に対応する [AEM／Oak 直接バイナリアップロード](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)に使用されます。<br>フィールドは次のとおりです。<ul><li>`urls`：文字列配列。署名済みのパート URL ごとに 1 つの文字列が割り当てられます。</li><li>`minPartSize`：1 つのパート（URL）に使用する最小サイズ</li><li>`maxPartSize`：1 つのパート（URL）に使用する最大サイズ</li></ul> | `{ "urls": [ "https://part1...", "https://part2..." ], "minPartSize": 10000, "maxPartSize": 100000 }` |
+| `target` | `object` | 生成されたレンディションの署名済み URL へのマルチパートアップロードの情報。これは、この[マルチパートアップロード動作](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html)に対応する [AEM／Oak 直接バイナリアップロード](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)に使用されます。<br>フィールドは次のとおりです。<ul><li>`urls`：文字列配列。署名済みのパート URL ごとに 1 つの文字列が割り当てられます。</li><li>`minPartSize`：1 つのパート（URL）に使用する最小サイズ</li><li>`maxPartSize`：1 つのパート（URL）に使用する最大サイズ</li></ul> | `{ "urls": [ "https://part1...", "https://part2..." ], "minPartSize": 10000, "maxPartSize": 100000 }` |
 | `userData` | `object` | クライアントによって制御され、レンディションイベントにそのまま渡されるオプションの予約済み領域。クライアントがカスタム情報を追加してレンディションイベントを識別できるようにします。これは、クライアントがいつでも自由に変更できるので、カスタムアプリケーションで変更したり依存したりしてはいけません。 | `{ ... }` |
 
 ### レンディション固有のフィールド {#rendition-specific-fields}
