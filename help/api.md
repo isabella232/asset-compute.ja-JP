@@ -3,9 +3,9 @@ title: '[!DNL Asset Compute Service] HTTP API'
 description: カスタムアプリケーションを作成するための [!DNL Asset Compute Service] HTTP API。
 exl-id: 4b63fdf9-9c0d-4af7-839d-a95e07509750
 source-git-commit: 780ddb7e119a28a1f8cc555ed2f1d3cee543b73f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2906'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -381,7 +381,7 @@ HTTP ステータスコードは次のとおりです。
 
 ### レンディション固有のフィールド {#rendition-specific-fields}
 
-現在サポートされているファイル形式の一覧については、[サポートされているファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html)を参照してください。
+現在サポートされているファイル形式の一覧については、[サポートされているファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=ja)を参照してください。
 
 | 名前 | 種類 | 説明 | 例 |
 |-------------------|----------|-------------|---------|
