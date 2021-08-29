@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] に必要な開発環境の設定'
 description: カスタムコードの作成とテストを開始するための  [!DNL Asset Compute Service]  の開発環境の設定。
 exl-id: 91c12889-01d8-4757-9bdd-f73c491cd9d5
-source-git-commit: 187a788d036f33b361a0fd1ca34a854daeb4a101
+source-git-commit: eed9da4b20fe37a4e44ba270c197505b50cfe77f
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 100%
+source-wordcount: '358'
+ht-degree: 85%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 100%
 
 [!DNL Asset Compute Service] に対応した開発をおこなえるように環境を設定するには、次の要件と手順に従います。
 
-1. Project Firefly の[アクセス権と資格情報を取得](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/setup.md#acquire-access-and-credentials)します。
+1. [のアクセス権と資格情報](https://www.adobe.io/project-firefly/docs/getting_started/#acquire-access-and-credentials) を取得し [!DNL Project Firefly]ます。
 
-1. 必須ツールなど、[ローカル環境を設定](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/setup.md#local-environment-set-up)します。
+1. 必須ツールなど、[ローカル環境を設定](https://www.adobe.io/project-firefly/docs/getting_started/#local-environment-set-up)します。
 
 1. スムーズに開発に着手するために役立つツールは次のとおりです。
 
@@ -23,15 +23,15 @@ ht-degree: 100%
    * [Docker Desktop](https://www.docker.com/get-started)
    * [NodeJS](https://nodejs.org)（v10～v12 LTS、奇数バージョンはお勧めしません）と [NPM](https://www.npmjs.com)。OSX HomeBrew のユーザーは、`brew install node` を実行して両方をインストールできます。それ以外の場合は、[NodeJS ダウンロードページ](https://nodejs.org/ja/)からダウンロードします。
    * NodeJS に適した IDE。[Visual Studio Code（VS Code）](https://code.visualstudio.com)をお勧めします。デバッガーでサポートされている IDE です。その他の任意の IDE をコードエディターとして使用できますが、高度な使用方法（デバッガーなど）はまだサポートされていません。
-   * [[!DNL Adobe I/O]  CLI](https://github.com/adobe/aio-cli)（`aio`）- `npm install -g @adobe/aio-cli` を使用してインストールします。
+   * [[!DNL Adobe I/O]  CLI](https://github.com/adobe/aio-cli)（`aio`）- `npm install -g @adobe/aio-cli@7.1.0` を使用してインストールします。
 
 1. 必ず[前提条件](/help/understand-extensibility.md#prerequisites-and-provisioning)を満たすようにしてください。
 
 ## Firefly プロジェクトの設定 {#create-firefly-project}
 
-1. エクスペリエンス組織でのシステム管理者ロールまたは開発者ロールのアクセス権を取得します。これは、システム管理者が [Admin Console](https://adminconsole.adobe.com/overview) で設定できます。
+1. [!DNL Experience Cloud]組織のシステム管理者または開発者の役割を確認します。 これは、システム管理者が[Admin Console](https://adminconsole.adobe.com/overview)で設定します。
 
-1. [Adobe Developer Console](https://console.adobe.io/) にログオンします。[!DNL Experience Manager] as a [!DNL Cloud Service] 統合と同じ Adobe Experience Cloud 組織に属していることを確認します。Adobe Developer Console について詳しくは、[コンソールのドキュメント](https://www.adobe.io/apis/experienceplatform/console/docs.html)を参照してください。
+1. [Adobe Developer Console](https://console.adobe.io/) にログオンします。[!DNL Cloud Service]統合と同じ[!DNL Experience Cloud]組織に属していることを確認します。 [!DNL Experience Manager]Adobe Developer Console について詳しくは、[コンソールのドキュメント](https://www.adobe.io/apis/experienceplatform/console/docs.html)を参照してください。
 
 1. [Firefly プロジェクトを作成](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/getting_started/first_app.md)します。**[!UICONTROL Create new project]**／**[!UICONTROL Project from template]**　をクリックします。「Project Firefly」を選択します。`Production` と `Stage` の 2 つのワークスペースを持つ新しい Firefly プロジェクトが作成されます。必要に応じて、ワークスペース（例：`Development`）を追加します。
 
@@ -41,11 +41,14 @@ ht-degree: 100%
 
 これで環境が設定されたので、[カスタムアプリケーションを作成](develop-custom-application.md)する準備が整いました。
 
-<!-- TBD items for later:
+<!-- More ideas:
  
 * Any steps in the beginning that lead to gotchas later should be called out for caution? For example,
   * don't change some defaults initially
   * know risks when deviating from standard path
   * naming conventions to follow
   * Retrieve and format credentials (YAML file details)
+
+TBD: When aio-cli v8 bugs are resolved, update the AIO CLI install command to remove v7.x reference and instruct users to use the latest version. See CQDOC-18346.
+
 -->

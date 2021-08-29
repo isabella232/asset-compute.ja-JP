@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] の拡張について'
 description: カスタムアセット処理を実行するために  [!DNL Asset Compute Service]  の機能を拡張するタイミングと方法。
 exl-id: 3b903364-34cc-44d5-9a03-24a0102cf85d
-source-git-commit: 187a788d036f33b361a0fd1ca34a854daeb4a101
+source-git-commit: eed9da4b20fe37a4e44ba270c197505b50cfe77f
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 100%
+source-wordcount: '254'
+ht-degree: 94%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 100%
 次の前提条件を満たしている必要があります。
 
 * Project Firefly ツールがコンピューターにインストールされている。
-* [!DNL Experience Cloud] 組織である。詳しくは、[こちら](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/setup.md#acquire-access-and-credentials)を参照してください。
+* [!DNL Experience Cloud] 組織である。詳しくは、[こちら](https://www.adobe.io/project-firefly/docs/getting_started/#acquire-access-and-credentials)を参照してください。
 * Experience 組織では、Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] が有効になっている。
-* [!DNL Adobe Experience Cloud] 組織は、[!DNL Project Firefly] 開発者プレビュープログラムに含まれている。アクセス申請方法につては[こちら](https://github.com/AdobeDocs/project-firefly/blob/master/overview/getting_access.md)を参照してください。
+* [!DNL Adobe Experience Cloud] 組織は、[!DNL Project Firefly] 開発者プレビュープログラムに含まれている。アクセス申請方法につては[こちら](https://www.adobe.io/project-firefly/docs/overview/getting_access/)を参照してください。
 * 開発者の組織に開発者ロールまたは管理者権限がある。
 * [[!DNL Adobe I/O]  CLI](https://github.com/adobe/aio-cli) がローカルにインストールされている。
 

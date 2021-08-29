@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] に関連するトラブルシューティング'
 description: ' [!DNL Asset Compute Service] を使用したカスタムアプリケーションのトラブルシューティングとデバッグ。'
 exl-id: 017fff91-e5e9-4a30-babf-5faa1ebefc2f
-source-git-commit: 187a788d036f33b361a0fd1ca34a854daeb4a101
+source-git-commit: eed9da4b20fe37a4e44ba270c197505b50cfe77f
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 85%
 
 ---
 
@@ -17,12 +17,12 @@ Asset Compute Service のトラブルシューティングに役立つ一般的�
 * インストールするすべての依存コンポーネントがアプリケーションの `package.json` ファイルで参照されるようにします。
 * 失敗時のクリーンアップに起因する可能性のあるエラーが、元の問題を隠す独自のエラーを発生させないようにします。
 
-* 新しい [!DNL Asset Compute Service] 統合で初めて開発者ツールを起動した場合、Asset Compute イベントジャーナルの設定が完全でない可能性があり、最初の処理リクエストが失敗する場合があります。ジャーナルが設定されるまでしばらく待ってから、別のリクエストを送信します。
+* 新しい[!DNL Asset Compute Service]統合で初めて開発者ツールを起動したときに、Asset computeイベントジャーナルの設定が完全でないと、最初の処理リクエストが失敗する場合があります。 ジャーナルが設定されるまでしばらく待ってから、別のリクエストを送信します。
 * Asset Compute の `/register` リクエストまたは `/process` リクエストの送信でエラーが発生した場合は、必要なすべての API が [!DNL Adobe I/O] プロジェクトとワークスペース（Asset Compute、[!DNL Adobe I/O] イベント、[!DNL Adobe I/O] イベント管理、[!DNL Adobe I/O] ランタイム）に追加されていることを確認します。
 
-## [!DNL Adobe I/O] CLI を使用してログインする {#login-via-aio-cli}
+## [!DNL Adobe I/O] CLI を使用してログインする  {#login-via-aio-cli}
 
-[!DNL Adobe Developer Console] [CLI を通じて [!DNL Adobe I/O] ](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#3-signing-in-from-cli) にログインするときに問題が発生した場合は、カスタムアプリケーションの開発、テスト、デプロイに必要な資格情報を手動で追加します。
+[!DNL Adobe Developer Console] [CLI を通じて [!DNL Adobe I/O] ](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#3-signing-in-from-cli) にログインするときに問題が発生した場合は、カスタムアプリケーションの開発、テスト、デプロイに必要な資格情報を手動で追加します。
 
 1. [Adobe Developer Console](https://console.adobe.io/) で Firefly プロジェクトとワークスペースに移動し、右上隅にある「**[!UICONTROL Download]**」をクリックします。このファイルを開き、この JSON をコンピューター上の安全な場所に保存します。
 

@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] に対応した開発'
 description: ' [!DNL Asset Compute Service] を使用してカスタムアプリケーションを作成します。'
 exl-id: a0c59752-564b-4bb6-9833-ab7c58a7f38e
-source-git-commit: 187a788d036f33b361a0fd1ca34a854daeb4a101
+source-git-commit: eed9da4b20fe37a4e44ba270c197505b50cfe77f
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 100%
+source-wordcount: '1605'
+ht-degree: 97%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 100%
 
 [[!DNL Adobe I/O]  CLI](https://github.com/adobe/aio-cli) がローカルにインストールされていることを確認します。
 
-1. カスタムアプリケーションを作成するには、[Firefly アプリケーションを作成](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#4-bootstrapping-new-app-using-the-cli)します。それには、ターミナルで `aio app init <app-name>` を実行します。
+1. カスタムアプリケーションを作成するには、[Firefly アプリケーションを作成](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#4-bootstrapping-new-app-using-the-cli)します。それには、ターミナルで `aio app init <app-name>` を実行します。
 
-   まだログインしていない場合は、このコマンドを実行すると、Adobe ID で [Adobe Developer Console](https://console.adobe.io/) にログインするように促すメッセージがブラウザーに表示されます。CLI からのログインについて詳しくは、[こちら](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#3-signing-in-from-cli)を参照してください。
+   まだログインしていない場合は、このコマンドを実行すると、Adobe ID で [Adobe Developer Console](https://console.adobe.io/) にログインするように促すメッセージがブラウザーに表示されます。CLI からのログインについて詳しくは、[こちら](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#3-signing-in-from-cli)を参照してください。
 
-   ログインすることをお勧めします。問題が発生した場合は、指示に従って、[ログインせずにアプリを作成](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user)します。
+   ログインすることをお勧めします。問題が発生した場合は、指示に従って、[ログインせずにアプリを作成](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user)します。
 
 1. ログイン後、CLI のプロンプトに従って、アプリケーションに使用する `Organization`、`Project`、`Workspace` を選択します。[環境の設定](setup-environment.md)で作成したプロジェクトとワークスペースを選択します。
 
@@ -60,7 +60,7 @@ ht-degree: 100%
 
 1. 残りのプロンプトに従い、Visual Studio Code（または、お好きなコードエディター）で新しいアプリケーションを開きます。カスタムアプリケーションの基礎モードとサンプルコードが含まれています。
 
-   Firefly アプリケーションの主なコンポーネントについては、[こちら](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application)を参照してください。
+   Firefly アプリケーションの主なコンポーネントについては、[こちら](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#5-anatomy-of-a-project-firefly-application)を参照してください。
 
    テンプレートアプリケーションでは、アプリケーションレンディションのアップロード、ダウンロード、オーケストレーションにアドビの [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk#asset-compute-sdk) を利用するので、開発者はカスタムアプリケーションロジックを実装するだけで済みます。`actions/<worker-name>` フォルダー内の `index.js` ファイルがカスタムアプリケーションコードの追加先です。
 
@@ -98,7 +98,7 @@ Firefly プロジェクトのルートにある ENV ファイルに、開発者�
 1. Adobe Developer Console からファイルをダウンロードします。プロジェクトのルートに移動し、右上隅の「すべてをダウンロード」をクリックします。ファイルは「`<namespace>-<workspace>.json`」というファイル名でダウンロードされます。次のいずれかの操作をおこないます。
 
    * ファイル名を「`console.json`」に変更し、プロジェクトのルートに移動します。
-   * オプションとして、Adobe Developer Console 統合 JSON ファイルへの絶対パスを追加できます。これは、プロジェクトワークスペースにダウンロードされる [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user) ファイルと同じです。
+   * オプションとして、Adobe Developer Console 統合 JSON ファイルへの絶対パスを追加できます。これは、プロジェクトワークスペースにダウンロードされる [`console.json`](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user) ファイルと同じです。
 
       ```conf
       ASSET_COMPUTE_INTEGRATION_FILE_PATH=
