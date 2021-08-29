@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] に必要な開発環境の設定'
 description: カスタムコードの作成とテストを開始するための  [!DNL Asset Compute Service]  の開発環境の設定。
 exl-id: 91c12889-01d8-4757-9bdd-f73c491cd9d5
-source-git-commit: eed9da4b20fe37a4e44ba270c197505b50cfe77f
+source-git-commit: 9404ffcc66a3b6ba206155d1b1a5c16a43e22a39
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 85%
+source-wordcount: '370'
+ht-degree: 82%
 
 ---
 
@@ -26,6 +26,10 @@ ht-degree: 85%
    * [[!DNL Adobe I/O]  CLI](https://github.com/adobe/aio-cli)（`aio`）- `npm install -g @adobe/aio-cli@7.1.0` を使用してインストールします。
 
 1. 必ず[前提条件](/help/understand-extensibility.md#prerequisites-and-provisioning)を満たすようにしてください。
+
+>[!NOTE]
+>
+>現時点では、[!DNL Adobe I/O] CLI v7.1.0を使用し、[!DNL Adobe I/O] CLI v8は使用しません。
 
 ## Firefly プロジェクトの設定 {#create-firefly-project}
 
