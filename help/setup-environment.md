@@ -3,9 +3,9 @@ title: ' [!DNL Asset Compute Service] に必要な開発環境の設定'
 description: カスタムコードの作成とテストを開始するための [!DNL Asset Compute Service] の開発環境の設定。
 exl-id: 91c12889-01d8-4757-9bdd-f73c491cd9d5
 source-git-commit: 9404ffcc66a3b6ba206155d1b1a5c16a43e22a39
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '370'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->現時点では、[!DNL Adobe I/O] CLI v7.1.0を使用し、[!DNL Adobe I/O] CLI v8は使用しません。
+>現時点では、[!DNL Adobe I/O] CLI v7.1.0 を使用し、[!DNL Adobe I/O] CLI v8 は使用しません。
 
 ## Firefly プロジェクトの設定 {#create-firefly-project}
 
