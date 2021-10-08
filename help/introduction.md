@@ -2,9 +2,9 @@
 title: ' [!DNL Asset Compute Service] について'
 description: '[!DNL Asset Compute Service] は、複雑さを軽減しスケーラビリティを向上させるクラウドネイティブなアセット処理サービスです。'
 exl-id: f8c89f65-5a94-44f3-aaac-4612ae291101
-source-git-commit: 187a788d036f33b361a0fd1ca34a854daeb4a101
+source-git-commit: a2460a0719f8c585ed72e44c904aa0df33301032
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '307'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 100%
 >
 >現在、[!DNL Asset Compute Service] は Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] 経由でのみ使用できます。管理者は、[!DNL Asset Compute Service] を呼び出してアセットを処理に渡すことができる処理プロファイルを作成します。詳しくは、[アセットマイクロサービスと処理プロファイルの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=ja)を参照してください。
 
-## [!DNL Asset Compute Service] のサポート対象ユースケース {#possible-use-cases-benefits}
+## [!DNL Asset Compute Service] のサポート対象ユースケース  {#possible-use-cases-benefits}
 
 [!DNL Asset Compute Service] は、基本的な画像処理、Adobe アプリケーション固有の変換、複雑なビジネス要件をオーケストレーションするカスタムアプリケーションの作成など、いくつかの一般的なビジネスユースケースをサポートしています。
 
@@ -47,7 +47,6 @@ ht-degree: 100%
 >* [ [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] のアセットマイクロサービスを使用したアセット処理の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=ja)。
 >* [Project Firefly のドキュメント](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html)
 >* [処理でサポートされるファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html)
->* [Asset Compute Service のリリースノート](release-notes.md)
 
 
 <!-- **TBD:**
