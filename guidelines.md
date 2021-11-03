@@ -1,8 +1,8 @@
 ---
 source-git-commit: c0fd9623ad09443a99695352743a165744961758
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 # ドキュメントへの投稿に関するガイドライン
@@ -31,7 +31,7 @@ ht-degree: 94%
 
 ドキュメントの改善に役立つアイデアの投稿を歓迎します。ただし、コメント、問題報告（イシュー）および変更修正依頼（プル要求）は、*投稿*&#x200B;専用です。これらを、製品の使用方法、プロジェクトの実装方法、技術的な問題の解決方法についての質問に回答するために使用することはできません。
 
-使用方法や技術的な問題に関して質問がある場合は、[[!DNL Experience Manager]  カスタマーサポートポータル ](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) の通常のサポートプロセスを通じて報告したり、[[!DNL Experience Manager]  コミュニティ ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) でディスカッションしたりする必要があります。
+使用方法や技術的な問題に関して質問がある場合は、[[!DNL Experience Manager] カスタマーサポートポータル](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=ja#home)の通常のサポートプロセスを通じて報告したり、[[!DNL Experience Manager]  コミュニティ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)でディスカッションしたりする必要があります。
 
 ドキュメントへの投稿は、アドビのサポートに代わるものではありません。サポート関連の質問に対する回答を求めるような投稿は拒否されます。
 
