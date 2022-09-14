@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] に対応した開発'
 description: ' [!DNL Asset Compute Service] を使用してカスタムアプリケーションを作成します。'
 exl-id: a0c59752-564b-4bb6-9833-ab7c58a7f38e
-source-git-commit: eed9da4b20fe37a4e44ba270c197505b50cfe77f
-workflow-type: ht
-source-wordcount: '1605'
-ht-degree: 100%
+source-git-commit: a50a3bdb520cbe608c5710716df80ac6e3b486e5
+workflow-type: tm+mt
+source-wordcount: '1618'
+ht-degree: 92%
 
 ---
 
@@ -21,21 +21,23 @@ ht-degree: 100%
 
 [[!DNL Adobe I/O]  CLI](https://github.com/adobe/aio-cli) がローカルにインストールされていることを確認します。
 
-1. カスタムアプリケーションを作成するには、[Firefly アプリケーションを作成](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#4-bootstrapping-new-app-using-the-cli)します。それには、ターミナルで `aio app init <app-name>` を実行します。
+1. カスタムアプリケーションを作成するには、 [アプリビルダープロジェクトの作成](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#4-bootstrapping-new-app-using-the-cli). それには、ターミナルで `aio app init <app-name>` を実行します。
 
    まだログインしていない場合は、このコマンドを実行すると、Adobe ID で [Adobe Developer Console](https://console.adobe.io/) にログインするように促すメッセージがブラウザーに表示されます。CLI からのログインについて詳しくは、[こちら](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#3-signing-in-from-cli)を参照してください。
 
    ログインすることをお勧めします。問題が発生した場合は、指示に従って、[ログインせずにアプリを作成](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user)します。
 
-1. ログイン後、CLI のプロンプトに従って、アプリケーションに使用する `Organization`、`Project`、`Workspace` を選択します。[環境の設定](setup-environment.md)で作成したプロジェクトとワークスペースを選択します。
+1. ログイン後、CLI のプロンプトに従って、アプリケーションに使用する `Organization`、`Project`、`Workspace` を選択します。[環境の設定](setup-environment.md)で作成したプロジェクトとワークスペースを選択します。「`Which extension point(s) do you wish to implement ?`」というプロンプトが表示されたら、必ず `DX Asset Compute Worker` を選択します。
 
    ```sh
    $ aio app init <app-name>
    Retrieving information from [!DNL Adobe I/O] Console.
    ? Select Org My Adobe Org
    ? Select Project MyFireflyProject
-   ? Select Workspace myworkspace
-   create console.json
+   ? Which extension point(s) do you wish to implement ? (Press <space> to select, <a>
+   to toggle all, <i> to invert selection)
+   ❯◯ DX Experience Cloud SPA
+   ◯ DX Asset Compute Worker
    ```
 
 1. 「`Which Adobe I/O App features do you want to enable for this project?`」というプロンプトが表示されたら、「`Actions`」を選択します。Web アセットは別の認証および承認チェックを使用するので、必ず「`Web Assets`」オプションの選択を解除してください。
@@ -60,7 +62,7 @@ ht-degree: 100%
 
 1. 残りのプロンプトに従い、Visual Studio Code（または、お好きなコードエディター）で新しいアプリケーションを開きます。カスタムアプリケーションの基礎モードとサンプルコードが含まれています。
 
-   Firefly アプリケーションの主なコンポーネントについては、[こちら](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#5-anatomy-of-a-project-firefly-application)を参照してください。
+   詳しくは、こちらを参照してください。 [App Builder アプリの主なコンポーネント](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#5-anatomy-of-a-project-firefly-application).
 
    テンプレートアプリケーションでは、アプリケーションレンディションのアップロード、ダウンロード、オーケストレーションにアドビの [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk#asset-compute-sdk) を利用するので、開発者はカスタムアプリケーションロジックを実装するだけで済みます。`actions/<worker-name>` フォルダー内の `index.js` ファイルがカスタムアプリケーションコードの追加先です。
 
@@ -68,7 +70,7 @@ ht-degree: 100%
 
 ### 資格情報の追加 {#add-credentials}
 
-アプリケーションの作成時にログインすると、Firefly 資格情報のほとんどが ENV ファイルに収集されます。ただし、開発者ツールを使用するには、追加の資格情報が必要です。
+アプリケーションを作成する際にログインすると、App Builder の資格情報のほとんどが ENV ファイルに収集されます。 ただし、開発者ツールを使用するには、追加の資格情報が必要です。
 
 <!-- TBD: Check if manual setup of credentials is required.
 Manual set up of credentials is removed from troubleshooting and best practices page. Link was broken.
@@ -87,9 +89,9 @@ If you did not log in, refer to our troubleshooting guide to [set up credentials
 
 #### ENV ファイルへの資格情報の追加 {#add-credentials-env-file}
 
-Firefly プロジェクトのルートにある ENV ファイルに、開発者ツール用の次の資格情報を追加します。
+App Builder プロジェクトのルートにある ENV ファイルに、開発者ツール用の次の資格情報を追加します。
 
-1. Firefly プロジェクトにサービスを追加する際に作成された秘密鍵ファイルの絶対パスを追加します。
+1. App Builder プロジェクトにサービスを追加する際に作成した秘密鍵ファイルの絶対パスを追加します。
 
    ```conf
    ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
@@ -220,7 +222,7 @@ exports.main = worker(async function (source, rendition) {
 
 ## 認証と承認のサポート {#authentication-authorization-support}
 
-Asset Compute カスタムアプリケーションでは、デフォルトで Firefly アプリケーションの認証および承認チェックがおこなわれます。これは、`manifest.yml` で `require-adobe-auth` 注釈を `true` に設定すると有効になります。
+デフォルトでは、Asset computeのカスタムアプリケーションには、App Builder プロジェクトの認証と認証のチェックが付属しています。 これは、`manifest.yml` で `require-adobe-auth` 注釈を `true` に設定すると有効になります。
 
 ### 他の Adobe API へのアクセス {#access-adobe-apis}
 
@@ -292,6 +294,6 @@ Asset Compute アプリケーションは本来、ネットワークとディス
 
 アクションコンテナが使用できるメモリは、`memorySize` に MB 単位で指定します。現在のところ、この値はコンテナが取得する CPU アクセスの量も定義していますが、最も重要なのは、この値が Runtime の使用コストの主要な要素になっていることです（コンテナが大きいほどコストが大きくなります）。処理に必要なメモリや CPU の量が多い場合は、ここでより大きい値を指定しますが、コンテナが大きいほど全体的なスループットが低下するので、リソースを無駄にしないように注意してください。
 
-さらに、この `concurrency` 設定を使用して、コンテナ内でのアクションの同時実行性を制御することができます。これは、1 つのコンテナが（同じアクションについて）同時に受け取るアクティベーションの数です。このモデルでは、アクションコンテナは、複数の同時リクエストをその上限まで受け取る Node.js サーバーのようなものです。これを設定しないと、Runtime のデフォルトは 200 になります。これは、小規模な Firefly アクションには適していますが、Asset Compute アプリケーションではローカル処理とディスクアクティビティの負荷が高くなることを考えると、Asset Compute アプリケーションには通常大きすぎます。実装によっては、一部のアプリケーションは、同時実行アクティビティではうまく動作しない場合もあります。Asset Compute SDK を使用すると、一意の異なるフォルダーにファイルを書き込むことで、アクティベーションが確実に分離されます。
+さらに、この `concurrency` 設定を使用して、コンテナ内でのアクションの同時実行性を制御することができます。これは、1 つのコンテナが（同じアクションについて）同時に受け取るアクティベーションの数です。このモデルでは、アクションコンテナは、複数の同時リクエストをその上限まで受け取る Node.js サーバーのようなものです。設定しない場合、 Runtime のデフォルトは 200 です。これは、小規模な App Builder アクションには最適ですが、ローカル処理とディスクアクティビティの負荷が高い場合、通常はAsset computeアプリケーションには大きすぎます。 実装によっては、一部のアプリケーションは、同時実行アクティビティではうまく動作しない場合もあります。Asset Compute SDK を使用すると、一意の異なるフォルダーにファイルを書き込むことで、アクティベーションが確実に分離されます。
 
 アプリケーションをテストして、`concurrency` と `memorySize` の最適な値を見つけてください。コンテナが大きい、つまりメモリ上限が大きいと、同時実行性が高くなる可能性がありますが、同時に、トラフィック量が少ない場合にリソースが無駄になる可能性があります。

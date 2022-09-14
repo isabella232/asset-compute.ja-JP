@@ -2,10 +2,10 @@
 title: カスタムアプリケーションの動作について
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションの動作の理解に役立つその内部動作'
 exl-id: a3ee6549-9411-4839-9eff-62947d8f0e42
-source-git-commit: 187a788d036f33b361a0fd1ca34a854daeb4a101
+source-git-commit: 07e87c57e57f18f4d6e34ca8529d5598b0b12f3d
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 100%
+source-wordcount: '752'
+ht-degree: 97%
 
 ---
 
@@ -68,7 +68,7 @@ curl -X POST \
 }
 ```
 
-[!DNL Asset Compute Service] が、カスタムアプリケーションレンディションリクエストをカスタムアプリケーションに送信します。指定されたアプリケーション URL（Project Firefly のセキュアな Web アクション URL）への HTTP POST が使用されます。すべてのリクエストで HTTPS プロトコルが使用されるので、データのセキュリティは最大になります。
+[!DNL Asset Compute Service] が、カスタムアプリケーションレンディションリクエストをカスタムアプリケーションに送信します。指定されたアプリケーション URL への HTTPPOSTを使用します。これは、Project App Builder の保護された Web アクション URL です。 すべてのリクエストで HTTPS プロトコルが使用されるので、データのセキュリティは最大になります。
 
 カスタムアプリケーションで使用する [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk) が HTTP POST リクエストを処理します。また、ソースのダウンロード、レンディションのアップロード、[!DNL Adobe I/O] イベントの送信、エラー処理もおこないます。
 
@@ -118,7 +118,7 @@ SDK は、レンディションごとに非同期の[レンディションコー
 
 SDK は、レンディションごとに [!DNL Adobe I/O] イベントを送信します。これらのイベントは、結果に応じて `rendition_created` か `rendition_failed` のどちらかのタイプになります。イベントについて詳しくは、[Asset Compute の非同期イベント](api.md#asynchronous-events)を参照してください。
 
-## [!DNL Adobe I/O] イベントを受信 {#receive-aio-events}
+## [!DNL Adobe I/O] イベントを受信  {#receive-aio-events}
 
 クライアントは、消費ロジックに従って [[!DNL Adobe I/O]  イベントジャーナル](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#/Journaling)をポーリングします。最初のジャーナル URL は、`/register` API 応答で提供される URL です。イベントは、`requestId` を使用して識別できます。この ID はイベントに存在し、`/process` で返されるものと同じです。レンディションごとに個別のイベントがあります。このイベントは、レンディションがアップロードされる（または失敗する）とすぐに送信されます。一致するイベントを受け取ると、クライアントは結果のレンディションを表示したり、処理したりすることができます。
 
