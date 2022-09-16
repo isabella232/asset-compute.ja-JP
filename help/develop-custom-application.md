@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] に対応した開発'
 description: ' [!DNL Asset Compute Service] を使用してカスタムアプリケーションを作成します。'
 exl-id: a0c59752-564b-4bb6-9833-ab7c58a7f38e
-source-git-commit: a50a3bdb520cbe608c5710716df80ac6e3b486e5
+source-git-commit: a121b48d480b45405259c2061ac86b9ab46b89cb
 workflow-type: tm+mt
 source-wordcount: '1618'
-ht-degree: 92%
+ht-degree: 89%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 92%
 
 [[!DNL Adobe I/O]  CLI](https://github.com/adobe/aio-cli) がローカルにインストールされていることを確認します。
 
-1. カスタムアプリケーションを作成するには、 [アプリビルダープロジェクトの作成](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#4-bootstrapping-new-app-using-the-cli). それには、ターミナルで `aio app init <app-name>` を実行します。
+1. カスタムアプリケーションを作成するには、 [アプリビルダープロジェクトの作成](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#4-bootstrapping-new-app-using-the-cli). それには、ターミナルで `aio app init <app-name>` を実行します。
 
-   まだログインしていない場合は、このコマンドを実行すると、Adobe ID で [Adobe Developer Console](https://console.adobe.io/) にログインするように促すメッセージがブラウザーに表示されます。CLI からのログインについて詳しくは、[こちら](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#3-signing-in-from-cli)を参照してください。
+   まだログインしていない場合は、このコマンドを実行すると、Adobe ID で [Adobe Developer Console](https://console.adobe.io/) にログインするように促すメッセージがブラウザーに表示されます。CLI からのログインについて詳しくは、[こちら](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#3-signing-in-from-cli)を参照してください。
 
-   ログインすることをお勧めします。問題が発生した場合は、指示に従って、[ログインせずにアプリを作成](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user)します。
+   ログインすることをお勧めします。問題が発生した場合は、指示に従って、[ログインせずにアプリを作成](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user)します。
 
 1. ログイン後、CLI のプロンプトに従って、アプリケーションに使用する `Organization`、`Project`、`Workspace` を選択します。[環境の設定](setup-environment.md)で作成したプロジェクトとワークスペースを選択します。「`Which extension point(s) do you wish to implement ?`」というプロンプトが表示されたら、必ず `DX Asset Compute Worker` を選択します。
 
@@ -62,7 +62,7 @@ ht-degree: 92%
 
 1. 残りのプロンプトに従い、Visual Studio Code（または、お好きなコードエディター）で新しいアプリケーションを開きます。カスタムアプリケーションの基礎モードとサンプルコードが含まれています。
 
-   詳しくは、こちらを参照してください。 [App Builder アプリの主なコンポーネント](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#5-anatomy-of-a-project-firefly-application).
+   詳しくは、こちらを参照してください。 [App Builder アプリの主なコンポーネント](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#5-anatomy-of-an-app-builder-application).
 
    テンプレートアプリケーションでは、アプリケーションレンディションのアップロード、ダウンロード、オーケストレーションにアドビの [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk#asset-compute-sdk) を利用するので、開発者はカスタムアプリケーションロジックを実装するだけで済みます。`actions/<worker-name>` フォルダー内の `index.js` ファイルがカスタムアプリケーションコードの追加先です。
 

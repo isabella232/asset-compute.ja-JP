@@ -2,9 +2,9 @@
 title: カスタムアプリケーションの動作について
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションの動作の理解に役立つその内部動作'
 exl-id: a3ee6549-9411-4839-9eff-62947d8f0e42
-source-git-commit: 07e87c57e57f18f4d6e34ca8529d5598b0b12f3d
+source-git-commit: a121b48d480b45405259c2061ac86b9ab46b89cb
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '751'
 ht-degree: 97%
 
 ---
@@ -68,7 +68,7 @@ curl -X POST \
 }
 ```
 
-[!DNL Asset Compute Service] が、カスタムアプリケーションレンディションリクエストをカスタムアプリケーションに送信します。指定されたアプリケーション URL への HTTPPOSTを使用します。これは、Project App Builder の保護された Web アクション URL です。 すべてのリクエストで HTTPS プロトコルが使用されるので、データのセキュリティは最大になります。
+[!DNL Asset Compute Service] が、カスタムアプリケーションレンディションリクエストをカスタムアプリケーションに送信します。指定されたアプリケーション URL（App Builder の保護された Web アクション URL）への HTTPPOSTを使用します。 すべてのリクエストで HTTPS プロトコルが使用されるので、データのセキュリティは最大になります。
 
 カスタムアプリケーションで使用する [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk) が HTTP POST リクエストを処理します。また、ソースのダウンロード、レンディションのアップロード、[!DNL Adobe I/O] イベントの送信、エラー処理もおこないます。
 
