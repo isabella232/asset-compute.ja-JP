@@ -5,7 +5,7 @@ exl-id: a0c59752-564b-4bb6-9833-ab7c58a7f38e
 source-git-commit: a121b48d480b45405259c2061ac86b9ab46b89cb
 workflow-type: tm+mt
 source-wordcount: '1618'
-ht-degree: 89%
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 89%
 
 [[!DNL Adobe I/O]  CLI](https://github.com/adobe/aio-cli) がローカルにインストールされていることを確認します。
 
-1. カスタムアプリケーションを作成するには、 [アプリビルダープロジェクトの作成](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#4-bootstrapping-new-app-using-the-cli). それには、ターミナルで `aio app init <app-name>` を実行します。
+1. カスタムアプリケーションを作成するには、[App Builder プロジェクトを作成](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#4-bootstrapping-new-app-using-the-cli)します。それには、ターミナルで `aio app init <app-name>` を実行します。
 
    まだログインしていない場合は、このコマンドを実行すると、Adobe ID で [Adobe Developer Console](https://console.adobe.io/) にログインするように促すメッセージがブラウザーに表示されます。CLI からのログインについて詳しくは、[こちら](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#3-signing-in-from-cli)を参照してください。
 
@@ -70,7 +70,7 @@ ht-degree: 89%
 
 ### 資格情報の追加 {#add-credentials}
 
-アプリケーションを作成する際にログインすると、App Builder の資格情報のほとんどが ENV ファイルに収集されます。 ただし、開発者ツールを使用するには、追加の資格情報が必要です。
+アプリケーションの作成時にログインすると、App Builder 資格情報のほとんどが ENV ファイルに収集されます。ただし、開発者ツールを使用するには、追加の資格情報が必要です。
 
 <!-- TBD: Check if manual setup of credentials is required.
 Manual set up of credentials is removed from troubleshooting and best practices page. Link was broken.
@@ -91,7 +91,7 @@ If you did not log in, refer to our troubleshooting guide to [set up credentials
 
 App Builder プロジェクトのルートにある ENV ファイルに、開発者ツール用の次の資格情報を追加します。
 
-1. App Builder プロジェクトにサービスを追加する際に作成した秘密鍵ファイルの絶対パスを追加します。
+1. App Builder プロジェクトにサービスを追加する際に作成された、秘密鍵ファイルへの絶対パスを追加します。
 
    ```conf
    ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
@@ -222,7 +222,7 @@ exports.main = worker(async function (source, rendition) {
 
 ## 認証と承認のサポート {#authentication-authorization-support}
 
-デフォルトでは、Asset computeのカスタムアプリケーションには、App Builder プロジェクトの認証と認証のチェックが付属しています。 これは、`manifest.yml` で `require-adobe-auth` 注釈を `true` に設定すると有効になります。
+Asset Compute カスタムアプリケーションでは、デフォルトで App Builder アプリケーションの承認および認証チェックが行われます。これは、`manifest.yml` で `require-adobe-auth` 注釈を `true` に設定すると有効になります。
 
 ### 他の Adobe API へのアクセス {#access-adobe-apis}
 
@@ -294,6 +294,6 @@ Asset Compute アプリケーションは本来、ネットワークとディス
 
 アクションコンテナが使用できるメモリは、`memorySize` に MB 単位で指定します。現在のところ、この値はコンテナが取得する CPU アクセスの量も定義していますが、最も重要なのは、この値が Runtime の使用コストの主要な要素になっていることです（コンテナが大きいほどコストが大きくなります）。処理に必要なメモリや CPU の量が多い場合は、ここでより大きい値を指定しますが、コンテナが大きいほど全体的なスループットが低下するので、リソースを無駄にしないように注意してください。
 
-さらに、この `concurrency` 設定を使用して、コンテナ内でのアクションの同時実行性を制御することができます。これは、1 つのコンテナが（同じアクションについて）同時に受け取るアクティベーションの数です。このモデルでは、アクションコンテナは、複数の同時リクエストをその上限まで受け取る Node.js サーバーのようなものです。設定しない場合、 Runtime のデフォルトは 200 です。これは、小規模な App Builder アクションには最適ですが、ローカル処理とディスクアクティビティの負荷が高い場合、通常はAsset computeアプリケーションには大きすぎます。 実装によっては、一部のアプリケーションは、同時実行アクティビティではうまく動作しない場合もあります。Asset Compute SDK を使用すると、一意の異なるフォルダーにファイルを書き込むことで、アクティベーションが確実に分離されます。
+さらに、この `concurrency` 設定を使用して、コンテナ内でのアクションの同時実行性を制御することができます。これは、1 つのコンテナが（同じアクションについて）同時に受け取るアクティベーションの数です。このモデルでは、アクションコンテナは、複数の同時リクエストをその上限まで受け取る Node.js サーバーのようなものです。これを設定しないと、Runtime のデフォルトは 200 になります。これは、小規模な App Builder アクションには適していますが、Asset Compute アプリケーションではローカル処理とディスクアクティビティの負荷が高くなることを考えると、Asset Compute アプリケーションには通常大きすぎます。実装によっては、一部のアプリケーションは、同時実行アクティビティではうまく動作しない場合もあります。Asset Compute SDK を使用すると、一意の異なるフォルダーにファイルを書き込むことで、アクティベーションが確実に分離されます。
 
 アプリケーションをテストして、`concurrency` と `memorySize` の最適な値を見つけてください。コンテナが大きい、つまりメモリ上限が大きいと、同時実行性が高くなる可能性がありますが、同時に、トラフィック量が少ない場合にリソースが無駄になる可能性があります。

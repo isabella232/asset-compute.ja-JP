@@ -5,7 +5,7 @@ exl-id: 91c12889-01d8-4757-9bdd-f73c491cd9d5
 source-git-commit: 2b690ce37c0bac58abcb745e0b82018541434659
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 72%
+ht-degree: 94%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 72%
 
    * [Git](https://git-scm.com/)
    * [Docker Desktop](https://www.docker.com/get-started)
-   * [NodeJS](https://nodejs.org) （v14 LTS、奇数バージョンはお勧めしません） [NPM](https://www.npmjs.com). OSX HomeBrew のユーザーは、`brew install node` を実行して両方をインストールできます。それ以外の場合は、 [NodeJS ダウンロードページ](https://nodejs.org/ja/)
-   * NodeJS に適した IDE。[Visual Studio Code（VS Code）](https://code.visualstudio.com)をお勧めします。デバッガーでサポートされている IDE です。他の任意の IDE をコードエディターとして使用できますが、高度な使用方法（デバッガーなど）はまだサポートされていません
-   * 最新の[[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) (`aio`)
+   * [NodeJS](https://nodejs.org) （v14 LTS、奇数バージョンはお勧めしません） [NPM](https://www.npmjs.com). OSX HomeBrew のユーザーは、`brew install node` を実行して両方をインストールできます。それ以外の場合は、[NodeJS ダウンロードページ](https://nodejs.org/ja/)からダウンロードします
+   * NodeJS に適した IDE。[Visual Studio Code（VS Code）](https://code.visualstudio.com)をお勧めします。デバッガーでサポートされている IDE です。その他の任意の IDE をコードエディターとして使用できますが、高度な使用方法（デバッガーなど）はまだサポートされていません
+   * 最新の [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli)（`aio`）をインストールします
 
    <!-- - install using `npm install -g @adobe/aio-cli@7.1.0` -->
 
-1. 必ず [前提条件](/help/understand-extensibility.md#prerequisites-and-provisioning)
+1. 必ず[前提条件](/help/understand-extensibility.md#prerequisites-and-provisioning)を満たすようにしてください。
 
 <!--
 >[!NOTE]
@@ -41,9 +41,9 @@ ht-degree: 72%
 
 1. [Adobe Developer Console](https://console.adobe.io/) にログオンします。[!DNL Experience Manager] as a [!DNL Cloud Service] 統合と同じ [!DNL Experience Cloud] 組織に属していることを確認します。Adobe Developer Console について詳しくは、[コンソールのドキュメント](https://www.adobe.io/apis/experienceplatform/console/docs.html)を参照してください。
 
-1. [App Builder プロジェクトの作成](https://developer.adobe.com/app-builder/docs/getting_started/first_app/). **[!UICONTROL Create new project]**／**[!UICONTROL Project from template]** をクリックします。「App Builder」を選択します。 次の 2 つのワークスペースを持つ新しい App Builder プロジェクトが作成されます。 `Production` および `Stage`. 必要に応じて、ワークスペース（例：`Development`）を追加します。
+1. [App Builder プロジェクトを作成します](https://developer.adobe.com/app-builder/docs/getting_started/first_app/)。**[!UICONTROL Create new project]**／**[!UICONTROL Project from template]** をクリックします。「App Builder」を選択します。`Production` と `Stage` の 2 つのワークスペースを持つ新しい App Builder プロジェクトが作成されます。必要に応じて、ワークスペース（例：`Development`）を追加します。
 
-1. App Builder プロジェクトで、ワークスペースを選択し、Asset computeに必要なサービスを購読します。 **Add to Project**／**API** をクリックし、`Asset Compute`、`IO Events`、`IO Events Management` の各サービスを追加します。最初の API を追加すると、秘密鍵の作成を促すメッセージが表示されます。開発者ツールでカスタムアプリケーションをテストするには、この鍵が必要なので、この情報をコンピューターに保存します。
+1. この App Builder プロジェクトで、ワークスペースを選択し、Asset Compute に必要なサービスを購読します。**Add to Project**／**API** をクリックし、`Asset Compute`、`IO Events`、`IO Events Management` の各サービスを追加します。最初の API を追加すると、秘密鍵の作成を促すメッセージが表示されます。開発者ツールでカスタムアプリケーションをテストするには、この鍵が必要なので、この情報をコンピューターに保存します。
 
 ## 次の手順 {#next-step}
 
