@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ'
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ。'
 exl-id: c2534904-0a07-465e-acea-3cb578d3bc08
-source-git-commit: ebc0d717b3f6fc4518f4a79cd44ebe8fdcf9ec6a
+source-git-commit: 2dde177933477dc9ac2ff5a55af1fd2366e18359
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 100%
+source-wordcount: '812'
+ht-degree: 93%
 
 ---
 
@@ -66,7 +66,7 @@ test/
 
 ### テスト出力 {#test-output}
 
-カスタムアプリケーションの詳細なテスト出力（ログなど）は、`aio app test` の出力で示されているように、Firefly アプリケーションのルートの `build` フォルダーにあります。
+カスタムアプリケーションのログを含む詳細なテスト出力は、 `build` Adobe Developer App Builder アプリのルートにあるフォルダー。 `aio app test` 出力。
 
 ### 外部サービスのモック作成 {#mock-external-services}
 
@@ -164,7 +164,7 @@ tests/
 
 次の手順は、Visual Studio Code を使用したカスタムアプリケーションのデバッグ方法を示しています。ライブログの確認、ブレークポイントのヒット、コードのステップスルー、ローカルコード変更のライブ再読み込みをアクティベーションのたびにおこなうことができます。
 
-これらの手順の多くは通常、初期設定では `aio` で自動的に実行されます。詳しくは、[Firefly ドキュメント](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/getting_started/first_app.md)の「Debugging the Application」（アプリケーションのデバッグ）の節を参照してください。現時点では、以下の手順には回避策が含まれています。
+これらの手順の多くは、通常、 `aio` 標準搭載の場合は、 [Adobe Developer App Builder ドキュメント](https://developer.adobe.com/app-builder/docs/getting_started/first_app). 現時点では、以下の手順には回避策が含まれています。
 
 1. GitHub の最新の [wskdebug](https://github.com/apache/openwhisk-wskdebug) とオプションの [ngrok](https://www.npmjs.com/package/ngrok) をインストールします。
 

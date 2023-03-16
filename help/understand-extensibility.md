@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] の拡張について'
 description: カスタムアセット処理を実行するために [!DNL Asset Compute Service] の機能を拡張するタイミングと方法。
 exl-id: 3b903364-34cc-44d5-9a03-24a0102cf85d
-source-git-commit: eed9da4b20fe37a4e44ba270c197505b50cfe77f
-workflow-type: ht
-source-wordcount: '254'
-ht-degree: 100%
+source-git-commit: 2dde177933477dc9ac2ff5a55af1fd2366e18359
+workflow-type: tm+mt
+source-wordcount: '260'
+ht-degree: 78%
 
 ---
 
@@ -17,16 +17,16 @@ ht-degree: 100%
 >
 >[!DNL Asset Compute Service] は、Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] でのみ使用できます。
 
-カスタムアプリケーションは、[Project Firefly](https://github.com/AdobeDocs/project-firefly) のヘッドレスアプリです。[Asset Compute SDK](https://github.com/adobe/asset-compute-sdk) と Project Firefly 開発者ツールを使用すると、[!DNL Asset Compute Service] をカスタムアプリケーションで簡単に拡張できるようになります。これにより、開発者はビジネスロジックに専念できます。カスタムアプリケーションの作成は、サーバーレスのプレーン [!DNL Adobe I/O] Runtime アクションを作成するのと同程度の簡単な作業です。カスタムアプリケーションは 1 つの Node.js JavaScript 関数です。詳しくは、[基本的なカスタムアプリケーションの例](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js)を参照してください。
+カスタムアプリケーションはヘッドレスです [Adobe Developer App Builder](https://github.com/AdobeDocs/app-builder) アプリ 拡張ガイド [!DNL Asset Compute Service] を使用すると、 [asset computeSDK](https://github.com/adobe/asset-compute-sdk) とAdobe Developer App Builder の開発者ツール これにより、開発者はビジネスロジックに専念できます。カスタムアプリケーションの作成は、サーバーレスのプレーン [!DNL Adobe I/O] Runtime アクションを作成するのと同程度の簡単な作業です。カスタムアプリケーションは 1 つの Node.js JavaScript 関数です。詳しくは、[基本的なカスタムアプリケーションの例](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js)を参照してください。
 
 ## 前提条件とプロビジョニング要件 {#prerequisites-and-provisioning}
 
 次の前提条件を満たしている必要があります。
 
-* Project Firefly ツールがコンピューターにインストールされている。
-* [!DNL Experience Cloud] 組織である。詳しくは、[こちら](https://www.adobe.io/project-firefly/docs/getting_started/#acquire-access-and-credentials)を参照してください。
+* Adobe Developer App Builder ツールがコンピューターにインストールされている。
+* [!DNL Experience Cloud] 組織である。詳しくは、[こちら](https://developer.adobe.com/app-builder/docs/getting_started/#acquire-access-and-credentials)を参照してください。
 * Experience 組織では、Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] が有効になっている。
-* [!DNL Adobe Experience Cloud] 組織は、[!DNL Project Firefly] 開発者プレビュープログラムに含まれている。アクセス申請方法につては[こちら](https://www.adobe.io/project-firefly/docs/overview/getting_access/)を参照してください。
+* [!DNL Adobe Experience Cloud] 組織は、[!DNL Adobe Developer App Builder] 開発者プレビュープログラムに含まれている。アクセス申請方法につては[こちら](https://developer.adobe.com/app-builder/docs/overview/getting_access)を参照してください。
 * 開発者の組織に開発者ロールまたは管理者権限がある。
 * [[!DNL Adobe I/O]  CLI](https://github.com/adobe/aio-cli) がローカルにインストールされている。
 

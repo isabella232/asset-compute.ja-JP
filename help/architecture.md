@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] のアーキテクチャ'
 description: ' [!DNL Asset Compute Service] の API、アプリケーション、SDK が連携して、クラウドネイティブなアセット処理サービスを提供する仕組み。'
 exl-id: 658ee4b7-5eb1-4109-b263-1b7d705e49d6
-source-git-commit: eed9da4b20fe37a4e44ba270c197505b50cfe77f
-workflow-type: ht
-source-wordcount: '485'
-ht-degree: 100%
+source-git-commit: 2dde177933477dc9ac2ff5a55af1fd2366e18359
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 98%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 100%
 
 [!DNL Asset Compute Service] は、サーバーレスの [!DNL Adobe I/O] Runtime プラットフォーム上に構築されています。アセットに Adobe Sensei コンテンツサービスを提供します。呼び出し側クライアント（Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] のみサポート）には、アセットに必要な Adobe Sensei 生成情報が提供されます。返される情報は JSON 形式です。
 
-[!DNL Asset Compute Service] は、[!DNL Project Firefly] に基づいてカスタムアプリケーションを作成することにより拡張できます。これらのカスタムアプリケーションは [!DNL Project Firefly] ヘッドレスアプリであり、カスタム変換ツールの追加や、画像操作を実行する外部 API の呼び出しなどのタスクをおこないます。
+[!DNL Asset Compute Service] は、[!DNL Project Adobe Developer App Builder] に基づいてカスタムアプリケーションを作成することにより拡張できます。これらのカスタムアプリケーションは [!DNL Project Adobe Developer App Builder] ヘッドレスアプリであり、カスタム変換ツールの追加や、画像操作を実行する外部 API の呼び出しなどのタスクをおこないます。
 
-[!DNL Project Firefly] は、[!DNL Adobe I/O] ランタイム上にカスタム Web アプリケーションを作成してデプロイするためのフレームワークです。カスタムアプリケーションを作成する場合、開発者は [!DNL React Spectrum]（アドビの UI ツールキット）を活用し、マイクロサービスを作成し、カスタムイベントを作成し、API をオーケストレーションすることができます。詳しくは、[Project Firefly のドキュメント](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html)を参照してください。
+[!DNL Project Adobe Developer App Builder] は、[!DNL Adobe I/O] ランタイム上にカスタム Web アプリケーションを作成してデプロイするためのフレームワークです。カスタムアプリケーションを作成する場合、開発者は [!DNL React Spectrum]（アドビの UI ツールキット）を活用し、マイクロサービスを作成し、カスタムイベントを作成し、API をオーケストレーションすることができます。詳しくは、 [Adobe Developer App Builder のドキュメント](https://developer.adobe.com/app-builder/docs/overview).
 
 アーキテクチャの基盤となるものは次のとおりです。
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 <!-- TBD:
 
 * About the YAML file?
-* See [https://www.adobe.io/project-firefly/docs/getting_started/first_app/#5-anatomy-of-a-project-firefly-application](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#5-anatomy-of-a-project-firefly-application).
+* See [https://developer.adobe.com/app-builder/docs/getting_started/first_app/#5-anatomy-of-a-project-firefly-application](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#5-anatomy-of-a-project-firefly-application).
 
 * minimize description to custom applications
 * remove all internal stuff (e.g. Photoshop application, API Gateway) from text and diagram

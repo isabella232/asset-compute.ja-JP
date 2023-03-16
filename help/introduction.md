@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] について'
 description: 「[!DNL Asset Compute Service] は、複雑さを軽減しスケーラビリティを向上させるクラウドネイティブなアセット処理サービスです」。
 exl-id: f8c89f65-5a94-44f3-aaac-4612ae291101
-source-git-commit: 93d3b407c8875888f03bec673d0a677a3205cfbb
-workflow-type: ht
-source-wordcount: '307'
-ht-degree: 100%
+source-git-commit: 2dde177933477dc9ac2ff5a55af1fd2366e18359
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 95%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 100%
 
 [!DNL Asset Compute Service] は、デジタルアセットを処理するためのスケーラブルかつ拡張可能な [!DNL Adobe Experience Cloud] サービスです。画像、ビデオ、ドキュメントなどのファイル形式を、サムネール、抽出テキストとメタデータ、アーカイブなど、様々なレンディションに変換できます。
 
-開発者は、カスタムアセットアプリケーション（カスタムワーカーとも呼ばれます）をプラグインして、カスタムユースケースに対応できます。このサービスは [!DNL Adobe I/O] ランタイムで動作します。Node.js で作成された [!DNL Project Firefly] ヘッドレスアプリを通じて拡張できます。これらのアプリでは、外部 API を呼び出して画像操作を実行したり [!DNL Adobe Sensei] サポートを利用するなどのカスタム操作をおこなえます。
+開発者は、カスタムアセットアプリケーション（カスタムワーカーとも呼ばれます）をプラグインして、カスタムユースケースに対応できます。このサービスは [!DNL Adobe I/O] ランタイムで動作します。Node.js で作成された [!DNL Adobe Developer App Builder] ヘッドレスアプリを通じて拡張できます。これらのアプリでは、外部 API を呼び出して画像操作を実行したり [!DNL Adobe Sensei] サポートを利用するなどのカスタム操作をおこなえます。
 
-[!DNL Project Firefly] は、[!DNL Adobe I/O] ランタイム上にカスタム Web アプリケーションを作成およびデプロイして Adobe Experience Cloud のソリューションを拡張するためのフレームワークです。カスタムアプリケーションを作成する場合、開発者は [!DNL React Spectrum]（アドビの UI ツールキット）を活用し、マイクロサービスを作成し、カスタムイベントを作成し、API をオーケストレーションすることができます。詳しくは、[Project Firefly のドキュメント](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html)を参照してください。
+[!DNL Adobe Developer App Builder] は、[!DNL Adobe I/O] ランタイム上にカスタム Web アプリケーションを作成およびデプロイして Adobe Experience Cloud のソリューションを拡張するためのフレームワークです。カスタムアプリケーションを作成する場合、開発者は [!DNL React Spectrum]（アドビの UI ツールキット）を活用し、マイクロサービスを作成し、カスタムイベントを作成し、API をオーケストレーションすることができます。詳しくは、 [Adobe Developer App Builder のドキュメント](https://developer.adobe.com/app-builder/docs/overview/).
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ ht-degree: 100%
 >[!MORELIKETHIS]
 >
 >* [ [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] のアセットマイクロサービスを使用したアセット処理の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=ja)。
->* [Project Firefly のドキュメント](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html)
+>* [Adobe Developer App Builder のドキュメント](https://developer.adobe.com/app-builder/docs/overview).
 >* [処理でサポートされるファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=ja)
 
 

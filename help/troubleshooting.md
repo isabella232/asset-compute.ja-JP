@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] に関連するトラブルシューティング'
 description: ' [!DNL Asset Compute Service] を使用したカスタムアプリケーションのトラブルシューティングとデバッグ。'
 exl-id: 017fff91-e5e9-4a30-babf-5faa1ebefc2f
-source-git-commit: eed9da4b20fe37a4e44ba270c197505b50cfe77f
-workflow-type: ht
-source-wordcount: '285'
-ht-degree: 100%
+source-git-commit: 2dde177933477dc9ac2ff5a55af1fd2366e18359
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 88%
 
 ---
 
@@ -22,11 +22,11 @@ Asset Compute Service のトラブルシューティングに役立つ一般的�
 
 ## [!DNL Adobe I/O] CLI を使用してログインする  {#login-via-aio-cli}
 
-[!DNL Adobe Developer Console] [CLI を通じて [!DNL Adobe I/O] ](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#3-signing-in-from-cli) にログインするときに問題が発生した場合は、カスタムアプリケーションの開発、テスト、デプロイに必要な資格情報を手動で追加します。
+[!DNL Adobe Developer Console] [CLI を通じて [!DNL Adobe I/O] ](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#3-signing-in-from-cli) にログインするときに問題が発生した場合は、カスタムアプリケーションの開発、テスト、デプロイに必要な資格情報を手動で追加します。
 
-1. [Adobe Developer Console](https://console.adobe.io/) で Firefly プロジェクトとワークスペースに移動し、右上隅にある「**[!UICONTROL Download]**」をクリックします。このファイルを開き、この JSON をコンピューター上の安全な場所に保存します。
+1. 上のAdobe Developer App Builder プロジェクトとワークスペースに移動します。 [Adobe Developer Console](https://console.adobe.io/) を押します。 **[!UICONTROL ダウンロード]** を右上隅からクリックします。 このファイルを開き、この JSON をコンピューター上の安全な場所に保存します。
 
-1. Firefly アプリケーションの ENV ファイルに移動します。
+1. Adobe Developer App Builder アプリケーションの ENV ファイルに移動します。
 
 1. [!DNL Adobe I/O] Runtime 資格情報を追加します。ダウンロードした JSON から [!DNL Adobe I/O] Runtime の資格情報を取得します。資格情報は `project.workspace.services.runtime` の配下にあります。[!DNL Adobe I/O] Runtime の資格情報を `AIO_runtime_XXX` 変数に追加します。
 
