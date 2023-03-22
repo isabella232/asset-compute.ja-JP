@@ -2,8 +2,8 @@
 title: カスタムアプリケーションの動作について
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションの仕組みを理解するのに役立つ内部動作'
 exl-id: a3ee6549-9411-4839-9eff-62947d8f0e42
-source-git-commit: a121b48d480b45405259c2061ac86b9ab46b89cb
-workflow-type: ht
+source-git-commit: 2af710443cdc2e5e25e105eca6e779eb58631ae9
+workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 次の図は、クライアントでカスタムアプリケーションを使用してデジタルアセットを処理する際のエンドツーエンドのワークフローを示しています。
 
-![カスタムアプリケーションのワークフロー](assets/customworker.png)
+![カスタムアプリケーションのワークフロー](assets/customworker.svg)
 
 *図：[!DNL Asset Compute Service] を使用してアセットを処理する手順*
 
