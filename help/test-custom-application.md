@@ -3,9 +3,9 @@ title: ' [!DNL Asset Compute Service]  カスタムアプリケーションの�
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ。'
 exl-id: c2534904-0a07-465e-acea-3cb578d3bc08
 source-git-commit: 2dde177933477dc9ac2ff5a55af1fd2366e18359
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '812'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -66,9 +66,9 @@ test/
 
 ### テスト出力 {#test-output}
 
-カスタムアプリケーションのログを含む詳細なテスト出力は、 `build` Adobe Developer App Builder アプリのルートにあるフォルダー。 `aio app test` 出力。
+カスタムアプリケーションのログを含めた詳細なテスト出力は、`aio app test` の出力で示されているように、Adobe Developer App Builder アプリのルートの `build` フォルダーで使用できます。
 
-### 外部サービスのモック作成 {#mock-external-services}
+### モック用外部サービス {#mock-external-services}
 
 テストケースで `mock-<HOST_NAME>.json` ファイルを定義すると、アクション内で外部サービス呼び出しのモックを作成できます。ここで、HOST_NAME はモックを作成するホストです。ユースケースの例としては、S3 を個別に呼び出すアプリケーションがあります。新しいテスト構造は次のようになります。
 
@@ -164,7 +164,7 @@ tests/
 
 次の手順は、Visual Studio Code を使用したカスタムアプリケーションのデバッグ方法を示しています。ライブログの確認、ブレークポイントのヒット、コードのステップスルー、ローカルコード変更のライブ再読み込みをアクティベーションのたびにおこなうことができます。
 
-これらの手順の多くは、通常、 `aio` 標準搭載の場合は、 [Adobe Developer App Builder ドキュメント](https://developer.adobe.com/app-builder/docs/getting_started/first_app). 現時点では、以下の手順には回避策が含まれています。
+これらの手順の多くは通常、初期設定では `aio` で自動的に実行されます。詳しくは、[Adobe Developer App Builder ドキュメント](https://developer.adobe.com/app-builder/docs/getting_started/first_app)のアプリケーションのデバッグの節を参照してください。現時点では、以下の手順には回避策が含まれています。
 
 1. GitHub の最新の [wskdebug](https://github.com/apache/openwhisk-wskdebug) とオプションの [ngrok](https://www.npmjs.com/package/ngrok) をインストールします。
 
