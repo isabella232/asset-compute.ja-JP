@@ -3,9 +3,9 @@ title: ' [!DNL Asset Compute Service]  カスタムアプリケーションの�
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションのデプロイ。'
 exl-id: a68d4f59-8a8f-43b2-8bc6-19320ac8c9ef
 source-git-commit: 50f69e16772cee7f79a812f2b86f0ef0221db369
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '190'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 77%
 
 この URL を [Adobe  [!DNL Experience Manager]  as a  [!DNL Cloud Service] の処理プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=ja)で使用すると、アプリケーションを Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] と統合できます。
 
-App Builder プロジェクトとワークスペースが、アクションを使用する [!DNL Experience Manager] as a [!DNL Cloud Service] 環境に対応していることを確認します。開発、ステージング、実稼動用の環境は異なります。環境は、 `AIO_runtime_*` Adobe Developer App Builder アプリケーションのルートにある ENV ファイル内で定義される資格情報。 例えば、`Stage` ワークスペースにデプロイする場合、`AIO_runtime_namespace` は `xxxxxx_xxxxxxxxx_stage` の形式です。と統合するには [!DNL Experience Manager] as a [!DNL Cloud Service] 実稼動環境。Adobe Developer App Builder からアプリケーション URL を使用 `Production` ワークスペース。
+App Builder プロジェクトとワークスペースが、アクションを使用する [!DNL Experience Manager] as a [!DNL Cloud Service] 環境に対応していることを確認します。開発、ステージングおよび実稼動用の環境は異なります。環境が正しいか確かめるには、Adobe Developer App Builder アプリケーションのルートにある ENV ファイル内で定義されている `AIO_runtime_*` 資格情報を確認します。例えば、`Stage` ワークスペースにデプロイする場合、`AIO_runtime_namespace` は `xxxxxx_xxxxxxxxx_stage` の形式です。[!DNL Experience Manager] を [!DNL Cloud Service] の実稼動環境として統合するには、Adobe Developer App Builder の `Production` ワークスペースのアプリケーション URL を使用します。
 
 >[!CAUTION]
 >
