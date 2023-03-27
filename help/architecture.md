@@ -3,9 +3,9 @@ title: ' [!DNL Asset Compute Service] のアーキテクチャ'
 description: ' [!DNL Asset Compute Service] の API、アプリケーション、SDK が連携して、クラウドネイティブなアセット処理サービスを提供する仕組み。'
 exl-id: 658ee4b7-5eb1-4109-b263-1b7d705e49d6
 source-git-commit: 0c5ab8ab230e3f033b804849a2c005351542155f
-workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 [!DNL Asset Compute Service] は、[!DNL Project Adobe Developer App Builder] に基づいてカスタムアプリケーションを作成することにより拡張できます。これらのカスタムアプリケーションは [!DNL Project Adobe Developer App Builder] ヘッドレスアプリであり、カスタム変換ツールの追加や、画像操作を実行する外部 API の呼び出しなどのタスクをおこないます。
 
-[!DNL Project Adobe Developer App Builder] は、[!DNL Adobe I/O] ランタイム上にカスタム Web アプリケーションを作成してデプロイするためのフレームワークです。カスタムアプリケーションを作成する場合、開発者は [!DNL React Spectrum]（アドビの UI ツールキット）を活用し、マイクロサービスを作成し、カスタムイベントを作成し、API をオーケストレーションすることができます。詳しくは、 [Adobe Developer App Builder のドキュメント](https://developer.adobe.com/app-builder/docs/overview).
+[!DNL Project Adobe Developer App Builder] は、[!DNL Adobe I/O] ランタイム上にカスタム Web アプリケーションを作成してデプロイするためのフレームワークです。カスタムアプリケーションを作成する場合、開発者は [!DNL React Spectrum]（アドビの UI ツールキット）を活用し、マイクロサービスを作成し、カスタムイベントを作成し、API をオーケストレーションすることができます。詳しくは、[Adobe Developer App Builder のドキュメント](https://developer.adobe.com/app-builder/docs/overview)を参照してください。
 
 アーキテクチャの基盤となるものは次のとおりです。
 
