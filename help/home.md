@@ -3,15 +3,15 @@ title: 「[!DNL Adobe Asset Compute Service] ユーザーガイド」
 description: このドキュメントでは、導入、カスタムコードの開発、管理、デプロイ、トラブルシューティングの方法など、 [!DNL Asset Compute Service]  に関連するタスクについて説明しています。
 exl-id: 5acf87d1-a391-4802-bfce-e367fc8564df
 source-git-commit: 2dde177933477dc9ac2ff5a55af1fd2366e18359
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # [!DNL Asset Compute Service] について
 
-[!DNL Asset Compute Service] は、デジタルアセットを処理するためのスケーラブルかつ拡張可能な Adobe Experience Cloud サービスです。画像、ビデオ、ドキュメントなどのファイル形式を、サムネール、抽出したテキストとメタデータ、アーカイブなど、様々なレンディションに変換できます。開発者は、カスタムアプリケーション（カスタムワーカーとも呼ばれます）をプラグインして、を使用して構築されたカスタムユースケースに対処できます。 [Adobe Developer App Builder](https://developer.adobe.com/app-builder/docs/overview) サーバーレスで実行中 [[!DNL Adobe I/O] ランタイム](https://www.adobe.io/apis/experienceplatform/runtime.html).
+[!DNL Asset Compute Service] は、デジタルアセットを処理するためのスケーラブルかつ拡張可能な Adobe Experience Cloud サービスです。画像、ビデオ、ドキュメントなどのファイル形式を、サムネール、抽出したテキストとメタデータ、アーカイブなど、様々なレンディションに変換できます。開発者は、カスタムアプリケーション（カスタムワーカーとも呼ばれます）をプラグインして、カスタムユースケースに対処できます。これらのユースケースは [Adobe Developer App Builder](https://developer.adobe.com/app-builder/docs/overview) を使用して作成され、サーバーレスの [[!DNL Adobe I/O] Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) で動作します。
 
 このドキュメントでは、カスタムコードの開発、管理、デプロイ、トラブルシューティングの方法など、[!DNL Asset Compute Service] に関連するトピックについて説明しています。[!DNL Asset Compute Service] の機能については、[概要](introduction.md)を参照してください。[サービスの内容](introduction.md#possible-use-cases-benefits)を確認してください。
 
