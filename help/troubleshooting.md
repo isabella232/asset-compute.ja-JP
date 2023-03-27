@@ -3,9 +3,9 @@ title: ' [!DNL Asset Compute Service] に関連するトラブルシューティ
 description: ' [!DNL Asset Compute Service] を使用したカスタムアプリケーションのトラブルシューティングとデバッグ。'
 exl-id: 017fff91-e5e9-4a30-babf-5faa1ebefc2f
 source-git-commit: 2dde177933477dc9ac2ff5a55af1fd2366e18359
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '291'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ Asset Compute Service のトラブルシューティングに役立つ一般的�
 * 失敗時のクリーンアップに起因する可能性のあるエラーが、元の問題を隠す独自のエラーを発生させないようにします。
 
 * 新しい [!DNL Asset Compute Service] 統合で初めて開発者ツールを起動する際、Asset Compute イベントジャーナルの設定が完全でない場合は、最初の処理リクエストが失敗する場合があります。ジャーナルが設定されるまでしばらく待ってから、別のリクエストを送信します。
-* Asset Compute の `/register` リクエストまたは `/process` リクエストの送信でエラーが発生した場合は、必要なすべての API が [!DNL Adobe I/O] プロジェクトとワークスペース（Asset Compute、[!DNL Adobe I/O] イベント、[!DNL Adobe I/O] イベント管理、[!DNL Adobe I/O] ランタイム）に追加されていることを確認します。
+* Asset Compute の `/register` リクエストまたは `/process` リクエストの送信でエラーが発生した場合は、必要なすべての API が [!DNL Adobe I/O] プロジェクトとワークスペース（Asset Compute、[!DNL Adobe I/O] イベント、[!DNL Adobe I/O] イベント管理、[!DNL Adobe I/O] Runtime）に追加されていることを確認します。
 
 ## [!DNL Adobe I/O] CLI を使用してログインする  {#login-via-aio-cli}
 
-[!DNL Adobe Developer Console] [CLI を通じて [!DNL Adobe I/O] ](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#3-signing-in-from-cli) にログインするときに問題が発生した場合は、カスタムアプリケーションの開発、テスト、デプロイに必要な資格情報を手動で追加します。
+[ [!DNL Adobe I/O] CLI を通じて](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#3-signing-in-from-cli)、[!DNL Adobe Developer Console] にログインする際に問題が発生した場合は、カスタムアプリケーションの開発、テストおよびデプロイに必要な資格情報を手動で追加します。
 
-1. 上のAdobe Developer App Builder プロジェクトとワークスペースに移動します。 [Adobe Developer Console](https://console.adobe.io/) を押します。 **[!UICONTROL ダウンロード]** を右上隅からクリックします。 このファイルを開き、この JSON をコンピューター上の安全な場所に保存します。
+1. [Adobe Developer Console](https://console.adobe.io/) で Adobe Developer App Builder プロジェクトとワークスペースに移動し、右上隅にある「**[!UICONTROL ダウンロード]**」を押します。このファイルを開き、この JSON をコンピューター上の安全な場所に保存します。
 
 1. Adobe Developer App Builder アプリケーションの ENV ファイルに移動します。
 
