@@ -3,9 +3,9 @@ title: ' [!DNL Asset Compute Service] の拡張について'
 description: カスタムアセット処理を実行するために [!DNL Asset Compute Service] の機能を拡張するタイミングと方法。
 exl-id: 3b903364-34cc-44d5-9a03-24a0102cf85d
 source-git-commit: 2dde177933477dc9ac2ff5a55af1fd2366e18359
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '260'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 78%
 >
 >[!DNL Asset Compute Service] は、Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] でのみ使用できます。
 
-カスタムアプリケーションはヘッドレスです [Adobe Developer App Builder](https://github.com/AdobeDocs/app-builder) アプリ 拡張ガイド [!DNL Asset Compute Service] を使用すると、 [asset computeSDK](https://github.com/adobe/asset-compute-sdk) とAdobe Developer App Builder の開発者ツール これにより、開発者はビジネスロジックに専念できます。カスタムアプリケーションの作成は、サーバーレスのプレーン [!DNL Adobe I/O] Runtime アクションを作成するのと同程度の簡単な作業です。カスタムアプリケーションは 1 つの Node.js JavaScript 関数です。詳しくは、[基本的なカスタムアプリケーションの例](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js)を参照してください。
+カスタムアプリケーションは、ヘッドレスな [Adobe Developer App Builder](https://github.com/AdobeDocs/app-builder) アプリです。[Asset Compute SDK](https://github.com/adobe/asset-compute-sdk) および Adobe Developer App Builder 開発者ツールを使用すると、[!DNL Asset Compute Service] をカスタムアプリケーションで簡単に拡張できるようになります。これにより、開発者はビジネスロジックに専念できます。カスタムアプリケーションの作成は、サーバーレスのプレーン [!DNL Adobe I/O] Runtime アクションを作成するのと同程度の簡単な作業です。カスタムアプリケーションは 1 つの Node.js JavaScript 関数です。詳しくは、[基本的なカスタムアプリケーションの例](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js)を参照してください。
 
 ## 前提条件とプロビジョニング要件 {#prerequisites-and-provisioning}
 
