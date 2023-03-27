@@ -3,9 +3,9 @@ title: ' [!DNL Asset Compute Service] について'
 description: 「[!DNL Asset Compute Service] は、複雑さを軽減しスケーラビリティを向上させるクラウドネイティブなアセット処理サービスです」。
 exl-id: f8c89f65-5a94-44f3-aaac-4612ae291101
 source-git-commit: 2dde177933477dc9ac2ff5a55af1fd2366e18359
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '309'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 95%
 
 開発者は、カスタムアセットアプリケーション（カスタムワーカーとも呼ばれます）をプラグインして、カスタムユースケースに対応できます。このサービスは [!DNL Adobe I/O] ランタイムで動作します。Node.js で作成された [!DNL Adobe Developer App Builder] ヘッドレスアプリを通じて拡張できます。これらのアプリでは、外部 API を呼び出して画像操作を実行したり [!DNL Adobe Sensei] サポートを利用するなどのカスタム操作をおこなえます。
 
-[!DNL Adobe Developer App Builder] は、[!DNL Adobe I/O] ランタイム上にカスタム Web アプリケーションを作成およびデプロイして Adobe Experience Cloud のソリューションを拡張するためのフレームワークです。カスタムアプリケーションを作成する場合、開発者は [!DNL React Spectrum]（アドビの UI ツールキット）を活用し、マイクロサービスを作成し、カスタムイベントを作成し、API をオーケストレーションすることができます。詳しくは、 [Adobe Developer App Builder のドキュメント](https://developer.adobe.com/app-builder/docs/overview/).
+[!DNL Adobe Developer App Builder] は、[!DNL Adobe I/O] ランタイム上にカスタム Web アプリケーションを作成およびデプロイして Adobe Experience Cloud のソリューションを拡張するためのフレームワークです。カスタムアプリケーションを作成する場合、開発者は [!DNL React Spectrum]（アドビの UI ツールキット）を活用し、マイクロサービスを作成し、カスタムイベントを作成し、API をオーケストレーションすることができます。詳しくは、[Adobe Developer App Builder のドキュメント](https://developer.adobe.com/app-builder/docs/overview/)を参照してください。
 
 >[!NOTE]
 >
@@ -45,8 +45,8 @@ ht-degree: 95%
 >[!MORELIKETHIS]
 >
 >* [ [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] のアセットマイクロサービスを使用したアセット処理の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=ja)。
->* [Adobe Developer App Builder のドキュメント](https://developer.adobe.com/app-builder/docs/overview).
->* [処理でサポートされるファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=ja)
+>* [Adobe Developer App Builder のドキュメント](https://developer.adobe.com/app-builder/docs/overview)。
+>* [処理でサポートされるファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=ja)。
 
 
 <!-- **TBD:**
