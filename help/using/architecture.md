@@ -3,7 +3,7 @@ title: ' [!DNL Asset Compute Service] のアーキテクチャ'
 description: ' [!DNL Asset Compute Service] の API、アプリケーション、SDK が連携して、クラウドネイティブなアセット処理サービスを提供する仕組み。'
 exl-id: 658ee4b7-5eb1-4109-b263-1b7d705e49d6
 source-git-commit: 5257e091730f3672c46dfbe45c3e697a6555e6b1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 100%
 
