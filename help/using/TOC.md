@@ -4,11 +4,12 @@ product: adobe experience manager
 solution: Experience Manager, Experience Manager Assets
 type: Documentation
 role: Developer
+feature: Asset Compute Microservices
 user-guide-title: Asset Compute Service ガイド
 user-guide-description: このドキュメントでは、カスタムコードの開発、管理、デプロイ、トラブルシューティングの方法など、 [!DNL Asset Compute Service]  に関連するタスクについて説明しています。
 breadcrumb-title: Asset Compute Service ガイド
-source-git-commit: 5257e091730f3672c46dfbe45c3e697a6555e6b1
-workflow-type: tm+mt
+source-git-commit: 06016be9b813c28c502f5bd5df87fd42a211e7ac
+workflow-type: ht
 source-wordcount: '96'
 ht-degree: 100%
 
